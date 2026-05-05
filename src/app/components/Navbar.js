@@ -39,6 +39,7 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/roles", label: "Roles" },
     { href: "/options", label: "Options" },
+    { href: "/templates", label: "Live Template Editor" },
     { href: "/servers", label: "Servers" },
     { href: "/features", label: "Features" },
     { href: "/guide", label: "Guide" },
