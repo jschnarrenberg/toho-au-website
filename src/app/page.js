@@ -359,7 +359,7 @@ export default function Home() {
               </p>
               <div className="tor-cta-row">
                 <DownloadButton />
-                <Link href="/roles" className="tor-btn-secondary">View Roles →</Link>
+                <Link href="/guide" className="tor-btn-secondary">Guide →</Link>
                 <Link href="/starlight" className="tor-btn-secondary tor-btn-starlight">✦ Starlight</Link>
               </div>
             </section>
