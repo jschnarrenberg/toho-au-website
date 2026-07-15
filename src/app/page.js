@@ -6,16 +6,13 @@ import { FaPalette, FaVoteYea, FaPuzzlePiece, FaCog, FaGamepad, FaCheckCircle, F
 import { useEffect, useState, useRef } from "react";
 import Footer from "./components/Footer";
 import ChangelogSection from "./components/ChangelogSection";
-import ProgressBar from "./components/ProgressBar";
-import OpenTerminalButton from "./components/OpenTerminalButton";
-import "./terminal/styles.css";
 
 function DownloadButton() {
   const [downloadUrl, setDownloadUrl] = useState(null);
 
   useEffect(() => {
     async function fetchLatest() {
-      const res = await fetch("https://api.github.com/repos/TownofReworked/TORWLaunchpad/releases/latest");
+      const res = await fetch("https://api.github.com/repos/Limeau/TownofHost-Optimized/releases/latest");
       const data = await res.json();
       if (data.assets?.length > 0) {
         setDownloadUrl(data.assets[0].browser_download_url);
@@ -354,7 +351,7 @@ export default function Home() {
             <section className="tor-hero">
               <div className="tor-eyebrow">Among Us Mod</div>
               <h1 className="tor-h1">
-                The <span className="tor-gradient-text">Reworked</span><br />
+                The <span className="tor-gradient-text">Optimized</span><br />
                 Experience
               </h1>
               <p className="tor-sub">
@@ -367,9 +364,6 @@ export default function Home() {
               </div>
             </section>
           </FadeSection>
-		  
-		  <ProgressBar />
-		  <OpenTerminalButton />
 
           {/* Features */}
           <FadeSection delay={80}>
@@ -380,9 +374,8 @@ export default function Home() {
               </div>
               <div className="tor-feature-grid">
                 {[
-                  { icon: <FaPalette />, title: "Gradient UI",    desc: "Vibrant colors and visual enhancements throughout" },
-                  { icon: <FaVoteYea />, title: "Voting Modes",   desc: "Special and unique voting mechanics" },
-                  { icon: <FaPuzzlePiece />, title: "Custom Roles", desc: "Feature-rich roles with unique abilities" },
+                  { icon: <FaPalette />, title: "Colored UI",    desc: "Vibrant colors and visual enhancements throughout" },
+                  { icon: <FaPuzzlePiece />, title: "Custom Roles", desc: "400+ Feature-rich roles with unique abilities" },
                   { icon: <FaCog />,     title: "Game Options",   desc: "New settings and configuration tools" },
                   { icon: <FaGamepad />, title: "Gamemodes",      desc: "Entirely new ways to play" },
                 ].map(({ icon, title, desc }) => (
@@ -406,19 +399,19 @@ export default function Home() {
               <div className="tor-compat-list">
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-green" />
-                  <span className="tor-compat-text">Supports version <strong>2025.11.18 (17.1.0)</strong> on PC</span>
+                  <span className="tor-compat-text">Supports version <strong>2026.6.08 (17.4.0)</strong> on PC</span>
                 </div>
                 <div className="tor-compat-item">
-                  <div className="tor-dot tor-dot-yellow" />
+                  <div className="tor-dot tor-dot-green" />
                   <span className="tor-compat-text"><strong>Starlight</strong> support coming soon</span>
                 </div>
                 <div className="tor-compat-item">
-                  <div className="tor-dot tor-dot-red" />
-                  <span className="tor-compat-text">Not host-only — <strong>all players must install</strong></span>
+                  <div className="tor-dot tor-dot-green" />
+                  <span className="tor-compat-text">Host-only — <strong>only host requires mod</strong></span>
                 </div>
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-red" />
-                  <span className="tor-compat-text">Only works on <strong>private TOR-W servers</strong></span>
+                  <span className="tor-compat-text">Only works on <strong>modded regions (e.g. Niko-EU, MEU)</strong></span>
                 </div>
               </div>
             </section>
@@ -435,8 +428,7 @@ export default function Home() {
                 {[
                   { title: "BepInEx",   desc: "Install Unity.Il2Cpp win-x86 BepInEx build" },
                   { title: "Reactor",   desc: "Install Reactor plugin for Among Us modding" },
-                  { title: "Mira API",  desc: "Install Mira API dependency" },
-                  { title: "TOR-W: L",  desc: "Drop the downloaded .dll into your BepInEx/plugins folder" },
+                  { title: "TOHO",  desc: "Drop the downloaded .dll into your BepInEx/plugins folder" },
                 ].map(({ title, desc }, i) => (
                   <div key={title} className="tor-step">
                     <div className="tor-step-num">{i + 1}</div>

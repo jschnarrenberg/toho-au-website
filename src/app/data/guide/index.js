@@ -3,8 +3,9 @@ import { crewmate } from "./crewmate";
 import { impostor } from "./impostor";
 import { neutral } from "./neutral";
 import { coven } from "./coven";
+import { modifier } from "./modifier";
 
-export const factionData = { crewmate, impostor, neutral, coven };
+export const factionData = { crewmate, impostor, neutral, coven, modifier };
 export { factions };
 
 export function getFactionBySlug(slug) {

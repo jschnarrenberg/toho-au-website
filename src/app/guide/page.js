@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useEffect, useRef, useState } from "react";
 import { factions, factionData } from "@/app/data/guide";
-import HiddenComputer from "../components/HiddenComputer";
 
 function FadeSection({ children, delay = 0 }) {
   const ref = useRef(null);
@@ -267,7 +266,6 @@ export default function GuidePage() {
               <h1 className="tor-guide-title">
                 Role <span className="tor-guide-gradient-text">Guide</span>
               </h1>
-			  <HiddenComputer id="guide" />
               <p className="tor-guide-subtitle">
                 Select a faction to browse its roles, abilities, and host settings.
               </p>

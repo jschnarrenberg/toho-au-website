@@ -18,7 +18,7 @@ export default function ChangelogSection() {
     async function fetchChangelog() {
       try {
         const res = await fetch(
-          "https://api.github.com/repos/TownofReworked/TORWLaunchpad/releases/latest"
+          "https://api.github.com/repos/Limeau/TownofHost-Optimized/releases/latest"
         );
         const data = await res.json();
         if (data?.body) setChangelog(data.body);

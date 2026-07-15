@@ -1,0 +1,3299 @@
+[
+  {
+    "id": "Addict",
+    "name": "Addict",
+    "description": "Vent to become invulnerable, or you'll die",
+    "category": "Crewmate",
+    "extra": "As the Addict, you have a suicide timer. When it expires, you kill yourself.\nThe timer is indicated by the Vent Cooldown. When the Vent Cooldown is 0 seconds, you still have a short time to Vent.\nIf you don't make it, you die; if you make it, the Suicide Timer is reset.\nAlso after you Vent, no one can interact with you for a defined period.\nAfter; the period is over, and you are immobilized for another defined period, and cannot Report any bodies."
+  },
+  {
+    "id": "Admirer",
+    "name": "Admirer",
+    "description": "Choose a player to side with you",
+    "category": "Crewmate",
+    "extra": "As the Admirer, admire a player to make them Crewmate aligned.\nThey'll win with Crewmates and not their original team.\n\nYou can only do this once per player."
+  },
+  {
+    "id": "Alchemist",
+    "name": "Alchemist",
+    "description": "Brew potions by completing tasks",
+    "category": "Crewmate",
+    "extra": "As the Alchemist, you brew potions when you complete tasks. The potion you made will show up under your role name with its corresponding description and instructions. You can get seven different potions, some with harmful or no effects. Vent to use the potion."
+  },
+  {
+    "id": "Altruist",
+    "name": "Altruist",
+    "description": "Revive a player\nVent to change between Revive and Report",
+    "category": "Crewmate",
+    "extra": "As the Altruist, you can sacrifice yourself to revive a dead body using the «Report» button.\nNote: If a dead player has left the game, you report that body normally.\nAlso revived player cannot report self dead body\nUse the Vent button to change between Report & Revive."
+  },
+  {
+    "id": "Analyst",
+    "name": "Analyst",
+    "description": "Gain extra info from your body reports",
+    "category": "Crewmate",
+    "extra": "As the Analyst, when you report a body, they will receive a clue message, which will tell the Analyst what the victim's role is. According to the Host's settings, the Analyst may know what the murderer's role is. Note: Analyst won't be Oblivious."
+  },
+  {
+    "id": "Archivist",
+    "name": "Archivist",
+    "description": "Get information of everything that happens in a room",
+    "category": "Crewmate",
+    "extra": "The Archivist can use the Unshift button once per round, and at the next meeting will receive information on what happens in that room. This includes kills, vents entered, tasks completed, and shapeshifts\n\nNote: Archivist cannot use their kill button."
+  },
+  {
+    "id": "Astral",
+    "name": "Astral",
+    "description": "Do your tasks to win, but with a risk",
+    "category": "Crewmate",
+    "extra": "As the Astral, you can Vent to turn into a Crewmate ghost. The ghost can see everyone's roles, however they must complete a certain amount of tasks to return back to their original form. If someone calls a meeting when they are in Ghost form, they will die permanently. They can kill after completing their tasks."
+  },
+  {
+    "id": "Bastion",
+    "name": "Bastion",
+    "description": "Bomb Vents",
+    "category": "Crewmate",
+    "extra": "As the Bastion, bomb Vents to kill off Impostors and Neutrals.\nBe careful though; Crewmates can also be killed with the bombs."
+  },
+  {
+    "id": "Benefactor",
+    "name": "Benefactor",
+    "description": "Task complete, shield elite!",
+    "category": "Crewmate",
+    "extra": "As the Benefactor, whenever you finish a task, that task will be marked. When another player completes the marked task, they get a temporary shield.\n\n Note: Shield only protects from direct kill attacks."
+  },
+  {
+    "id": "Bodyguard",
+    "name": "Bodyguard",
+    "description": "Prevent nearby kills",
+    "category": "Crewmate",
+    "extra": "As the Bodyguard, if a player is about to be killed near the Bodyguard, the Bodyguard will prevent the kill and die with the murderer. The Bodyguard's skills will affect players of any team. When the Bodyguard becomes a Madmate, and the murderer is an Impostor, the Bodyguard will not activate the skill."
+  },
+  {
+    "id": "Captain",
+    "name": "Captain",
+    "description": "Sail with the Captain, lest Modifiers be abandoned.",
+    "category": "Crewmate",
+    "extra": "As the Captain, with each completed task, the Captain gains the power to slow down a random non-Crewmate role. Crewmates can see ☆besides Captain's name.\n\nIf anyone betrays the Captain's trust by voting Captain out, they will lose an Modifier."
+  },
+  {
+    "id": "Celebrity",
+    "name": "Celebrity",
+    "description": "Everyone knows when you die",
+    "category": "Crewmate",
+    "extra": "As the Celebrity, all Crewmates see the kill-flash when the Celebrity dies (same as the Seer sees the kill-flash) and get a notice at the next meeting. The Impostors don't know anything about this."
+  },
+  {
+    "id": "Chameleon",
+    "name": "Chameleon",
+    "description": "Vent to disguise into your surroundings",
+    "category": "Crewmate",
+    "extra": "As the Chameleon, you can Vent to Vanish temporarily. You will still appear visible on your screen. Vent again to become visible."
+  },
+  {
+    "id": "ChiefOfPolice",
+    "name": "Chief of Police",
+    "description": "Hire <color=#ffb347>Sheriffs</color> to serve the <color=#8cffff>Crewmates</color>!",
+    "category": "Crewmate",
+    "extra": "As the Chief of Police, you can recruit a player to be a Sheriff (only once per game).\nDepending on the settings, you may recruit non-Crewmates or players without a Kill button.\nYou may suicide when you recruit a wrong player."
+  },
+  {
+    "id": "Cleanser",
+    "name": "Cleanser",
+    "description": "Erase all Modifiers of your vote target",
+    "category": "Crewmate",
+    "extra": "As The Cleanser, you can vote to erase the Modifiers of any target at the meeting. This erasure takes effect after the meeting ends. Depending on the settings, the cleansed player may never receive Modifiers again."
+  },
+  {
+    "id": "Constable",
+    "name": "Constable",
+    "description": "Create bonus meetings for extra power",
+    "category": "Crewmate",
+    "extra": "The Constable can vote themself to create a bonus meeting after the current one. The Constable will receive a certain amount of extra votes during a Tribunal. More Tribunals can be called during a Tribunal."
+  },
+  {
+    "id": "CopyCat",
+    "name": "Copycat",
+    "description": "Use your Kill button to copy a target's role",
+    "category": "Crewmate",
+    "extra": "As the Copycat, you can use your Kill button to copy the target's role.\n\nYou can only copy some Crewmate roles.\nIf you try to copy a Madmate or Rascal, you become the Madmate variation of the target role.\nIf you target an evil with a Crewmate variant, you'll become the Crewmate variant.\n\nAdditionally, Your role will be set back to Copycat after every meeting.\nNote You can't guess people in meetings."
+  },
+  {
+    "id": "Coroner",
+    "name": "Coroner",
+    "description": "Find corpses and their killers",
+    "category": "Crewmate",
+    "extra": "As a Coroner, you can't report corpses; instead, after trying to report the corpse, you will see an arrow leading you to the killer. If someone calls a meeting, the arrows disappear. Depending on the settings, players can't report the body you found."
+  },
+  {
+    "id": "Corrupted",
+    "name": "Corrupted",
+    "description": "Transform yourself into an Impostor",
+    "category": "Crewmate",
+    "extra": "As the Corrupted, once you complete your tasks, you will become a random Impostor role. You will still win with Crewmates."
+  },
+  {
+    "id": "CrewmateTOHO",
+    "name": "Crewmate",
+    "description": "Search for the <color=#ff1919>Impostors</color>",
+    "category": "Crewmate",
+    "extra": "As the Crewmate, your goal is to find and exile the Impostors.\nCrewmates win by getting rid of all killers or by finishing all their tasks."
+  },
+  {
+    "id": "Crusader",
+    "name": "Crusader",
+    "description": "Kill a player's attacker",
+    "category": "Crewmate",
+    "extra": "As the Crusader, use your Kill button to crusade a player.\nIf that player gets attacked, you'll kill the attacker."
+  },
+  {
+    "id": "Cursebearer",
+    "name": "Cursebearer",
+    "description": "Reveal roles of alive players",
+    "category": "Crewmate",
+    "extra": "(Crewmates [Ghost]):\nAs the Cursebearer, when you use your Protect button on a target, their role will be revealed to everyone."
+  },
+  {
+    "id": "Deceiver",
+    "name": "Deceiver",
+    "description": "Try to fool the players",
+    "category": "Crewmate",
+    "extra": "The Deceiver can sell the counterfeit to other players through the Kill button. If the counterfeit is sold successfully, the Deceiver will see a Shield Animation on their body as a reminder. The counterfeit will take effect after the end of the next meeting. If the player with no kill ability holds the counterfeit, he will kill himself immediately. If the player with the killing ability has the counterfeit, he will commit suicide when he tries to kill someone next time."
+  },
+  {
+    "id": "Deputy",
+    "name": "Deputy",
+    "description": "Handcuff killers to increase their Cooldowns",
+    "category": "Crewmate",
+    "extra": "As the Deputy, use your Kill button to handcuff a player.\nThe player who is handcuffed will have their next kill attempt treated as a handcuff break, and the Kill Cooldown will be reset.\n\nIf the target does not have a Kill button, then the handcuff was a waste."
+  },
+  {
+    "id": "DetectiveTOHO",
+    "name": "Detective",
+    "description": "Keep tabs on players and your supicions",
+    "category": "Crewmate",
+    "extra": "As the Detective, you can write down notes about each crime scene and interrogate suspects."
+  },
+  {
+    "id": "Dictator",
+    "name": "Dictator",
+    "description": "Exile a player based on your judgment",
+    "category": "Crewmate",
+    "extra": "When the Dictator votes for someone, the meeting will end on the spot, and the player they voted for will be ejected from the meeting. The moment the Dictator votes someone out, the Dictator will also die.\nIf the setting to use the command is on, the Dictator will have to use '/exp id' in order to exile someone. The Dictator will be able to vote normally.\nThe Dictator can survive after voting an Evil player if the setting is on."
+  },
+  {
+    "id": "Director",
+    "name": "Director",
+    "description": "Turn players into Stars",
+    "category": "Crewmate",
+    "extra": "The Director can use their kill button to Star a player. From then until the next meeting, they will be assigned the Super Star role. They will revert to their old role once the meeting is over."
+  },
+  {
+    "id": "Doctor",
+    "name": "Doctor",
+    "description": "Know how each player died",
+    "category": "Crewmate",
+    "extra": "As the Doctor, you can see the cause of death for all players. In addition, the Doctor can access Vitals wherever you are while he still has battery left."
+  },
+  {
+    "id": "Drone",
+    "name": "Drone",
+    "description": "Protect players near you",
+    "category": "Crewmate",
+    "extra": "The Drone can protect players near themself for a certain amount of time by doing a task. While players are protected, if they do a task, the amount of time they are protected increases by 5 seconds."
+  },
+  {
+    "id": "Druid",
+    "name": "Druid",
+    "description": "Shapeshift into players to maybe kill them",
+    "category": "Crewmate",
+    "extra": "As the Druid, you can select a player with your kill button, then vent to temporarily transform into them. You can kill the same player after shapeshifting into them, but after doing so, you are stuck in their skin and if they are innocent you can no longer kill players."
+  },
+  {
+    "id": "Empath",
+    "name": "Empath",
+    "description": "Feel the vibes of a player.",
+    "category": "Crewmate",
+    "extra": "Use Sense Intent on a nearby player to feel their emotional state. Calm, Agitated, or Guilty - each reading hints at their alignment and recent actions, but never confirms it outright. If you are killed, your killer is marked with a lasting Burden curse."
+  },
+  {
+    "id": "EngineerTOHO",
+    "name": "Engineer",
+    "description": "Use the vents to catch the <color=#ff1919>Impostors</color>",
+    "category": "Crewmate",
+    "extra": "As the Engineer, you may access the Vents while Comms Sabotage is inactive."
+  },
+  {
+    "id": "Enigma",
+    "name": "Enigma",
+    "description": "Get clues about killers",
+    "category": "Crewmate",
+    "extra": "As the Enigma, you get a random clue about the killer each meeting. Depending on the settings, you may have to report the body to receive a clue. The more tasks you complete, the more precise the clues get."
+  },
+  {
+    "id": "Exorcist",
+    "name": "Exorcist",
+    "description": "Eliminate evils and purify the lobby!",
+    "category": "Crewmate",
+    "extra": "As the Exorcist, every time you do a task, nearby Impostors and Neutrals will be vaporized (dying instantly without a body)."
+  },
+  {
+    "id": "Firefighter",
+    "name": "Firefighter",
+    "description": "Put out fires",
+    "category": "Crewmate",
+    "extra": "The Firefighter can do a task to put out a fire- automatically fixes any active sabotage."
+  },
+  {
+    "id": "ForensicScientist",
+    "name": "Forensic Scientist",
+    "description": "Analyze bodies to find killers and remove curses.",
+    "category": "Crewmate",
+    "extra": "Report a body to collect a sample and analyze it ,if Analyze is successful the killer will be revealed in next meeting .\nYou can also vote a player to remove hexes and curses depending on host settings."
+  },
+  {
+    "id": "FortuneTeller",
+    "name": "Fortune Teller",
+    "description": "Get clues to player's roles",
+    "category": "Crewmate",
+    "extra": "As the Fortune Teller, vote for a player in a meeting to get a clue to their role.\nThe clue will relate to their actual role.\n\nWhen the Fortune Teller's tasks are complete, they will obtain the exact role rather than a clue!\n\nNote: If the setting to give random active players as a hint is on, you cannot check the same player multiple times."
+  },
+  {
+    "id": "Ghastly",
+    "name": "Ghastly",
+    "description": "Control somebody!",
+    "category": "Crewmate",
+    "extra": "(Crewmates [Ghost]):\nAs the Ghastly, possess an unsuspecting person, after that choose a target for them, now they'll only be able to use their kill (or kill ability) on target until you possess someone else or possess time runs out."
+  },
+  {
+    "id": "Grenadier",
+    "name": "Grenadier",
+    "description": "Reduce <color=#ff1919>Impostors</color>' vision by Venting",
+    "category": "Crewmate",
+    "extra": "As the Grenadier, you can Vent to Flashbang players nearby, causing them to lose vision if they are an Impostor or, depending on settings, a Neutral."
+  },
+  {
+    "id": "Guardian",
+    "name": "Guardian",
+    "description": "Complete your tasks to become immortal",
+    "category": "Crewmate",
+    "extra": "As the Guardian, you become immortal upon task completion. Guessers can't even guess you in meetings."
+  },
+  {
+    "id": "GuardianAngelTOHO",
+    "name": "Guardian Angel",
+    "description": "Protect the <color=#8cffff>Crewmates</color> from the <color=#ff1919>Impostors</color>",
+    "category": "Crewmate",
+    "extra": "As the Guardian Angel, you are the first Crewmate to die and can give Crewmates temporary shields."
+  },
+  {
+    "id": "GuessMaster",
+    "name": "Guess Master",
+    "description": "Whispers heard, every guessed word.",
+    "category": "Crewmate",
+    "extra": "As the Guess Master, you will receive information about every attempted guess made during a meeting. You will be informed about the role the Guesser tried to guess, and you will also be notified in case of a misguess."
+  },
+  {
+    "id": "Hawk",
+    "name": "Hawk",
+    "description": "Seek murdering the bad guys!",
+    "category": "Crewmate",
+    "extra": "(Crewmates [Ghost]):\nAs the Hawk, you can kill a limited amount of players decided by the Host, though there's a chance you miss, slicing someone multiple times increases the chances."
+  },
+  {
+    "id": "Hippie",
+    "name": "Hippie",
+    "description": "Spread joy to the Crewmates",
+    "category": "Crewmate",
+    "extra": "Everyone can see the Hippie.\nWhen the Hippie is killed, the killer will earn the Admired role, which turns them into a Crewmate team.\nThe Hippie will not be ejected."
+  },
+  {
+    "id": "Inspector",
+    "name": "Inspector",
+    "description": "Validate the alignments of two players",
+    "category": "Crewmate",
+    "extra": "As the Inspector, you can check if two players are in the same team or not. You will get an affirmation message if they are on the same team or a denial message if they are not on the same team.\n\nAll Neutrals and converted players are counted in the same team. Trickster counts as Crewmate, and Rascal counts as Impostor.\nChecking command: /cmp [player id 1] [player id 2]."
+  },
+  {
+    "id": "Investigator",
+    "name": "Investigator",
+    "description": "Find potential evils",
+    "category": "Crewmate",
+    "extra": "As an Investigator, you can use your Kill button to investigate someone. When you investigate someone, their name will appear in red if they possess a Kill button (Impostor/Shapeshifter basis) or light blue if they lack a Kill button (Crewmate/Engineer/Scientist basis). However, please note that the color of the names will return to normal when someone calls a meeting."
+  },
+  {
+    "id": "Jailer",
+    "name": "Jailer",
+    "description": "Jail suspicious players",
+    "category": "Crewmate",
+    "extra": "As the Jailer, use your Kill button to lock a player in jail. During the next meeting, the jailed player cannot vote or get voted (the vote count will be 0). The Jailer may choose to execute the prisoner by voting for them. If the Jailer executes an innocent player, the Jailer loses the ability to execute for the rest of the game.\nIf the Jailer is evil, then they can execute anyone.\nThe Jailer has limited executions.\n\nNote: Jailed players cannot be guessed or judged, and jailed players can only guess Jailer."
+  },
+  {
+    "id": "Judge",
+    "name": "Judge",
+    "description": "Silence in the courtroom!",
+    "category": "Crewmate",
+    "extra": "As the Judge, you can judge a certain player during the meeting. If the target is evil, the target will be killed (whether it is evil or not is set by the Host). If it is wrong, the Judge commits suicide.\nCommand for judgment: /tl [player id]\nYou can see the player's id before the player's name, or use the /id command to view the id of all players.\nJudges can judge all players when they become Madmate.\nIn meeting the ability count shows how many trails you have in this meeting. Out of meeting the ability counts shows how many trails you have for the whole game."
+  },
+  {
+    "id": "Jury",
+    "name": "Jury",
+    "description": "Put players on trial",
+    "category": "Crewmate",
+    "extra": "The Jury can put one person on trial. The party can decide to skip to save them or vote them to eject them. They cannot vote for other players. This ability can be used only once, and can be used again once tasks are completed."
+  },
+  {
+    "id": "Keeper",
+    "name": "Keeper",
+    "description": "Reject the eject, Keeper protect!",
+    "category": "Crewmate",
+    "extra": "As keeper, you can vote for someone to protect them from being ejected. You can only do this a configurable number of times."
+  },
+  {
+    "id": "Knight",
+    "name": "Knight",
+    "description": "You can kill one player",
+    "category": "Crewmate",
+    "extra": "As the Knight, you have no tasks. They can kill anyone but only do it once the whole game."
+  },
+  {
+    "id": "LazyGuy",
+    "name": "Lazy Guy",
+    "description": "You're too lazy",
+    "category": "Crewmate",
+    "extra": "Lazy Guy has only one task. In addition, the Impostor's abilities can't affect the Lazy Guy, such as being a scapegoat for Anonymous, being marked by a Warlock or Puppeteer, and more. Lazy Guy will not have any Modifiers."
+  },
+  {
+    "id": "Lighter",
+    "name": "Lighter",
+    "description": "Catch killers with your enhanced vision",
+    "category": "Crewmate",
+    "extra": "As the Lighter, you can Vent to increase your vision temporarily.\nYou have increased vision both when lights are not out and when lights are out.\nUse this power to catch sneaky killers!"
+  },
+  {
+    "id": "Lookout",
+    "name": "Lookout",
+    "description": "See through disguises",
+    "category": "Crewmate",
+    "extra": "As the Lookout, you can see the ID's of every player at all times.\nThis allows you to see through Shapeshifts and Camouflages."
+  },
+  {
+    "id": "Mage",
+    "name": "Mage",
+    "description": "Spell evils and doom them to die!",
+    "category": "Crewmate",
+    "extra": "The Mage can use their kill button to spell a player. If they spell a Crewmate, the spell will be placed on themselves. If they spell an Impostor, Neutral, or Coven, the target will get the spell. All spelled players die at the end of the next meeting if the Mage is not dead."
+  },
+  {
+    "id": "Marshall",
+    "name": "Marshall",
+    "description": "Finish your tasks to prove your innocence",
+    "category": "Crewmate",
+    "extra": "As the Marshall, complete your tasks to reveal yourself to the rest of the Crewmates.\nOther teams will not be able to see you.\nHowever, Madmates CAN see you."
+  },
+  {
+    "id": "Mayor",
+    "name": "Mayor",
+    "description": "Your vote counts multiple times",
+    "category": "Crewmate",
+    "extra": "As the Mayor, you have extra votes. Depending on the settings, players can't see your extra votes, you can Vent to call a meeting at any time, or you can have yourself revealed as Mayor upon task completion."
+  },
+  {
+    "id": "Mechanic",
+    "name": "Mechanic",
+    "description": "Vent around and fix Sabotages",
+    "category": "Crewmate",
+    "extra": "The Mechanic can use Vents at any time. They can also fix Reactors, O2, and Communications using only one side. You can fix Lights by flicking only one switch. Opening a door will open all doors in the map."
+  },
+  {
+    "id": "Medic",
+    "name": "Medic",
+    "description": "Cast a shield onto a player",
+    "category": "Crewmate",
+    "extra": "As the Medic, you can place a shield on the target by using their Kill button. The Medic can only give one shield for the whole game. Depending on the settings, the target's shield can or cannot deactivate when the Medic dies. The Medic can also see if someone is trying to break the target's shield.\nDepending on the Host's settings, the Medic or the target can see if the player has a shield (shown as a green cross「✚」next to the name)."
+  },
+  {
+    "id": "Medium",
+    "name": "Medium",
+    "description": "Talk with ghosts",
+    "category": "Crewmate",
+    "extra": "As the Medium, you can establish contact with a dead player after someone reports a dead body. The player who reports doesn't have to be the Medium. The dead player can answer once with a YES or NO to the Medium's question, which only the Medium will see (the dead player can use /ms yes or /ms no). Note: Medium won't be Oblivious."
+  },
+  {
+    "id": "Merchant",
+    "name": "Merchant",
+    "description": "Sell Modifiers and bribe killers",
+    "category": "Crewmate",
+    "extra": "As a Merchant, you sell a random Modifier to a random player for each task you complete. Each Modifier sold earns you money. If you have a certain amount of money, you can prevent the next killing attempt against you by bribing the murderer. The bribed player won't be able to kill you, but you don't know who it is. The money used is lost and not available for additional bribes."
+  },
+  {
+    "id": "Mole",
+    "name": "Mole",
+    "description": "<size=90%>Vanish and reappear, the Mole's game is crystal clear!</size>",
+    "category": "Crewmate",
+    "extra": "As the Mole, when you Vent, you stay in the Vent for 1 second. When you exit the Vent, you will spawn near a random Vent in the map (except the one you used)."
+  },
+  {
+    "id": "Monarch",
+    "name": "Monarch",
+    "description": "Give your Crew extra voting power!",
+    "category": "Crewmate",
+    "extra": "As the Monarch, you can knight players to give them an extra vote.\n\nYou cannot knight someone who already has multiple votes.\n\nKnighted players appear with a golden name.\nIf a knighted player is alive, the Monarch cannot be guessed or killed."
+  },
+  {
+    "id": "Mortician",
+    "name": "Mortician",
+    "description": "Locate dead bodies",
+    "category": "Crewmate",
+    "extra": "The Mortician can see arrows pointing to all dead bodies, and if the Mortician reports a body, they will know the last player the victim had contact with. Note: Mortician won't be Oblivious or Seer."
+  },
+  {
+    "id": "Neutralizer",
+    "name": "Neutralizer",
+    "description": "Make a player unable to use their role for a round",
+    "category": "Crewmate",
+    "extra": "The Neutralizer can use their kill button to remove a player's role for a single round. They will be unable to do anything related to their role that round. Their role will be returned to them after the round is over"
+  },
+  {
+    "id": "NiceGuesser",
+    "name": "Nice Guesser",
+    "description": "Guess <color=#ff1919>Impostor</color> roles in meetings to kill",
+    "category": "Crewmate",
+    "extra": "As the Nice Guesser, you can guess the role of a certain player during the meeting. If it is correct, it will kill the target, and if it is wrong, Nice Guesser will suicide.\nThe guessing command is: /bt [player id] [role]\nYou can see the player's id before the player's name or use the /id command to view the id of all players.\nNice Guesser can guess Crewmate when become Madmate."
+  },
+  {
+    "id": "NiceMini",
+    "name": "Nice Mini",
+    "description": "No one can hurt you until you grow up.",
+    "category": "Crewmate",
+    "extra": "As a Nice Mini, your survival is crucial. You can't be killed until you grow up, and if you die or are evicted from the meeting before you grow up, everyone loses. This unique role adds a new dynamic to the game, where your survival is not just for your benefit but for the entire Crew's success."
+  },
+  {
+    "id": "NoisemakerTOHO",
+    "name": "Noisemaker",
+    "description": "Send out an alert when killed",
+    "category": "Crewmate",
+    "extra": "As the Noisemaker, whenever you die, you will make a noise, and a visual indicator of your death appears on the screen so the Crewmates can run to catch the person who killed you red-handed (even if it’s not red)."
+  },
+  {
+    "id": "Observer",
+    "name": "Observer",
+    "description": "You can see all Shield Animations",
+    "category": "Crewmate",
+    "extra": "As the Observer, you can see all Shield Animations caused by other players after the first meeting. The Shield Animations typically indicate a role ability, so look out for this."
+  },
+  {
+    "id": "Oracle",
+    "name": "Oracle",
+    "description": "Vote a player to see their alignment",
+    "category": "Crewmate",
+    "extra": "As the Oracle, you may vote a player during a meeting.\nYou'll see if they are a Crewmate, Neutral, or Impostor.\nDepending on settings, there can be a chance that your result will be incorrect."
+  },
+  {
+    "id": "Overseer",
+    "name": "Overseer",
+    "description": "Reveal roles of other players",
+    "category": "Crewmate",
+    "extra": "As the Overseer, you have minimal vision, but you can use your Kill button to reveal the role of a nearby player. A 「○」 will be displayed next to the revealed target after you use the Kill button on them, and you will also be scanning them (only you can see this). Stay near the target for a defined time to reveal his role; if you move too far away, the reveal will cancel."
+  },
+  {
+    "id": "Overthinker",
+    "name": "Overthinker",
+    "description": "You know too much",
+    "category": "Crewmate",
+    "extra": "On each meeting, the Overthinker knows where each player was 10 seconds ago."
+  },
+  {
+    "id": "Pacifist",
+    "name": "Pacifist",
+    "description": "Vent to reset Kill Cooldowns",
+    "category": "Crewmate",
+    "extra": "As the Pacifist, when you Vent, they will reset the Kill Cooldown for every player with a Kill button. When they become a Madmate, this ability will only work on Crewmates."
+  },
+  {
+    "id": "ParanormalB",
+    "name": "Paranormal",
+    "description": "Come back to life with your protect button",
+    "category": "Crewmate",
+    "extra": "As the Paranormal, you spawn as a normal Crewmate. When someone kills you, you spawn with a Protect button that can kill any player and revive you into a normal Crewmate directly."
+  },
+  {
+    "id": "Phantasm",
+    "name": "Phantasm",
+    "description": "You used to be Astral, but now you can kill",
+    "category": "Crewmate",
+    "extra": "As the Phantasm, you are the transformed version of Astral when you complete all your tasks."
+  },
+  {
+    "id": "Plumber",
+    "name": "Plumber",
+    "description": "Block the ventilation system",
+    "category": "Crewmate",
+    "extra": "When the Plumber is in a vent, no other players can use the vents."
+  },
+  {
+    "id": "President",
+    "name": "President",
+    "description": "You are in charge of the meeting",
+    "category": "Crewmate",
+    "extra": "As the President, you have two abilities: End the meeting and Reveal identity.\n\n+ Ability 1: End the meeting - Type /finish in meetings as President to instantly end the meeting.\n+ Ability 2: Reveal identity - Type /reveal in meetings to reveal yourself. Revealing yourself will make it so every player can see that you are the President, and you will become unguessable after typing the command. However, after the President has revealed themselves, whoever killed the President will have their kill CD greatly reduced on their next kill."
+  },
+  {
+    "id": "Prosecutor",
+    "name": "Prosecutor",
+    "description": "Put players on the spot!",
+    "category": "Crewmate",
+    "extra": "The Prosecutor can vote a player, and everyone's votes are immediately returned.\nEach player can either vote Skip or the player that was voted. They cannot vote for anyone else.\nVote Skip to vote normally."
+  },
+  {
+    "id": "Protector",
+    "name": "Protector",
+    "description": "Complete tasks, shield yourself!",
+    "category": "Crewmate",
+    "extra": "As the Protector, whenever you finish a task, you get a temporary shield. The shield lasts until you are attacked, or when a meeting ends.\n\n Note: Shield only protects from direct kill attacks."
+  },
+  {
+    "id": "Protester",
+    "name": "Protester",
+    "description": "Kill Impostors by organizing groups!",
+    "category": "Crewmate",
+    "extra": "If the Protester has a large number of people nearby, all of the players will kill any Impostors in the group. This will cause several bodies to spawn."
+  },
+  {
+    "id": "Psychic",
+    "name": "Psychic",
+    "description": "One of the red names is <color=#ff1919>evil</color>",
+    "category": "Crewmate",
+    "extra": "The Psychic can see the names of several players highlighted in red during the meeting; at least one of them is evil. The Psychic will correctly see all Neutrals and Killing Crewmates displayed as red names when becoming a Madmate."
+  },
+  {
+    "id": "Raven",
+    "name": "Raven",
+    "description": "Travel to crime scenes to retrieve information",
+    "category": "Crewmate",
+    "extra": "When someone is killed, their exact location of where they were killed is marked. The Raven must travel to this location to receive more information about the kill. The information can include the victim's name, the victim's role, if the killer is dead or not, or the killer's role."
+  },
+  {
+    "id": "Retributionist",
+    "name": "Retributionist",
+    "description": "Help the <color=#8cffff>Crewmates</color> after you die",
+    "category": "Crewmate",
+    "extra": "As the Retributionist, you can kill a limited amount of players after your death.\n\nUse /ret [player ID] to kill."
+  },
+  {
+    "id": "Reverie",
+    "name": "Reverie",
+    "description": "With each kill, your Cooldown decreases",
+    "category": "Crewmate",
+    "extra": "As the Reverie, you can kill, but your Cooldown starts high.\n\nIt increases if you kill a Crewmate and reduces otherwise.\nDepending on the Host's setting, you may misfire on reaching the maximum Kill Cooldown, and your target dies with you. \n\nYou win with other Crewmates."
+  },
+  {
+    "id": "Santa",
+    "name": "Santa",
+    "description": "Give gifts to the Nice and the Naughty",
+    "category": "Crewmate",
+    "extra": "As the Santa, you can give gifts to players- if they are nice (crewmate) they get a shield, and if they are naughty (impostor), their next kill gets shielded!"
+  },
+  {
+    "id": "Savior",
+    "name": "Savior",
+    "description": "Choose a player to protect every round",
+    "category": "Crewmate",
+    "extra": "As the Savior, you can choose a player to protect every round. After a meeting, the player will no longer be protected."
+  },
+  {
+    "id": "ScientistTOHO",
+    "name": "Scientist",
+    "description": "Access portable Vitals from anywhere",
+    "category": "Crewmate",
+    "extra": "As the Scientist, you can see Vitals at any time, showing you who is alive and dead."
+  },
+  {
+    "id": "Sentinel",
+    "name": "Sentinel",
+    "description": "Report bodies to kill killers",
+    "category": "Crewmate",
+    "extra": "As the Sentinel, you can report a body to kill the body's killer. You will report normally after your ability uses are used."
+  },
+  {
+    "id": "Sheriff",
+    "name": "Sheriff",
+    "description": "Shoot the <color=#ff1919>Impostors</color>",
+    "category": "Crewmate",
+    "extra": "As the Sheriff, you have no task. The Sheriff can kill Impostors (according to the Host settings, the Sheriff can also kill Neutrals). If the Sheriff tries to kill a Crewmate, the Sheriff will kill himself. The Sheriff can kill anyone when he becomes a Madmate (also according to the Host settings)."
+  },
+  {
+    "id": "Snitch",
+    "name": "Snitch",
+    "description": "Finish your tasks to find the <color=#ff1919>Impostors</color>",
+    "category": "Crewmate",
+    "extra": "After the Snitch completes all tasks, they can see the Impostor's names displayed in red on the meeting. When the Snitch has only one task left, the Impostors will see a「⚠」mark next to the name of themselves and the Snitch. When a Snitch becomes a Madmate, the「⚠」mark turns red."
+  },
+  {
+    "id": "Spiritualist",
+    "name": "Spiritualist",
+    "description": "Be guided by the ghostly life",
+    "category": "Crewmate",
+    "extra": "As the Spiritualist, you get an arrow pointing towards the ghost of the last meeting's victim. There is an option for the arrow to disappear and reappear in intervals. Try to notify the ghost about your ability if you can; if they are on your side, they may lead you to an evil role so you can eject them. Be careful, as evil roles can do the same for Crewmates."
+  },
+  {
+    "id": "Spy",
+    "name": "Spy",
+    "description": "You know who interacts with you",
+    "category": "Crewmate",
+    "extra": "As the Spy, when someone uses their Kill button on you (any ability used through the Kill button), you'll see their name in orange for a few seconds.\nNote: If a Crewmate used their ability on you, you'll also see them with an orange name!\nNote: If you cannot use left, you won't see orange names!\nNote: If the Kill button interaction is blocked, the player's Cooldown will reset to 10s'"
+  },
+  {
+    "id": "SuperStar",
+    "name": "Super Star",
+    "description": "Everyone knows you",
+    "category": "Crewmate",
+    "extra": "As the Super Star, there will be a star logo next to their name, so everyone knows who the Super Star is. The Super Star can only die when the murderer is alone with the Super Star (regular kills only). In addition, the Guessers can't guess the Super Star. "
+  },
+  {
+    "id": "Supervisor",
+    "name": "Supervisor",
+    "description": "See the state of everyone's tasks!",
+    "category": "Crewmate",
+    "extra": "When the Supervisor's tasks are completed, they can view everyone else's task status, including how many they have and how many remain. If a player does not have tasks, the Supervisor will know."
+  },
+  {
+    "id": "Survivalist",
+    "name": "Survivalist",
+    "description": "Win the showdown to make crewmates win",
+    "category": "Crewmate",
+    "extra": "If Imposters win when you are alive , a countdown will begin and the Imposter team will try and hunt you . Survive the showdown and lead crew to victory"
+  },
+  {
+    "id": "Swapper",
+    "name": "Swapper",
+    "description": "Swap the votes of two players",
+    "category": "Crewmate",
+    "extra": "As the Swapper, you can swap votes in meetings.\n\nTo swap votes, use '/sw [player ID]' twice.\n\nPlayer ID's are displayed next to player names in meetings, but you can also use /id to get a list of all player ID's.\n\nNote: Depending on the Host's settings, you can exchange your own votes."
+  },
+  {
+    "id": "TaskManager",
+    "name": "Task Manager",
+    "description": "Complete tasks for other players",
+    "category": "Crewmate",
+    "extra": "As the Task Manager, your objective is to help the Crewmates complete tasks as fast as possible.\nEverytime you complete a task one random Crewmate will have one of their tasks completed.\nYou will be rewarded with a random Modifier if any Crewmate finishes all their tasks.\nAny tasks completed will affect you if marked by other roles.\nDepending on settings you might get information on what visual tasks were completed in past rounds."
+  },
+  {
+    "id": "Technician",
+    "name": "Technician",
+    "description": "You can see it all",
+    "category": "Crewmate",
+    "extra": "As the Technician, you have three main abilities.\n\nYou can see all player ID's at all times.\nThis allows you to see through Shapeshifts and Camouflages.\n\nYou can see all Shield Animations caused by other players after the first meeting. Shield Animations typically indicate a role ability.\n\nYou can get notfied whenever any player Vents or Shapeshifts, Shapeshifts used for abilities do not notify the Technician."
+  },
+  {
+    "id": "Telecommunication",
+    "name": "Telecommunication",
+    "description": "Track device usage",
+    "category": "Crewmate",
+    "extra": "As the Telecommunication, you are notified when anyone uses Cameras, Vitals, Door Logs, or Admin."
+  },
+  {
+    "id": "TimeManager",
+    "name": "Time Manager",
+    "description": "Increase meeting time by doing tasks",
+    "category": "Crewmate",
+    "extra": "As the Time Manager, when you do more tasks, the longer the meeting time will be. When the Time Manager dies, the meeting time will return to normal. When the Time Manager becomes a Madmate, the skill changes to reducing the meeting time instead of increasing it."
+  },
+  {
+    "id": "TimeMaster",
+    "name": "Time Master",
+    "description": "Rewind time!",
+    "category": "Crewmate",
+    "extra": "As the Time Master, use the Vents to mark everyone's position.\nWhen using the ability again, every alive player will rewind to the marked positions.\n\nDuring the ability duration, the Time Master gains a time shield, which protects them from death."
+  },
+  {
+    "id": "Tracefinder",
+    "name": "Tracefinder",
+    "description": "Sense the location of dead bodies",
+    "category": "Crewmate",
+    "extra": "As the Tracefinder, you can access Vitals at any time.\nIn addition, you get arrows pointing to dead bodies, with a delay set by the Host."
+  },
+  {
+    "id": "TrackerTOHO",
+    "name": "Tracker",
+    "description": "Track players with your map",
+    "category": "Crewmate",
+    "extra": "As the Tracker, press your Tracker button on a player to track their location via the map for a limited amount of time."
+  },
+  {
+    "id": "Transporter",
+    "name": "Transporter",
+    "description": "Do tasks to swap two players' locations",
+    "category": "Crewmate",
+    "extra": "Whenever the Transporter completes the task, two random players will switch positions, but if there are not enough players left, nothing will happen. Note: Players in a Vent will not be selected."
+  },
+  {
+    "id": "Valkyrie",
+    "name": "Valkyrie",
+    "description": "Take revenge on your enemies",
+    "category": "Crewmate",
+    "extra": "When the Valkyrie is killed, they will be teleported to a random vent and have a set amount of time to kill their killer. If they do not kill their killer within the timer, they die. The killer will be alerted when the Valkyrie is killed."
+  },
+  {
+    "id": "Ventguard",
+    "name": "Ventguard",
+    "description": "Block Vents by entering them",
+    "category": "Crewmate",
+    "extra": "As the Ventguard, you can enter Vents to block them. No one can enter blocked Vents, except Crewmates, if the setting is on. Blocked Vents can be resets every meeting."
+  },
+  {
+    "id": "Veteran",
+    "name": "Veteran",
+    "description": "Alert to kill anyone who interacts with you",
+    "category": "Crewmate",
+    "extra": "As the Veteran, you can enter the alert state by Venting. If a player tries to kill the Veteran in the alert state, the Veteran will kill the murderer instead. Veteran will see a Shield Animation on their body and a text above their head as a reminder when they enter and exit the alert state."
+  },
+  {
+    "id": "Vigilante",
+    "name": "Vigilante",
+    "description": "Not the hero we deserved but the hero we needed",
+    "category": "Crewmate",
+    "extra": "As the Vigilante, you are tasked with eliminating potential threats to the Crewmates, but if they mistakenly kill an innocent Crew member, they become a Madmate driven by guilt and remorse.\n\n Note: Gangster cannot convert Vigilante into Madmate."
+  },
+  {
+    "id": "Villager",
+    "name": "Villager",
+    "description": "Receive gossip info about players",
+    "category": "Crewmate",
+    "extra": "The Villager receives one message per meeting about where a random player was most recently."
+  },
+  {
+    "id": "Visitor",
+    "name": "Visitor",
+    "description": "Visit players each meeting to track them.",
+    "category": "Crewmate",
+    "extra": "Each meeting, choose players to visit next round - either by casting your vote on them, or with the /visit {player id} command, depending on the host's settings.\n\nAt the start of the following meeting, you'll automatically receive a report on everyone you visited:\n- The rooms they passed through, in order\n- How many tasks they completed\n- How many kills they got\n\nUse /visits at any time to see your most recent report again.\n\nIf one of your targets is killed while you're visiting them, you may also learn the killer's role and any modifiers they have, depending on host settings. Depending on those same settings, the killer might be warned that you saw them, or you and the killer may each get an arrow pointing to one another."
+  },
+  {
+    "id": "Warden",
+    "name": "Warden",
+    "description": "(Ghost) Alert about danger",
+    "category": "Crewmate",
+    "extra": "(Crewmates [Ghost]):\nAs the Warden, alert someone of nearby danger, additionally giving them a temporary speed boost."
+  },
+  {
+    "id": "Webweaver",
+    "name": "Webweaver",
+    "description": "Trap people in vents",
+    "category": "Crewmate",
+    "extra": "When the Webweaver vents, they set a trap. Anytime anyone vents in the vent the Webweaver trapped, they will get locked in that vent for X amount of time."
+  },
+  {
+    "id": "Witness",
+    "name": "Witness",
+    "description": "Find out if someone killed recently",
+    "category": "Crewmate",
+    "extra": "As the Witness, when you use your Kill button on someone, you will know if they killed in the last X seconds or not. (X depends on the settings)."
+  },
+  {
+    "id": "Abyssbringer",
+    "name": "Abyssbringer",
+    "description": "Place Black Holes",
+    "category": "Impostor",
+    "extra": "As the Abyssbringer, you can place black holes. Black holes will suck in players and kill them when colliding with them."
+  },
+  {
+    "id": "Agent",
+    "name": "Agent",
+    "description": "Add members to your team with each kill",
+    "category": "Impostor",
+    "extra": "As the Agent, when your kills are reported, the reporter will become a Madmate."
+  },
+  {
+    "id": "Anonymous",
+    "name": "Anonymous",
+    "description": "Force a player to report a body",
+    "category": "Impostor",
+    "extra": "As the Anonymous, you can Shapeshift to force your target to report whoever you killed this round.\nIf you killed nobody that round, the target will report their own dead body as if they had died.\nNote: This does not work on Lazy nor Lazy Guy, and this ability will work regardless of whether the body can normally be reported."
+  },
+  {
+    "id": "AntiAdminer",
+    "name": "Anti Adminer",
+    "description": "Know when players are near devices",
+    "category": "Impostor",
+    "extra": "As the Anti Adminer, you at any time can find out if there are Crewmates or Neutrals near Cameras, Admin Table, Vitals, DoorLog, and/or other devices. Note: Anti Adminer does not know if the player uses the device while near it. They only know that someone is near the device."
+  },
+  {
+    "id": "Arrogance",
+    "name": "Arrogance",
+    "description": "With each kill you make, your Cooldown decreases",
+    "category": "Impostor",
+    "extra": "As the Arrogance, your Kill Cooldown reduces with each successful kill of theirs."
+  },
+  {
+    "id": "Bane",
+    "name": "Bane",
+    "description": "Mark an area to kill players",
+    "category": "Impostor",
+    "extra": "As the Bane, use your Shapeshift button to mark an area. The first person who walks in that area dies."
+  },
+  {
+    "id": "Bard",
+    "name": "Bard",
+    "description": "Poem's grace, murder's trace, a rhythmic dance in a dark embrace.",
+    "category": "Impostor",
+    "extra": "When a Bard is alive, the exile confirmation will display a sentence composed by the Bard. Whenever the Bard completes a creation, the Bard's Kill Cooldown will be permanently halved."
+  },
+  {
+    "id": "Blackmailer",
+    "name": "Blackmailer",
+    "description": "Silence other players",
+    "category": "Impostor",
+    "extra": "As the Blackmailer, when you Shift into a target, you will blackmail that player. This means that during the meetings, they won't be able to speak.\n\nNote: If someone is already blackmailed, blackmailing another person un-blackmails the current person."
+  },
+  {
+    "id": "Blinder",
+    "name": "Blinder",
+    "description": "Blind all witnesses",
+    "category": "Impostor",
+    "extra": "When the Blinder kills, all nearby players are fully blinded and cannot move for a set duration."
+  },
+  {
+    "id": "Bloodmoon",
+    "name": "Bloodmoon",
+    "description": "Seek havoc upon the <color=#8cffff>Crewmates</color>",
+    "category": "Impostor",
+    "extra": "(Impostors [Ghost]):\nAs the Bloodmoon, attack the enemies to make them drip blood, this means they will die in a time set by the Host, and will be aware of it."
+  },
+  {
+    "id": "Bomber",
+    "name": "Bomber",
+    "description": "Shapeshift to explode",
+    "category": "Impostor",
+    "extra": "As the Bomber, use the Shapeshift button to self-explode, killing players within a certain range. But as a price, the Bomber will also die. Note: All players will see a kill flash when the Bomber explodes."
+  },
+  {
+    "id": "BountyHunter",
+    "name": "Bounty Hunter",
+    "description": "Eliminate your target",
+    "category": "Impostor",
+    "extra": "As the Bounty Hunter, if you kill your assigned target (indicated by the arrow if you have one), your next Kill Cooldown will be shortened.\nIf you kill anyone other than your target, your next Kill Cooldown will be increased. The target swaps after a certain amount of time."
+  },
+  {
+    "id": "Butcher",
+    "name": "Butcher",
+    "description": "Enjoy my beautiful work",
+    "category": "Impostor",
+    "extra": "As the Butcher, your kills, including passive ones, leave multiple dead bodies on targets, which can be a bit confusing when reporting. Here's the rule: the killed target must repeatedly display the animation of being killed, which cannot be skipped, and they cannot participate in the meeting normally during this period. If the Butcher kills the Avenger, the Avenger will revenge everyone in anger."
+  },
+  {
+    "id": "Camouflager",
+    "name": "Camouflager",
+    "description": "Camouflage everyone for easy kills",
+    "category": "Impostor",
+    "extra": "As the Camouflager, when you Shapeshift, all players start to look the same. This state ends when the Camouflager reverts its Shapeshifting. It's important to note that the skills of Communication Sabotage Camouflage, and the skills of the Camouflager can be superimposed.\nThis skill will be invalid if a meeting is held during the skill activation of the Camouflager."
+  },
+  {
+    "id": "Chronomancer",
+    "name": "Chronomancer",
+    "description": "Kill in bursts",
+    "category": "Impostor",
+    "extra": "As the Chronomancer, you have a charge bar which indicates when the slaughter is ready. When it is at 100% the next time you kill someone, you go into slaughter mode, meaning you can kill indefinitely until your bar runs out of charge. Otherwise, you have a normal KCD."
+  },
+  {
+    "id": "Cleaner",
+    "name": "Cleaner",
+    "description": "Report bodies to make them unreportable",
+    "category": "Impostor",
+    "extra": "As the Cleaner, you can use the Report button to clean up any dead body they come across (including those they kill). If the cleanup is successful, the Cleaner will see a Shield Animation on their body as a reminder (only visible to himself). The cleaned-up body cannot be reported (including Bait)."
+  },
+  {
+    "id": "Consigliere",
+    "name": "Consigliere",
+    "description": "Discover the roles of other players",
+    "category": "Impostor",
+    "extra": "As the Consigliere, you can reveal the roles of other players using your Kill button.\n\nSingle click: Reveal role\nDouble click: Kill\n\nIf you run out of reveal uses, your Kill button functions normally."
+  },
+  {
+    "id": "Councillor",
+    "name": "Councillor",
+    "description": "Kill off <color=#8cffff>Crewmates</color> during meetings",
+    "category": "Impostor",
+    "extra": "As the Councillor, you can kill players during a meeting like a Judge.\nWhen killing in a meeting, those kills will appear as a trial from a Judge.\n\nThe kill command is /tl [player id]\nYou can see the player's id before the player's name, or use the /id command to view the id of all players.\nDepending on the settings, Councillor will suicide when he judge his teammates.\nConverted Councillor can judge freely."
+  },
+  {
+    "id": "Crewpostor",
+    "name": "Crewpostor",
+    "description": "Kill by completing tasks",
+    "category": "Impostor",
+    "extra": "(Madmates):\nAs the Crewpostor, you kill the nearest player whenever you finish a task."
+  },
+  {
+    "id": "Crow",
+    "name": "Crow",
+    "description": "Steal the roles of your victims",
+    "category": "Impostor",
+    "extra": "When the Crow kills a player, they will take their role for the rest of the round. The Crow will also be assigned the Madmate Modifier, and their original role will be returned at the end of the next meeting"
+  },
+  {
+    "id": "CursedWolf",
+    "name": "Cursed Wolf",
+    "description": "You survive a few kill attempts",
+    "category": "Impostor",
+    "extra": "As the Cursed Wolf, when you're about to be killed, the Cursed Wolf will curse the killer to death. (The Host sets the maximum of times you can counterattack)"
+  },
+  {
+    "id": "Dazzler",
+    "name": "Dazzler",
+    "description": "Reduce the vision of the Crew",
+    "category": "Impostor",
+    "extra": "As the Dazzler, you can reduce the vision of the target of your Shapeshift permanently. When you die, their vision will turn back to normal."
+  },
+  {
+    "id": "Deathpact",
+    "name": "Deathpact",
+    "description": "Assign players to a deathpact",
+    "category": "Impostor",
+    "extra": "As the Deathpact, You Shapeshift to mark your targets for a deathpact.\nIf you have enough players marked for a deathpact, they must meet within a specific period; if they fail to do so, they die.\nIf a marked player dies before the deathpact becomes complete, the pact is withdrawn."
+  },
+  {
+    "id": "Detonator",
+    "name": "Detonator",
+    "description": "Turn players into bombs",
+    "category": "Impostor",
+    "extra": "As the Detonator, you can use your kill button to freeze a player. Using the unshift button you can kill the player and everyone around them. If you do not shapeshift in time, your target will be released. Double click to kill normally."
+  },
+  {
+    "id": "Deviator",
+    "name": "Deviator",
+    "description": "Protect yourself from attacks",
+    "category": "Impostor",
+    "extra": "The Deviator can use their unshift button to temporarily be protected from attacks. They will kill anyone who tries to attack them."
+  },
+  {
+    "id": "Devourer",
+    "name": "Devourer",
+    "description": "Consume the skin of the Crew",
+    "category": "Impostor",
+    "extra": "As the Devourer, use your Shapeshift button to change the appearance of the target of the Shapeshift permanently. Additionally, when each player's appearance changes, you will have your Kill Cooldown reduced by a defined number of seconds. If the Devourer dies or gets voted out during a meeting, the player's appearance will change back to their normal appearance."
+  },
+  {
+    "id": "Disperser",
+    "name": "Disperser",
+    "description": "Teleport everyone to random Vents",
+    "category": "Impostor",
+    "extra": "As the Disperser, you can use the Shapeshift button to teleport all players to random Vents."
+  },
+  {
+    "id": "Diviner",
+    "name": "Diviner",
+    "description": "Kill your killer to defy death",
+    "category": "Impostor",
+    "extra": "As the Diviner, when someone tries to kill you, you will block the kill, and you will teleport to a random Vent. You will have a limited time to kill your killer. If you succeed in doing so, you live. If the time runs out before you kill your killer, you die permanently. If you try to kill someone else other than your killer, you will die."
+  },
+  {
+    "id": "DollMaster",
+    "name": "Dollmaster",
+    "description": "Take control of players actions!",
+    "category": "Impostor",
+    "extra": "As the Dollmaster, you can temporarily take control of any player by using the <color=#ff0000>Shapeshift</color> button and to make them do your deeds!"
+  },
+  {
+    "id": "DoubleAgent",
+    "name": "Double Agent",
+    "description": "Plant bombs on players in meetings",
+    "category": "Impostor",
+    "extra": "As the Double Agent, you cannot access the Kill button. However, you can vote for someone in a meeting to pass a bomb onto them, which can only be done one player at a time. Once the meeting has finished, the bomb will activate and explode in a set amount of time.\nNote: when you pass the bomb onto someone in a meeting, you can vote afterward.\n\nAdditionally depending on settings the Double Agent can diffuse <color=#696969>Bastion</color> and <color=#F4A460>Agitator</color> bombs when Venting.\n\nThe Double Agent can change roles when they are the <color=#ff1919>Last Impostor</color>, depending on the settings the role can be a <color=#ee43c3>Admired Impostor</color>, <color=#ff1919>Trickster</color>, <color=#BA2E05>Traitor</color>, or stay as the Double Agent."
+  },
+  {
+    "id": "Dragon",
+    "name": "Dragon",
+    "description": "Set players on fire!",
+    "category": "Impostor",
+    "extra": "Use the kill button to set a player on fire. They will be aware that they are on fire. After a certain amount of time, the player will die. The fire can spread among players, when a player gets close to a player that is on fire, they will also catch on fire.\n"
+  },
+  {
+    "id": "Eraser",
+    "name": "Eraser",
+    "description": "Erase the role of your vote target",
+    "category": "Impostor",
+    "extra": "As the Eraser, you can vote for any target at the meeting to erase the target's roles, and the erasure will take effect after the meeting ends. Note: Players with erased skills will always be considered a vanilla role, including the game result page.\nA target can only be erased once (including OIIAI)"
+  },
+  {
+    "id": "Escapist",
+    "name": "Escapist",
+    "description": "Shift to mark places and warp back to them",
+    "category": "Impostor",
+    "extra": "As the Escapist, you can mark a location with the Shapeshift button. Shapeshift again to teleport back to the marked spot.\nMarked location resets upon every teleport."
+  },
+  {
+    "id": "EvilGuesser",
+    "name": "Evil Guesser",
+    "description": "Guess <color=#8cffff>Crewmate</color> roles in meetings to kill",
+    "category": "Impostor",
+    "extra": "As the Evil Guesser, you can guess the role of a certain player during the meeting. If correct, the target dies. If wrong, the Evil Guesser dies.\nThe guessing command is: /bt [player id] [role]\nYou can see the player's id before the player's name or use the /id command to view the id of all players."
+  },
+  {
+    "id": "EvilHacker",
+    "name": "Evil Hacker",
+    "description": "Hack systems",
+    "category": "Impostor",
+    "extra": "As the Evil Hacker, you can get last-minute Admin information at the meeting beginning.\nUnoccupied rooms are not shown.\nA '★' marks rooms with Impostors.\nRooms with dead bodies are marked with the number of bodies.\nExample: ★Cafeteria: 3 (DEAD×1)."
+  },
+  {
+    "id": "EvilMini",
+    "name": "Evil Mini",
+    "description": "No one can hurt you until you grow up",
+    "category": "Impostor",
+    "extra": "As the Evil Mini, you are unkillable until you grow up and have a very long initial Kill Cooldown, which gets drastically shortened as you grow up."
+  },
+  {
+    "id": "EvilTracker",
+    "name": "Evil Tracker",
+    "description": "Track players by Shifting",
+    "category": "Impostor",
+    "extra": "As the Evil Tracker, you can track other players, the Evil Tracker can Shapeshift into someone to switch the tracking target to the Shapeshift target (you will immediately Unshift after performing Shapeshift). The arrow below the Evil Tracker's name indicates the direction of the target. When the Evil Tracker's teammate kills, the Evil Tracker will see a kill flash."
+  },
+  {
+    "id": "Fireworker",
+    "name": "Fireworker",
+    "description": "Go out with a BANG",
+    "category": "Impostor",
+    "extra": "As the Fireworker, you can Shapeshift to place Fireworks up to the maximum amount the Host sets.\nWhen you are the last Impostor and all Fireworks have been placed, Shapeshift again to detonate them and kill everyone in their radius, including you.\nIf you kill all players with your Fireworks, it's considered an Impostor victory."
+  },
+  {
+    "id": "Fury",
+    "name": "Fury",
+    "description": "Unleash your rage",
+    "category": "Impostor",
+    "extra": "As the Fury, use your Shapeshift button to enter Rage Mode.\nRage Mode changes the Fury their speed and Kill Cooldown for a set duration of time.\n\nAdditionally there is a setting to reveal when the Fury enters Rage Mode to everyone.\nWithout the use of Rage Mode, the Fury acts like a regular Impostor."
+  },
+  {
+    "id": "Gangster",
+    "name": "Gangster",
+    "description": "Convert players to your side",
+    "category": "Impostor",
+    "extra": "As the Gangster, you're a powerful character that can recruit a player to a Madmate by using their Kill button. If the recruitment is successful, both the Gangster and the target will see the Shield Animation on each other as a reminder (only visible to each other). The remaining number of available recruits is displayed next to the Gangster's name (the Host sets the maximum). If the Gangster tries to recruit players who cannot be recruited, such as Neutrals or some special Crewmates, they will kill the target normally instead. When the Gangster has no remaining recruitments, they can only make normal kills from that point on."
+  },
+  {
+    "id": "Godfather",
+    "name": "Godfather",
+    "description": "Convert players to Refugees by voting",
+    "category": "Impostor",
+    "extra": "As the Godfather, you vote someone to make them your target.\nIn the next round, if someone kills the target, the killer will turn into a Refugee or Madmate."
+  },
+  {
+    "id": "Gravedigger",
+    "name": "Gravedigger",
+    "description": "Conceal and hide your kills",
+    "category": "Impostor",
+    "extra": "The Gravedigger can use their kill button to send a player to a random part of the map, then kill them."
+  },
+  {
+    "id": "Greedy",
+    "name": "Greedy",
+    "description": "Your Kill Cooldown shifts",
+    "category": "Impostor",
+    "extra": "As the Greedy, your kills with odd and even kills will have different Kill Cooldowns. Greedy's Kill Cooldown is reset every meeting, and Greedy's first kill is always odd."
+  },
+  {
+    "id": "Hangman",
+    "name": "Hangman",
+    "description": "I will decide when your life will end",
+    "category": "Impostor",
+    "extra": "As the Hangman, during the Shapeshifting, you use a unique killing method-strangling. This method ignores any status of the target, such as the shield of the Medic, the Bodyguard's protection, the Super Star's skills, etc. The strangled player will not leave a dead body, nor will it trigger any of its skills. For example, Veteran kill back (including additional roles), and Seer will not be prompted."
+  },
+  {
+    "id": "Harbourer",
+    "name": "Harbourer",
+    "description": "Store roles to use the abilities yourself",
+    "category": "Impostor",
+    "extra": "When the Harbourer is attacked, they will store the role that attacked them in an inventory. They can swap between each role's ability by using the Unshift button. When they use their kill button, the ability of the role they have equipped will be used. The Harbourer cannot guess. Equip the Harbourer role to kill normally."
+  },
+  {
+    "id": "Hoarder",
+    "name": "Hoarder",
+    "description": "Collect seconds from Crewmate's tasks",
+    "category": "Impostor",
+    "extra": "As the Hoarder, use your Unshift button to temporarily restrict tasks from being done. Each task done will reduce your kill cooldown by 1sec."
+  },
+  {
+    "id": "ImpostorTOHO",
+    "name": "Impostor",
+    "description": "Kill and Sabotage",
+    "category": "Impostor",
+    "extra": "As the Impostor, your goal is to simply kill off the Crewmates.\nYou can Sabotage and Vent."
+  },
+  {
+    "id": "Inhibitor",
+    "name": "Inhibitor",
+    "description": "You cannot kill during Sabotages",
+    "category": "Impostor",
+    "extra": "As the Inhibitor, you can only kill when there is not a Critical Sabotage active.\n\nIf Light or Comms Sabotage is active, then you can kill."
+  },
+  {
+    "id": "Instigator",
+    "name": "Instigator",
+    "description": "Sow discord among the Crewmates",
+    "category": "Impostor",
+    "extra": "As the Instigator, it's your job to turn the Crewmates against each other. Each time a Crewmate gets voted out in a meeting, if you are alive, an additional Crewmate who voted for the innocent player will die after the meeting. The Host determines the number of additional players dying."
+  },
+  {
+    "id": "Investor",
+    "name": "Investor",
+    "description": "Complete tasks to shorten your Kill Cooldown",
+    "category": "Impostor",
+    "extra": "(Madmates):\nAs the Investor, when you compete a task, your future Kill Cooldown reduces a certain amount set by the Host. Venting will turn you into an Impostor called Rich. The Rich has a set Cooldown that is reduced by the number of tasks you have done."
+  },
+  {
+    "id": "Kamikaze",
+    "name": "Kamikaze",
+    "description": "Kill players with a suicidal mission",
+    "category": "Impostor",
+    "extra": "As the Kamikaze you can single click to mark players. Double-click to kill normally. When you die, all marked also die, with death reason Targeted."
+  },
+  {
+    "id": "Kidnapper",
+    "name": "Kidnapper",
+    "description": "Kidnap and kill your target",
+    "category": "Impostor",
+    "extra": "As the Kidnapper, you may select a target via your kill button, then unshift to teleport them to you and kill them. Double click to kill normally."
+  },
+  {
+    "id": "KillingMachine",
+    "name": "Killing Machine",
+    "description": "You can ONLY kill, but low Cooldown",
+    "category": "Impostor",
+    "extra": "As the Killing Machine, you have a very short Kill Cooldown with tiny vision. However, you cannot Vent, Sabotage, Report, nor call Emergency Meetings.\n\nNote: You will bypass any shields, killing Bait and Beartrap won't take any effect"
+  },
+  {
+    "id": "Lightning",
+    "name": "Lightning",
+    "description": "Convert players to Quantum Ghosts",
+    "category": "Impostor",
+    "extra": "As the Lightning, you cannot kill normally. Instead, your Kill button quantizes targets, which activates after a delay, causing the next person they encounter to kill them. Those who are actively quantized show a「■」next to their name. Additionally, those who have been quantized die if they survive until the end of a meeting. There is a setting to quantize your killer."
+  },
+  {
+    "id": "Ludopath",
+    "name": "Ludopath",
+    "description": "Your kill Cooldown is random",
+    "category": "Impostor",
+    "extra": "As the Ludopath, your Kill Cooldown is randomized.\n\nMinimum it can be is 1 second, while the maximum is your default Kill Cooldown."
+  },
+  {
+    "id": "Lunger",
+    "name": "Lunger",
+    "description": "Lunge to kill players!",
+    "category": "Impostor",
+    "extra": "As the Lunger, you cannot kill normally. Instead, you can use your unshift button to lunge into the direction you're walking. Everyone in the way dies. You have a normal kill cd. But if you dash while standing, you will dash into heaven (you just suicide)."
+  },
+  {
+    "id": "Lurker",
+    "name": "Lurker",
+    "description": "Reduce your Kill Cooldown by venting",
+    "category": "Impostor",
+    "extra": "As the Lurker, you can jump into a Vent to reduce your Cooldown by a certain number of seconds. After you kill, your Cooldown resets to its original value."
+  },
+  {
+    "id": "Magnet",
+    "name": "Magnet",
+    "description": "Send one player to another",
+    "category": "Impostor",
+    "extra": "The Magnet can mark one player, and then mark another to send the second player to the first player's spot. Double click to kill normally."
+  },
+  {
+    "id": "Marksman",
+    "name": "Marksman",
+    "description": "Set up your partners to have free kills!",
+    "category": "Impostor",
+    "extra": "The Marksman can mark a player with their kill button. When another impostor kills the player, the impostor's kill cooldown will not be reset. Double click or be the last remaining impostor to kill normally."
+  },
+  {
+    "id": "Mastermind",
+    "name": "Mastermind",
+    "description": "Make others kill for you",
+    "category": "Impostor",
+    "extra": "As the Mastermind, you can use your Kill button on a player once to manipulate them. The manipulation does nothing if the target doesn't have a Kill button. But if the target does have a Kill button, whoever you manipulate will be told after a delay that they got manipulated and must kill someone in a limited time to survive. If the time limit expires or a meeting gets called before killing someone, they die.\nDouble click on someone to kill them normally."
+  },
+  {
+    "id": "Mercenary",
+    "name": "Mercenary",
+    "description": "Keep killing, else you suicide",
+    "category": "Impostor",
+    "extra": "As the Mercenary, you must kill within your deadline, as shown by your Shapeshift Cooldown (which you cannot use). If you fail to kill, you die."
+  },
+  {
+    "id": "Meteor",
+    "name": "Meteor",
+    "description": "Summon a meteor strike on target",
+    "category": "Impostor",
+    "extra": "Use your kill button to plant a bomb on your target which will explode after a certain period set by host . \nDouble click to kill normally"
+  },
+  {
+    "id": "Miner",
+    "name": "Miner",
+    "description": "Warp to your last used Vent by Shifting",
+    "category": "Impostor",
+    "extra": "As the Miner, you can use the Shapeshift button to teleport back to the last vent you were in."
+  },
+  {
+    "id": "Minion",
+    "name": "Minion",
+    "description": "(Ghost) Blind enemies",
+    "category": "Impostor",
+    "extra": "(Impostor [Ghost]):\nAs the Minion, you can temporarily blind non-Impostors."
+  },
+  {
+    "id": "Morphling",
+    "name": "Morphling",
+    "description": "You can only kill while Shapeshifted",
+    "category": "Impostor",
+    "extra": "As the Morphling, you are a Shapeshifter but cannot kill while not Shapeshifted."
+  },
+  {
+    "id": "Nemesis",
+    "name": "Nemesis",
+    "description": "Kill when you're the last Impostor",
+    "category": "Impostor",
+    "extra": "As the Nemesis, you can only kill if you are the last Impostor.\nIf you are dead, you can use the command /rv [ID] to kill the player whose ID you typed. Use /id to show the ID's of all players, or look next to their names."
+  },
+  {
+    "id": "Ninja",
+    "name": "Ninja",
+    "description": "Mark a target, then Shift to kill",
+    "category": "Impostor",
+    "extra": "As the Ninja, you can use your Kill button to mark a target (single click) or kill normally (double click). You may then Shapeshift to teleport to the marked target and kill them."
+  },
+  {
+    "id": "Nuancer",
+    "name": "Nuancer",
+    "description": "Kill in different ways",
+    "category": "Impostor",
+    "extra": "Your killing method is Random. \nWhen you use your Kill Button on someone one of the following events happen with equal probability.\n Normal kill.\n Delayed Kill like Vampire.\n Curse like witch.\n Explosion like Bomber.\n You can suicide(if enabled)."
+  },
+  {
+    "id": "Parasite",
+    "name": "Parasite",
+    "description": "Help the Impostors kill the Crew",
+    "category": "Impostor",
+    "extra": "(Madmates):\nAs the Parasite, you are an Impostor that does not know the other Impostors.\n\nYou may Kill, Vent, Sabotage, whatever.\nJust know that you are an Impostor."
+  },
+  {
+    "id": "Pathogen",
+    "name": "Pathogen",
+    "description": "Shift to make a player constantly perform the shapeshift animation",
+    "category": "Impostor",
+    "extra": "The Pathogen can Shift to make a player constantly perform the shapeshift animation. They will shift until the next meeting."
+  },
+  {
+    "id": "Penguin",
+    "name": "Penguin",
+    "description": "Drag your victims",
+    "category": "Impostor",
+    "extra": "As the Penguin, you can restrain the target by pressing the Kill button and drag it around.\nWhile dragging, the target dies by pressing the Kill button again or after a certain period.\nPress the Kill button twice for a direct kill."
+  },
+  {
+    "id": "PhantomTOHO",
+    "name": "Phantom",
+    "description": "Turn invisible",
+    "category": "Impostor",
+    "extra": "As the Phantom, you can press your Vanish button to go invisible to escape a kill. You can click your Appear button if you want to become visible before the timer runs out or not.\nNote: You will make a smoke cloud whenever you go invisible and become visible. So make sure you are in a safe area where no one will see you."
+  },
+  {
+    "id": "Pitfall",
+    "name": "Pitfall",
+    "description": "Setup traps around the map",
+    "category": "Impostor",
+    "extra": "As the Pitfall, use your Shapeshift button to mark the area as a trap. Players who enter this area will be immobilized quickly, and their vision will be affected."
+  },
+  {
+    "id": "Possessor",
+    "name": "Possessor",
+    "description": "Possess and lead <color=#8cffff>Crewmates</color> away from others",
+    "category": "Impostor",
+    "extra": "(Impostors [Ghost]):\nAs the Possessor, you can possess players when others aren't in the Alert Range. Lead the possessed player as far as possible from other players in the Focus Range. Once the possession duration is up, the possessed player will be killed if others aren't in the Focus Range. If you run into another player in the Alert Range while possessing, the Possessor will immediately unpossess."
+  },
+  {
+    "id": "Professor",
+    "name": "Professor",
+    "description": "Add tasks to players!",
+    "category": "Impostor",
+    "extra": "The Professor can use their shapeshift button to reset a specific player's tasks. They gain ability uses with each kill."
+  },
+  {
+    "id": "Propagandist",
+    "name": "Propagandist",
+    "description": "Steal the votes of players!",
+    "category": "Impostor",
+    "extra": "As the Propagandist, you can kill normally using your kill button with a double click. By single clicking a player, you will steal their vote for the round and they will not know."
+  },
+  {
+    "id": "Puppeteer",
+    "name": "Puppeteer",
+    "description": "Make players kill for you",
+    "category": "Impostor",
+    "extra": "As the Puppeteer, you can use your Kill button to Puppeteer (single click) or kill normally (double click).\nThose you Puppeteer will kill the next non-Impostor they touch. Depending on options, Puppeteered targets will also die once they kill."
+  },
+  {
+    "id": "QuickShooter",
+    "name": "Quick Shooter",
+    "description": "Store ammo to offset Kill Cooldown",
+    "category": "Impostor",
+    "extra": "As the Quick Shooter, when your Kill Cooldown is over, you can use the Shapeshift button to store a bullet. \nAfter a successful kill, if the QuickShooter still has bullets remaining, your Kill Cooldown will reset to zero and will immediately consume one bullet. \nDepending on the Host's settings, QuickShooter's ability may be restricted by the Shapeshift Cooldown."
+  },
+  {
+    "id": "Ragnarok",
+    "name": "Ragnarok",
+    "description": "Blind players & target Valhalla",
+    "category": "Impostor",
+    "extra": "The Ragnarok can use the Unshift button to blind everyone for a certain amount of time. When the blindness is over, one random player will receive the Valhalla modifier.\nWhen the Ragnarok kills the Valhalla, their cooldown will not be reset."
+  },
+  {
+    "id": "Reckless",
+    "name": "Reckless",
+    "description": "Each time you kill is a gamble",
+    "category": "Impostor",
+    "extra": "The Reckless has a chance to kill the nearest additional player with every kill, but also has a chance to alert the original target of a failed kill."
+  },
+  {
+    "id": "Refugee",
+    "name": "Refugee",
+    "description": "Help the Impostors kill off the Crew",
+    "category": "Impostor",
+    "extra": "(Madmates):\nAs the Refugee, you were either:\n -An Amnesiac who remembered an Impostor\n -A killer who killed the Godfather's target.\n -A Romantic whose partner was an Impostor\n -Or an Imitator that imitated an Impostor.\n\nNow your job is to help the Impostors kill the Crewmates."
+  },
+  {
+    "id": "Rich",
+    "name": "Rich",
+    "description": "Lower Kill Cooldown from your investments",
+    "category": "Impostor",
+    "extra": "(Madmates):\nAs the Rich, you are the transformed version of Investor when you enter a Vent."
+  },
+  {
+    "id": "RiftMaker",
+    "name": "Rift Maker",
+    "description": "Two rifts I trace, touch 'em to warp space",
+    "category": "Impostor",
+    "extra": "As the Rift Maker, you can Shapeshift to create a Rift. You can teleport from one Rift to another by touching the area where the rift was created. Trying to vent will kick you out, therefore destroying all the rifts.\n\nNote: Up to two rifts can be placed at a time; if you try to place a third, it removes the first one."
+  },
+  {
+    "id": "Rogue",
+    "name": "Rogue",
+    "description": "Sneak away from your kills",
+    "category": "Impostor",
+    "extra": "As the Rogue, after killing a player, you gain a massive speed boost"
+  },
+  {
+    "id": "Saboteur",
+    "name": "Saboteur",
+    "description": "You can only kill during Sabotages",
+    "category": "Impostor",
+    "extra": "As the Saboteur, you can only kill when there is a Critical sabotage active.\n\nIf Reactor or O2 Sabotage is active, then you can kill."
+  },
+  {
+    "id": "Scavenger",
+    "name": "Scavenger",
+    "description": "Your kills are unreportable",
+    "category": "Impostor",
+    "extra": "As the Scavenger, your kills do not leave dead bodies behind. In addition, if the victim is a Bait, no self-report will be made."
+  },
+  {
+    "id": "ShapeMaster",
+    "name": "Shapemaster",
+    "description": "Swiftly kill with no Shapeshift Cooldown",
+    "category": "Impostor",
+    "extra": "As the Shapemaster, you have no Shapeshift Cooldown."
+  },
+  {
+    "id": "ShapeshifterTOHO",
+    "name": "Shapeshifter",
+    "description": "Disguise as <color=#8cffff>Crewmates</color> to frame them",
+    "category": "Impostor",
+    "extra": "As the Shapeshifter, you can Shapeshift into other players. It is obvious when you Shapeshift or revert Shifting."
+  },
+  {
+    "id": "Shapetricker",
+    "name": "Shapetricker",
+    "description": "Trick other players with your egg color",
+    "category": "Impostor",
+    "extra": "As the Shapetricker, the color of your Shapeshift egg will always be the color of the shapeshift target."
+  },
+  {
+    "id": "Shovel",
+    "name": "Shovel",
+    "description": "Vent from any distance",
+    "category": "Impostor",
+    "extra": "The Shovel can use their Unshift button to enter the closest vent to them at any point, no matter how far they are from a vent."
+  },
+  {
+    "id": "Sniper",
+    "name": "Sniper",
+    "description": "Snipe players from a distance by Shifting",
+    "category": "Impostor",
+    "extra": "As the Sniper, you can shoot players from far distances.\nYou have to Shapeshift twice to make a successful snipe.\nImagine an arrow pointing from your first Shapeshift location towards your Unshift location.\nThat will be the direction in which the snipe will be made.\nThe snipe kills the first person in its path.\nYou cannot kill people normally until you use up all your ammo."
+  },
+  {
+    "id": "SoulCatcher",
+    "name": "Soul Catcher",
+    "description": "You swap places with your Shift target",
+    "category": "Impostor",
+    "extra": "As the Soul Catcher, you can use the Shapeshift button to swap places with your target as long as they are not dead, in a Vent, swallowed by Pelican, or in a similar odd state."
+  },
+  {
+    "id": "Staller",
+    "name": "Staller",
+    "description": "Your kills take too long to report",
+    "category": "Impostor",
+    "extra": "When the victims of the Staller are reported, the report is delayed by a certain amount of time."
+  },
+  {
+    "id": "Stealth",
+    "name": "Stealth",
+    "description": "Killing blinds everyone in the room",
+    "category": "Impostor",
+    "extra": "As the Stealth, when you kill, players in the same room are blinded for a short time."
+  },
+  {
+    "id": "Stunner",
+    "name": "Stunner",
+    "description": "Jumpscare and blind the Crewmates",
+    "category": "Impostor",
+    "extra": "The Stunner can use their shapeshift button to flash bang someone and temporarily blind them."
+  },
+  {
+    "id": "Sun",
+    "name": "Sun",
+    "description": "Burn players while you are risen!",
+    "category": "Impostor",
+    "extra": "As the Sun, when you are alive, after every meeting a random non-Impostor player will die. If you run out of ability uses, a player will not die. You gain a certian amount of ability uses with each kill."
+  },
+  {
+    "id": "Swooper",
+    "name": "Swooper",
+    "description": "Turn invisible temporarily",
+    "category": "Impostor",
+    "extra": "As the Swooper, you can Vent to Vanish temporarily. You will still appear visible on your screen. Vent again to become visible."
+  },
+  {
+    "id": "Threat",
+    "name": "Threat",
+    "description": "Kill someone without them knowing you killed them",
+    "category": "Impostor",
+    "extra": "When the Threat kills someone, the target doesn't die, instead they don't even get alerted by the kill. When a dead body is reported or if there's a emergency meeting, the player will suddenly die."
+  },
+  {
+    "id": "TimeThief",
+    "name": "Time Thief",
+    "description": "Lower meeting time by killing",
+    "category": "Impostor",
+    "extra": "As the Time Thief, when you kill a player, the meeting time will be reduced by a certain amount of time. If the Time Thief dies, the meeting time will return to normal."
+  },
+  {
+    "id": "Trapmaker",
+    "name": "Trapmaker",
+    "description": "Create your own dead body as a trap!",
+    "category": "Impostor",
+    "extra": "As the Trapmaker, you can Unshift to create your own dead body, then immediately revive yourself. The Trapmaker can do this only once per round. When someone reports this dead body, they will die."
+  },
+  {
+    "id": "Trapster",
+    "name": "Trapster",
+    "description": "Trap your kills",
+    "category": "Impostor",
+    "extra": "As the Trapster, you have a unique method of killing. By initiating a body report, the Trapster can eliminate the player attempting to report the body the Trapster killed.\nNote: If Trapster kills the Bait, the Trapster will die immediately."
+  },
+  {
+    "id": "Trickster",
+    "name": "Trickster",
+    "description": "Kill and trick the Crew",
+    "category": "Impostor",
+    "extra": "As the Trickster, you function as a regular Impostor but with one key difference.\nYou appear as a Crewmate to Crewmate roles.\n\nThe Sheriff cannot kill you.\nPsychic does not see you as evil.\nSnitch cannot find you."
+  },
+  {
+    "id": "Twister",
+    "name": "Twister",
+    "description": "Swap all player positions",
+    "category": "Impostor",
+    "extra": "As the Twister, you can use Shapeshifting to swap the position of all players randomly. The swap happens twice, once when you start your Shapeshift and once when you return to your original appearance.\nThe Twister itself will not swap places with anyone, and players in vents will not teleport."
+  },
+  {
+    "id": "Underdog",
+    "name": "Underdog",
+    "description": "Start killing on a low player count",
+    "category": "Impostor",
+    "extra": "As the Underdog, you cannot kill until there's a certain amount of players alive."
+  },
+  {
+    "id": "Undertaker",
+    "name": "Undertaker",
+    "description": "Teleport dead body to a marked location",
+    "category": "Impostor",
+    "extra": "As the Undertaker, when you Shapeshift, you mark a location. Your kills will then teleport to the marked location.\nAfter every kill and meeting, your marked location will reset.\n\nAfter every teleported kill, you will freeze for a configurable amount of time"
+  },
+  {
+    "id": "Vampire",
+    "name": "Vampire",
+    "description": "Your kills are delayed",
+    "category": "Impostor",
+    "extra": "As the Vampire, your kills are delayed. This means that your target still dies even if a meeting is called first. However, if you bite a Bait, you kill normally and report the body. Depending on the settings, you can use double trigger (bite players - single click, kill normally - double click)."
+  },
+  {
+    "id": "Vindicator",
+    "name": "Vindicator",
+    "description": "Use your extra votes to kill everyone",
+    "category": "Impostor",
+    "extra": "As the Vindicator, you have extra votes like a <color=#204d42>Mayor</color>."
+  },
+  {
+    "id": "ViperTOHO",
+    "name": "Viper",
+    "description": "Dissolve the bodies of your kills",
+    "category": "Impostor",
+    "extra": "When you kill, the body of your target will slowly dissolve into nothing."
+  },
+  {
+    "id": "Visionary",
+    "name": "Visionary",
+    "description": "You see the alignments of the living",
+    "category": "Impostor",
+    "extra": "As the Visionary, you see the alignments of living players during a meeting.\nThe following information will be displayed on the players:\n- The Red name indicates the Impostors.\n- The Cyan name indicates the Crewmates.\n- The Gray name indicates the Neutrals."
+  },
+  {
+    "id": "Warlock",
+    "name": "Warlock",
+    "description": "Curse <color=#8cffff>Crewmates</color> then Shift to make them kill",
+    "category": "Impostor",
+    "extra": "As the Warlock, you can Curse up to one other player at a time.\nWhen you Shapeshift, if you have Cursed a player, they kill the nearest person, which, depending on settings, can include you or other Impostors.\nYou can kill normally while Shapeshifted."
+  },
+  {
+    "id": "WildShot",
+    "name": "WildShot",
+    "description": "Use your kill button to kill random players.",
+    "category": "Impostor",
+    "extra": "As the WildShot when you use your kill button on someone , the kill will be blocked and a random non-imposter will be killed.\nDouble click to kill normally."
+  },
+  {
+    "id": "Wildling",
+    "name": "Wildling",
+    "description": "Kill with strength and disguise",
+    "category": "Impostor",
+    "extra": "As the Wildling, you can Shapeshift but cannot Vent.\nWhen you kill, you temporarily become immune to attacks."
+  },
+  {
+    "id": "Witch",
+    "name": "Witch",
+    "description": "Spell Crewmates to kill them in meetings",
+    "category": "Impostor",
+    "extra": "As the Witch, you can use your Kill button to Spell (single click) or Kill normally (double click).\nDuring the next meeting, the spelled target(s) will have a 「†」 next to their name visible to everyone. Unless you die by the end of that meeting, all Spelled targets will die."
+  },
+  {
+    "id": "YinYanger",
+    "name": "YinYanger",
+    "description": "Spontaneously combust two players",
+    "category": "Impostor",
+    "extra": "As the YinYanger, you can use your Kill button one time to pick your Yin and then a second time to choose a Yang. When those two players meet, they'll kill each other. When Yin & Yang have been chosen, you can kill normally."
+  },
+  {
+    "id": "Zombie",
+    "name": "Zombie",
+    "description": "You are very slow",
+    "category": "Impostor",
+    "extra": "As the Zombie, you have a short Kill Cooldown but moves very slowly and has very little vision. Zombie can not be voted out by anyone other than the Dictator, and the movement speed of Zombie will gradually slow down as they make kills or time passes."
+  },
+  {
+    "id": "Abzorbaloff",
+    "name": "Abzorbaloff",
+    "description": "Absorb souls and make them kill players",
+    "category": "Neutral",
+    "extra": "The Abzorbaloff can kill players. When they kill a player directly, that player is added to a list of dead players that do deeds for them. When they kill again, each player in said list will kill a player within range of the kill.\n"
+  },
+  {
+    "id": "Agitater",
+    "name": "Agitator",
+    "description": "Pass a Bomb onto others",
+    "category": "Neutral",
+    "extra": "As the Agitator, your premise is essentially Hot Potato.\n\nUse your Kill Button on a player to pass the bomb.\nThis can only be done once per round.\n\nThe player who receives the bomb will be notified when receiving said bomb, in which they need to pass it to another player by getting near a player.\n\nWhen a meeting is called, the player with the bomb dies.\n\nIf trying to pass to Pestilence or a Veteran on alert, the bombed player dies instead.\nOptionally, the Agitator cannot receive the bomb."
+  },
+  {
+    "id": "Amnesiac",
+    "name": "Amnesiac",
+    "description": "Remember the role of a dead body",
+    "category": "Neutral",
+    "extra": "As the Amnesiac, use your Report button to remember a target and get its role.\nTo balance the game, you will not be able to Vent after remembering your role if you can't Vent as Amnesiac.'"
+  },
+  {
+    "id": "Arsonist",
+    "name": "Arsonist",
+    "description": "Douse everyone and ignite",
+    "category": "Neutral",
+    "extra": "As the Arsonist, you can douse a player by using your Kill button on the player and following them for a few seconds. When the dousing starts and it's successful, a Shield Animation will happen as a reminder (only visible to themselves). When the Arsonist has doused all surviving players, the Arsonist can Vent to start the fire and win alone.\n\nIf the player name shows 「△」, that means they are being doused;\nif the player name shows 「▲」, it means they have been completely doused.\nDepending on the setting, Arsonist may start the fire anytime. But if he fails to kill everyone, he loses."
+  },
+  {
+    "id": "Artist",
+    "name": "Artist",
+    "description": "Paint players to victory",
+    "category": "Neutral",
+    "extra": "As the Artist, you can single click on a player to paint them gray, similair to Devourer. Double click to kill normally."
+  },
+  {
+    "id": "Assassin",
+    "name": "Assassin",
+    "description": "Choose your own team by killing",
+    "category": "Neutral",
+    "extra": "As the Assassin, after you kill for the first time, certain things will happen:\nIf you kill a Crewmate, you become an Impostor.\nIf you kill a Neutral, you become a Neutral Killer.\nIf you kill an Impostor, you become a Sheriff."
+  },
+  {
+    "id": "Atoner",
+    "name": "Atoner",
+    "description": "Kill quickly but with a risk",
+    "category": "Neutral",
+    "extra": "As the Atoner, you can kill people with a low kill cooldown. However, after each kill, you have an increased chance to die."
+  },
+  {
+    "id": "Baker",
+    "name": "Baker",
+    "description": "Feed players bread to become Famine",
+    "category": "Neutral",
+    "extra": "(Apocalypse):\nAs the Baker, you can use your Kill Button on a player per round to give them bread. \nOnce a set amount of players are alive with bread, you become Famine.\n\nIf the Bread gives additional effects and the setting is on, then you can Vent to change the bread that you give out. \n<b>Bread Effects:</b>\nReveal: Reveals the target's role to the Baker (stays the whole game)\nRoleblock: Resets the target's Kill Cooldown when they try to use their Kill Button\nBarrier: Gives the target a Barrier that is only known to the Baker (Barrier is removed after the meeting)"
+  },
+  {
+    "id": "Bandit",
+    "name": "Bandit",
+    "description": "Rob a player's Modifier",
+    "category": "Neutral",
+    "extra": "As the Bandit, you can use your Kill button one time to steal a player's Modifier and twice to kill. Depending on the settings, you may instantly steal the Modifier or after the meeting starts. After the maximum number of steals is reached, you will kill normally. Additionally, if there are no stealable Modifiers on the target or the target is Stubborn, you will kill the target.\n\nKill everyone to win.\n\nNote: Cleansed, Last Impostor, and Lovers cannot be stolen.\nNote: If Bandit can Vent is on, Nimble will become unstealable."
+  },
+  {
+    "id": "Bankrupt",
+    "name": "Bankrupt",
+    "description": "You have lost your role",
+    "category": "Neutral",
+    "extra": "As the Bankrupt, you are a Neutral with no win condition.\nBankrupt is a utility role."
+  },
+  {
+    "id": "Beholder",
+    "name": "Beholder",
+    "description": "Use your Rays to target players",
+    "category": "Neutral",
+    "extra": "The Beholder can use their shapeshift button to target a player. Any of the following 4 things might happen. When they use their ability, they lose the ability to kill for the rest of the round.\n1- The player could freeze in place and not be able to move until a meeting starts.\n2- The player could instantly die without a body.\n3- The player could be blinded for the round.\n4- The player could lose their skin."
+  },
+  {
+    "id": "Berserker",
+    "name": "Berserker",
+    "description": "Kill to increase your level",
+    "category": "Neutral",
+    "extra": "(Apocalypse):\nAs the Berserker, you level up with each kill.\nUpon reaching a certain level defined by the Host, you unlock a new power.\n\nScavenged kills make your kills disappear.\nBombed kills make your kills explode. Be careful when killing, as this can kill your other Apocalypse members if they are near. \nAfter a certain level, you become War."
+  },
+  {
+    "id": "Blade",
+    "name": "Blade",
+    "description": "Silently kill players while frozen",
+    "category": "Neutral",
+    "extra": "The Blade can use the unshift button to freeze in place, and the next person to walk near the blade will die without a body. The Blade can kill normally while its ability is not active. Its ability will last for a few seconds after the first player is killed."
+  },
+  {
+    "id": "BloodKnight",
+    "name": "Blood Knight",
+    "description": "Killing gives you a temporary shield",
+    "category": "Neutral",
+    "extra": "As the Blood Knight, you win when they're the last killing role alive, and the amount of Crewmates is lower or equal to the amount of Blood Knights. The Blood Knight gains a temporary shield after every kill, making them immortal for a few seconds."
+  },
+  {
+    "id": "Catalyst",
+    "name": "Catalyst",
+    "description": "Set kill cooldowns to 0",
+    "category": "Neutral",
+    "extra": "The Catalyst can set another person's kill cooldown to 0. Win with anyone but the Crewmates."
+  },
+  {
+    "id": "Collector",
+    "name": "Collector",
+    "description": "Collect votes from players",
+    "category": "Neutral",
+    "extra": "As the Collector, when you vote for a player, for each other player that voted for them, you gain a point. When you collect the required votes, the game ends, and you win alone, even if you voted a Jester or Executioner's target out."
+  },
+  {
+    "id": "Communist",
+    "name": "Communist",
+    "description": "Give the lobby a Communist revolution",
+    "category": "Neutral",
+    "extra": "The Communist can turn other players into Communists. When a Communist is killed, the most recent player to be recruited is returned to their own role. Everyone knows when at least one Communist is alive. Turn everyone into Communists to win!"
+  },
+  {
+    "id": "Contaminator",
+    "name": "Contaminator",
+    "description": "Contaminate everyone to kill them later",
+    "category": "Neutral",
+    "extra": "As the Contaminator, you start out as an Engineer and can contaminate rooms by Venting in them. Anyone who is near is immediatly contaminated and the Contaminator can see this through a mark. Each meeting, the Contaminator can choose to swap to Massacare Mode permanently. In Massacare Mode, the Contaminator will gain a Kill button and will be able to kill freely with low Cooldown ignoring any and all Shields, OIIAI, effects of Coven etc... but can ONLY kill players who are contaminated and will misfire when they try to kill someone else. The Contaminator can do tasks when in Contamination M ode to gain ability uses."
+  },
+  {
+    "id": "Cultist",
+    "name": "Cultist",
+    "description": "Charm everyone",
+    "category": "Neutral",
+    "extra": "As the Cultist, your Kill Button is used to Charm others, making them win with you. To win, charm all who pose a threat and gain the majority.\nDepending on settings, you may be able to charm Neutrals, and those you Charm may count as their original team, nothing, or a Cultist to determine when you win due to majority."
+  },
+  {
+    "id": "CursedSoul",
+    "name": "Cursed Soul",
+    "description": "Snatch souls and steal the win",
+    "category": "Neutral",
+    "extra": "As the Cursed Soul, you steal the victory if you survive to the end of the game.\n\nYou can steal the win from a Jester or Executioner.\n\nAdditionally, you can steal the Souls of other players.\nSoulless players win with you and count as dead."
+  },
+  {
+    "id": "DarkFairy",
+    "name": "Dark Fairy",
+    "description": "Convert ALL players, via your tasks!",
+    "category": "Neutral",
+    "extra": "As the Dark Fairy, you can mark tasks to <color=#4B0082>Darken</color> other players. <color=#4B0082>Darkened</color> players know the Dark Fairy, depending on the settings set by the host.\nTo win, Darken as much players as possible and gain the majority.\n\nDepending on the settings you may <color=#4B0082>Darken</color> Neutrals.\nThose you <color=#4B0082>Darken</color> may count as their original team, nothing, or a Dark Fairy to determine when you win due to majority.\nThe Dark Fairy & <color=#4B0082>Darkened</color> team win together."
+  },
+  {
+    "id": "Death",
+    "name": "Death",
+    "description": "Enact Armageddon",
+    "category": "Neutral",
+    "extra": "(Apocalypse):\nOnce the Soul Collector has collected their needed souls, they become Death. Death kills everyone and wins if Death is not ejected by the end of the next meeting.\nA configurable amount of extra meeting time will be given on the meeting Death transforms to have more discussion to find Death.\n\n<b>You are invincible, and your presence is announced to everyone at the meeting after you transform.</b>"
+  },
+  {
+    "id": "Demon",
+    "name": "Demon",
+    "description": "Consume blood volumes",
+    "category": "Neutral",
+    "extra": "As the Demon, you kill by draining health. You see health in percentage near everyone's name, and every attack you make drains a percentage from that health without the victim knowing. Once you drain your victim's health to 0, they die. You win if you are the last one standing."
+  },
+  {
+    "id": "Developer",
+    "name": "Developer",
+    "description": "Assign custom roles to other players",
+    "category": "Neutral",
+    "extra": "The Developer can sell new roles to other players using its kill button. The Developer will win if any of its customers are winners at the end of the game."
+  },
+  {
+    "id": "DodoBird",
+    "name": "Dodo Bird",
+    "description": "Have your killer win",
+    "category": "Neutral",
+    "extra": "When the Dodo Bird is killed, they will win if their killer wins."
+  },
+  {
+    "id": "Doomsayer",
+    "name": "Doomsayer",
+    "description": "Successfully guess players to win",
+    "category": "Neutral",
+    "extra": "As the Doomsayer, you can guess the role of a certain player during the meeting.\nIf the Doomsayer guesses a certain number of roles (the number depends on the Host settings), then he wins.\nThe guessing command is: /bt [player ID] [role]\nYou can see the player's id before the player's name, or use the /id command to view the id of all players."
+  },
+  {
+    "id": "Doppelganger",
+    "name": "Doppelganger",
+    "description": "Steal your target's identity",
+    "category": "Neutral",
+    "extra": "As the Doppelganger, use your Kill button to steal a player's identity (their name and skin) and then kill your target. Double click to kill normally.\n\nKill everyone to win.\n\nNote: You cannot steal the target's identity when Camouflage is active."
+  },
+  {
+    "id": "Dreadsteed",
+    "name": "Dreadsteed",
+    "description": "Keep reviving but at a cost",
+    "category": "Neutral",
+    "extra": "As the Dreadsteed, after you die, you are revived after the next round with a negative effect. These effects depend on how many times you've been revived. The Dreadsteed wins with the winning team if it's alive at the end of the game.\n\n1st Revive: Lower speed.\n2nd Revive: Fragile is assigned.\n3rd Revive: Blinded.\n4th Revive: Die if anyone gets near you.\nYou die permanently after the 4th revive.\n\nAdditionally, when you finish your tasks, your negative effects will be reset to as if you were never revived."
+  },
+  {
+    "id": "Duck",
+    "name": "Duck",
+    "description": "Distract the Crewmates",
+    "category": "Neutral",
+    "extra": "The Duck can do a task to blind a random player for a certain amount of time and reset their kill cooldown. The Duck wins with anyone besides the Crewmates."
+  },
+  {
+    "id": "Entity",
+    "name": "Entity",
+    "description": "Win by haunting enough players",
+    "category": "Neutral",
+    "extra": "When the Entity clicks their kill button, it \"jams\" the target's ability, meaning they won't be able to use their kill button ability. The Entity successfully \"haunted\" that player. They need to haunt a specific number of players to win. Haunts will be removed after a long period of time."
+  },
+  {
+    "id": "Executioner",
+    "name": "Executioner",
+    "description": "Get your target voted out",
+    "category": "Neutral",
+    "extra": "As the Executioner, you have an execution target, indicated by a diamond symbol「♦」next to their name. If the execution target is killed, the Executioner's role will change to Crewmate, Jester, or Opportunist depending on the game settings. However, if the execution target is voted out in the meeting, the Executioner wins. Note: Jester, Executioner, and Innocent can win together."
+  },
+  {
+    "id": "Extremist",
+    "name": "Extremist",
+    "description": "Win with the extreme, not with the Neutrals",
+    "category": "Neutral",
+    "extra": "Wins with the crewmates OR impostors. Does not win with Neutrals."
+  },
+  {
+    "id": "Falcon",
+    "name": "Falcon",
+    "description": "Scar players while in Attack Mode",
+    "category": "Neutral",
+    "extra": "The Falcon can use their Unshift button to enter Attack Mode. While in Attack Mode, the Falcon has a faster speed, and can use their kill button to Scar a player, which makes the player unable to report bodies, use their kill button, or do tasks. This player is also slowed, and they will be killed at the beginning of the next meeting. Use your kill button outside of Attack Mode to kill normally."
+  },
+  {
+    "id": "Famine",
+    "name": "Famine",
+    "description": "Starve everyone",
+    "category": "Neutral",
+    "extra": "(Apocalypse):\nOnce the Baker has a set amount of people with bread alive, they will become Famine. If the Famine does not get voted out after the meeting, then they will become Famine, and every player without bread will starve (excluding other Apocalypse members).\nAfter this starvation of everyone without bread, Famine can use their Kill Button to starve any remaining players, which will kill those players right before the next meeting.\n\n<b>You are invincible, and your presence is announced to everyone at the meeting after you transform.</b>"
+  },
+  {
+    "id": "Follower",
+    "name": "Follower",
+    "description": "Follow a player and help them",
+    "category": "Neutral",
+    "extra": "As the Follower, you can use your Kill Button on someone to start following them and can use the Kill Button again to switch the following target. If the Follower's target wins, the Follower will win along with them. Note: The Follower can also win after they die."
+  },
+  {
+    "id": "Gastlighter",
+    "name": "Gastlighter",
+    "description": "Steal the win by gastlighting a player",
+    "category": "Neutral",
+    "extra": "The Gastlighter can select one player for the game, and if that player wins, the Gastlighter wins on its own."
+  },
+  {
+    "id": "Glitch",
+    "name": "Glitch",
+    "description": "Hack and kill everyone",
+    "category": "Neutral",
+    "extra": "As the Glitch, you can hack players (single click) or kill normally (double click).\nThose who have been hacked cannot kill, Vent, or report for the hack duration.\nAdditionally, calling a Sabotage other than doors will have no effect and will instead disguise you as a random player. You cannot disguise during or after Sabotages.\nTo win, be the last player alive."
+  },
+  {
+    "id": "God",
+    "name": "God",
+    "description": "Everything is under your control",
+    "category": "Neutral",
+    "extra": "As the God, you know everyone's role from the beginning. If you live until the end of the game, you steal the win, i.e., everyone else loses, and you win."
+  },
+  {
+    "id": "Godzilla",
+    "name": "Godzilla",
+    "description": "Destroy random rooms",
+    "category": "Neutral",
+    "extra": "As the Godzilla, you can destroy random rooms by using your unshift button. The Godzilla can also kill normally depending on host settings. Be the last one alive to win."
+  },
+  {
+    "id": "Gunslinger",
+    "name": "Gunslinger",
+    "description": "It's high noon",
+    "category": "Neutral",
+    "extra": "As the <color=#ffd700>Gunslinger</color>, use your kill button to mark a target each round. You will shootout duel your target the next meeting.\n\nWhen the meeting starts, the target gets a text notification and <size=3><color=#ffd700>¤</size></color> symbol. A configurable shootout countdown will instantly start.\n\nWhen the countdown reaches 0, a system message saying <color=#ff1919>SHOOT!!</color> is sent to the <color=#ffd700>Gunslinger</color> and target simultaneously. The first to type the <color=#007FFF>/shoot</color> command after the <color=#ff1919>SHOOT!!</color> indicator, wins the duel. The loser dies.\n\nTyping <color=#007FFF>/shoot</color> before the indicator kills you.\nWinning as the <color=#ffd700>Gunslinger</color> gives you a point.\n\nTIP: Pretype the /shoot message."
+  },
+  {
+    "id": "Hacker",
+    "name": "Hacker",
+    "description": "Target players to compromise tasks!",
+    "category": "Neutral",
+    "extra": "The Hacker can use their kill button to target a player. The Hacker can use their shapeshift button to murder the targeted player without a body at any time. The death reason will be Targeted."
+  },
+  {
+    "id": "Hater",
+    "name": "Hater",
+    "description": "Kill <color=#ff9ace>Lovers</color> and <color=#00a4ff>Neptunes</color>",
+    "category": "Neutral",
+    "extra": "As the Hater, you have no Kill Cooldown. However, depending on the settings, you can only kill Lovers and other Recruiting Roles and Modifiers. Killing anyone else will make you suicide. You win at the end of the game with the winning team if none of the killable roles are alive. You will not be Lovers."
+  },
+  {
+    "id": "Heir",
+    "name": "Heir",
+    "description": "Follow someone to be their successor",
+    "category": "Neutral",
+    "extra": "As the Heir, you have a target marked with a yellow diamond. When the target dies, you will take their place as their role."
+  },
+  {
+    "id": "Huntsman",
+    "name": "Huntsman",
+    "description": "Kill your targets for a low Cooldown",
+    "category": "Neutral",
+    "extra": "As the Huntsman, you are given a certain number of targets that reset every meeting. If you successfully eliminate one of your targets, your Kill Cooldown goes down permanently by the set amount. However, if you kill someone not one of your targets, your Kill Cooldown permanently increases by the set amount. A colored name indicates your targets."
+  },
+  {
+    "id": "Imitator",
+    "name": "Imitator",
+    "description": "Imitate a player's role",
+    "category": "Neutral",
+    "extra": "As the Imitator, use your Kill button to imitate a player.\n\nYou'll either become a Sheriff, a Refugee, or some Neutral."
+  },
+  {
+    "id": "Infectious",
+    "name": "Infectious",
+    "description": "Infect everyone",
+    "category": "Neutral",
+    "extra": "As the Infectious, your job is to infect as many players as you can.\n\nIf you infect all the killers, you can outnumber the Crew and win the game.\n\nIf you die, all the players you've infected will die after the next meeting.\nIf they achieve your win condition before then, you can still win."
+  },
+  {
+    "id": "Innocent",
+    "name": "Innocent",
+    "description": "Get someone ejected by making them kill you",
+    "category": "Neutral",
+    "extra": "The Innocent can use their Kill button to plant any player, and the planted target will immediately kill the Innocent. If the target gets voted out in the meeting, the Innocent wins. Note: Jester, Executioner, and Innocent can win together."
+  },
+  {
+    "id": "Jackal",
+    "name": "Jackal",
+    "description": "Murder everyone",
+    "category": "Neutral",
+    "extra": "As the Jackal, you win if you are the last player alive. Additionally, you may recruit using the Kill button. If the target is not one you can recruit, you have run out of uses, or you don't have the option to recruit, then you will kill people normally (i.e., don't use Kill buttons in front of others thinking it'll recruit). If the target has a Kill button and the option to turn into a Sidekick is on, they will become a Sidekick. Otherwise, they will gain the Recruit Modifier if the option to give the Recruit Modifier is on.\nDepending on the settings, when Jackal was killed, a Sidekick will be randomly selected as the new Jackal.\nRecruit may be selected if no Sidekick is alive."
+  },
+  {
+    "id": "Jester",
+    "name": "Jester",
+    "description": "Get voted out",
+    "category": "Neutral",
+    "extra": "As the Jester, when you get voted out, the Jester wins the game alone. If the Jester is still alive at the end of the game, the Jester loses. Note: Jester, Executioner, and Innocent can win together."
+  },
+  {
+    "id": "Juggernaut",
+    "name": "Juggernaut",
+    "description": "With each kill, your Cooldown decreases",
+    "category": "Neutral",
+    "extra": "As the Juggernaut, your Kill Cooldown decreases with each kill you make.\n\nKill everyone to win."
+  },
+  {
+    "id": "Keymaster",
+    "name": "Keymaster",
+    "description": "Unlock your focus",
+    "category": "Neutral",
+    "extra": "As the Keymaster, you have 2 stages.\n\nStage 1:\nThe Keymaster must mark every living player with a key by using their Kill button. To gain a key, the Keymaster has to simply enter a Vent.\nAfter marking a player with a key, the Keymaster needs to Vent again to gain a new key.\n\nStage 2:\nWhen the last needed player gets marked, the Keymaster gains a random shown colored key for a set duration of time. Additionally, the Keymaster their body color will switch repeatedly. The goal is to vent whenever the player's body color is equal to the key's color.\n\nThe Keymaster either wins when timing it correctly, or loses when timing it incorrectly.\nThey only have one chance!\n(Higher Difficulty = Faster color swaps)\n\nExtra:\nAfter beating both stages, by default, the Keymaster wins along with the other winners. They can also solo win depending on settings."
+  },
+  {
+    "id": "Laborer",
+    "name": "Laborer",
+    "description": "Kill <color=#8cffff>Crewmates</color> and see them lose",
+    "category": "Neutral",
+    "extra": "As the Laborer, you can mark a target, when someone kills the target, the Laborer will kill the target instead, live till the end while making sure Crewmates lose."
+  },
+  {
+    "id": "Lawyer",
+    "name": "Lawyer",
+    "description": "Help your target win!",
+    "category": "Neutral",
+    "extra": "As the Lawyer, you have a target to defend, which will be indicated by a diamond 「♦」 next to their name.\nIf your target wins, you win.\nIf they lose, you lose."
+  },
+  {
+    "id": "Massacre",
+    "name": "Massacre",
+    "description": "Kill your targets",
+    "category": "Neutral",
+    "extra": "As the Massacre, you are the transformed version of Contaminator when you contaminate everyone."
+  },
+  {
+    "id": "Maverick",
+    "name": "Maverick",
+    "description": "Kill and survive to the end",
+    "category": "Neutral",
+    "extra": "As the Maverick, you can kill and, depending on options, Vent and have Impostor vision\nIf you survive until the end of the game, you win with the winning team.\nUse your killing ability to eliminate threats to your life, but don't get voted out."
+  },
+  {
+    "id": "Mutant",
+    "name": "Mutant",
+    "description": "Shift like an Impostor",
+    "category": "Neutral",
+    "extra": "As the Mutant, you can shapeshift into any target."
+  },
+  {
+    "id": "Narc",
+    "name": "Narc",
+    "description": "Find the <color=#ff1919>Impostors</color> and kill them",
+    "category": "Neutral",
+    "extra": "As the Narc, your main objective is to reveal the Impostors. By using its Kill button, the Narc can check if the player is a Crewmate or Impostor. If the Narc reveals a Crewmate or Neutral, the Narc will turn into an Amnesiac, and the target will not die. If the Narc reveals an Impostor, they will kill the Impostor and leave no body behind and add the death reason 'Arrested'. If the Narc reveals all the Impostors it wins alone.\nNote: If killing the last Impostor triggers another win, the Narc will not win."
+  },
+  {
+    "id": "Neutralized",
+    "name": "Neutralized",
+    "description": "You have been neutralized by the Neutralizer and therefore cannot use your role. Your role will be returned to you after this meeting.",
+    "category": "Neutral",
+    "extra": "You have been neutralized by the Neutralizer and therefore cannot use your role. Your role will be returned to you after this meeting."
+  },
+  {
+    "id": "Opportunist",
+    "name": "Opportunist",
+    "description": "Stay alive until the end",
+    "category": "Neutral",
+    "extra": "As the Opportunist, your goal is to survive at the end of the game, the Opportunist will win with the winning player."
+  },
+  {
+    "id": "Pelican",
+    "name": "Pelican",
+    "description": "Eat all players",
+    "category": "Neutral",
+    "extra": "As the Pelican, you can use the Kill button to swallow a player alive, teleporting them off-bounds but not killing them yet. Those swallowed will only die if you're still alive at the end of the round. If you die or leave during the round, all alive swallowed players will spawn into the map where you were."
+  },
+  {
+    "id": "Pestilence",
+    "name": "Pestilence",
+    "description": "Obliterate everyone!",
+    "category": "Neutral",
+    "extra": "(Apocalypse):\nAs Pestilence, you're an unstoppable machine.\nAny attack towards you will be reflected towards them.\nIndirect kills don't even kill you.\n\nOnly way to kill Pestilence is by voting them out or the Pestilence misguessing.\n<b>Your presence is announced to everyone at the meeting after you transform.</b>"
+  },
+  {
+    "id": "Pickpocket",
+    "name": "Pickpocket",
+    "description": "Steal votes from your kills",
+    "category": "Neutral",
+    "extra": "As the Pickpocket, you steal votes from your kills.\n\nKill everyone to win."
+  },
+  {
+    "id": "Pirate",
+    "name": "Pirate",
+    "description": "Successfully plunder players to win",
+    "category": "Neutral",
+    "extra": "As the Pirate, use your Kill button to select a target every round.\nYou will duel with your target in the next meeting. \nIf both the Pirate and the target choose the same number, the Pirate wins.\nAdditionally, if the Pirate wins the duel or the target doesn't participate in the duel, the Pirate kills the target.\n\nDueling command: /duel X (where X can be 0, 1, or 2)\n\nYou win after winning a certain number of duels set by the Host.\n\nNote: The kill would not count towards Pirate victory if the target did not participate in the duel."
+  },
+  {
+    "id": "Pixie",
+    "name": "Pixie",
+    "description": "Tag 'em, Bag 'em, and Eject 'em!",
+    "category": "Neutral",
+    "extra": "As the Pixie, mark up to an X amount of targets each round by using the Kill button on them. You must have one of the marked targets ejected when the meeting starts. If unsuccessful, you will commit suicide, except if you didn't mark any targets or all the targets are dead. The selected targets reset to 0 after the meeting ends. If you succeed, you will gain a point. You see all your targets in colored names.\n\nYou win with the winning team when you have certain amounts of points set by the Host."
+  },
+  {
+    "id": "PlagueDoctor",
+    "name": "Plague Scientist",
+    "description": "Spread the infection!",
+    "category": "Neutral",
+    "extra": "(Plague Doctor from TOH)\nAs the Plague Scientist, your goal is to infect every living player.\nThey start by choosing one player to infect, after which anyone who spends a set amount of time in the range of the infected player becomes infected themselves.\nInfection progress is cumulative and does not reset with distance or after meetings."
+  },
+  {
+    "id": "PlagueBearer",
+    "name": "Plaguebearer",
+    "description": "Plague everyone to turn into <color=#343136>Pestilence</color>",
+    "category": "Neutral",
+    "extra": "(Apocalypse):\nAs the Plaguebearer, plague everyone using your Kill button to turn into Pestilence.\nOnce you turn into Pestilence, you will become immortal and gain the ability to kill, and you will kill anyone who tries to kill you.\n\nAlso, when infected players interact with uninfected players, they will also be infected."
+  },
+  {
+    "id": "Predator",
+    "name": "Predator",
+    "description": "Eliminate your prey",
+    "category": "Neutral",
+    "extra": "As the Predator, you are assigned 3 prey. To hunt for your prey, use your kill button on any player. If their name remains white they are not one of the prey. If their name turns orange they are one of the prey. If you use your kill button on a player with an Orange name, they will die. Eliminate all the prey to win."
+  },
+  {
+    "id": "Prototype",
+    "name": "Prototype",
+    "description": "Your kills are unstable!",
+    "category": "Neutral",
+    "extra": "The Prototype can kill with a lower cooldown, but has a small chance to fail and kill itself as well."
+  },
+  {
+    "id": "Provocateur",
+    "name": "Provocateur",
+    "description": "Victory with help target",
+    "category": "Neutral",
+    "extra": "As the Provocateur, you can kill any target with the Kill button. If the target loses at the end of the game, the Provocateur wins with the winning team."
+  },
+  {
+    "id": "PunchingBag",
+    "name": "Punching Bag",
+    "description": "Get attacked a few times to win!",
+    "category": "Neutral",
+    "extra": "As the Punching Bag, your goal is to get attacked a few times to win.\n\nYou cannot be guessed, as that adds to your attack count."
+  },
+  {
+    "id": "Pursuer",
+    "name": "Pursuer",
+    "description": "Protect yourself and live to the end!",
+    "category": "Neutral",
+    "extra": "As the Pursuer, you can use your ability on someone to make them misfire when they try to kill.\n\nTo win, survive to the end of the game."
+  },
+  {
+    "id": "Pyromaniac",
+    "name": "Pyromaniac",
+    "description": "Douse and kill everyone",
+    "category": "Neutral",
+    "extra": "As the Pyromaniac, you can douse players (single click) or kill normally (double click). Dousing players do nothing immediately, but killing a doused player will significantly shorten your Kill Cooldown. To win, be the last player alive."
+  },
+  {
+    "id": "Quizmaster",
+    "name": "Quizmaster",
+    "description": "Quiz people to kill them in meetings",
+    "category": "Neutral",
+    "extra": "As the Quizmaster, you can mark a player using your Kill button. In the next meeting, the marked player will have \"?!\" next to their name. The player will die if they answer the question wrong or doesn't answer. The player will live if the Quizmaster is killed/ejected in the same meeting.\nThe Quizmaster cannot mark multiple people in the same round"
+  },
+  {
+    "id": "Repellant",
+    "name": "Repellant",
+    "description": "Shield yourself against the killers",
+    "category": "Neutral",
+    "extra": "As the Repellant, you can Vent to temporarily shield yourself against killers. Live till the end to win."
+  },
+  {
+    "id": "Revenant",
+    "name": "Revenant",
+    "description": "Take your killer's role",
+    "category": "Neutral",
+    "extra": "As the Revenant, your goal is to be killed. If you are killed, you will take your killer's role and kill your killer instead. You cannot win before being killed.\nNote that Revenant only works when being directly killed."
+  },
+  {
+    "id": "Revolutionist",
+    "name": "Revolutionist",
+    "description": "Recruit players to win with you",
+    "category": "Neutral",
+    "extra": "As the Revolutionist, you can recruit players by clicking the Kill button on the player and following them until the Shield Animation plays for you. Recruiting has a chance, set by the Host, to kill players (though they are still recruited). When the required number of players are recruited (displayed next to your name), you must Vent within the specified time to win the game immediately with all your recruits. If you do not Vent in time, you lose and die."
+  },
+  {
+    "id": "Romantic",
+    "name": "Romantic",
+    "description": "Protect your partner to win together",
+    "category": "Neutral",
+    "extra": "As the Romantic, you can pick their lover partner using their Kill button (this can be done at any point of the game). Once they've picked their partner, they can use their Kill button to give their partner a temporary shield that protects them from attacks. If their lover partner dies, the Romantic's role will change according to the following conditions:\n1. If their partner was an Impostor, the Romantic becomes the Refugee\n2. If their partner was a Neutral Killer, then they become Ruthless Romantic.\n3. If their partner was a Crewmate or a non-killing Neutral, the Romantic becomes the Vengeful Romantic. \n\nThe Romantic wins with the winning team if their partner wins.\nNote: If your role changes, your win condition will be changed accordingly"
+  },
+  {
+    "id": "Rulebook",
+    "name": "Rulebook",
+    "description": "Enforce the standards of Among Us",
+    "category": "Neutral",
+    "extra": "When the Rulebook single clicks their kill button on a non-impostor player that has a kill button, that player is stripped of their kill button and turned into a vanilla crewmate or Opportunist. If used on a task-based role, nothing happens. If used on a Coven with the necronomicon, transformed neutral apocalypse, or any role that has defense that can kill back, the Rulebook is killed immediately. If the Rulebook lives till the end of the game, they win. The rulebook can double click to kill normally. The rule book can also erase the kill button of the person that killed them.\nAdditionally, the Rulebook cannot be erased by OIIAI."
+  },
+  {
+    "id": "RuthlessRomantic",
+    "name": "Ruthless Romantic",
+    "description": "Kill everyone to win with your partner",
+    "category": "Neutral",
+    "extra": "As the Ruthless Romantic, you change your roles from Romantic if your partner (a Neutral Killer) is killed. As a Ruthless Romantic, you win if you kill everyone and are the last one standing. If you win, your dead partner will also win with you."
+  },
+  {
+    "id": "SchrodingersCat",
+    "name": "Schrodingers Cat",
+    "description": "The Cat is both alive and dead until observed.",
+    "category": "Neutral",
+    "extra": "As Schrodingers Cat, if someone attempts to use the Kill button on you, you will block the action and join their team. This blocking ability works only once. By default, you don't have a victory condition, meaning you win only after switching teams.\nIn Addition to this, you will be counted as nothing in the game.\n\nNote: If the Killing Machine attempts to use their Kill button on you, the interaction is not blocked, and you will die."
+  },
+  {
+    "id": "SecretAgent",
+    "name": "Secret Agent",
+    "description": "Complete tasks in secret",
+    "category": "Neutral",
+    "extra": "As the Secret Agent, you must complete your tasks without anyone near you, or else you die. Complete all of your tasks to win."
+  },
+  {
+    "id": "Seeker",
+    "name": "Seeker",
+    "description": "Play Hide & Seek with your target\nYour target has a ★ mark.",
+    "category": "Neutral",
+    "extra": "As the Seeker, use your Kill button to tag the target. If the Seeker tags the wrong player, a point is deducted, and if the Seeker tags the correct player, a point will be added.\nAdditionally, the Seeker will not be able to move for 5 seconds after every meeting and after getting a new target.\n\nThe Seeker needs to collect a certain number of points set by the Host to win.\nSeeker will see a ★ mark on target's name."
+  },
+  {
+    "id": "SerialKiller",
+    "name": "Serial Killer",
+    "description": "Kill off everyone to win!",
+    "category": "Neutral",
+    "extra": "As the Serial Killer, you win if you are the last player alive."
+  },
+  {
+    "id": "Shade",
+    "name": "Shade",
+    "description": "Control people from the dead",
+    "category": "Neutral",
+    "extra": "As the Shade, you have no abilities when you are alive. You can select up to a certain amount of alive players to possess (adding them the Shaded Modifier) with your protect button. You can use the protect button on a Shaded player again to possess them and control their body for a limited amount of time, but this reduces your total ability uses.\n"
+  },
+  {
+    "id": "ShadeX",
+    "name": "Shade",
+    "description": "Control people from the dead",
+    "category": "Neutral",
+    "extra": "As the Shade, you have no abilities when you are alive. You can select up to a certain amount of alive players to possess (adding them the Shaded Modifier) with your protect button. You can use the protect button on a Shaded player again to possess them and control their body for a limited amount of time, but this reduces your total ability uses.\n"
+  },
+  {
+    "id": "ShadowKing",
+    "name": "Shadow King",
+    "description": "Use the dead to your advantage",
+    "category": "Neutral",
+    "extra": "As the Shadow King, when you are killed for the first time, you come back to life as another player. That player will become dead and lose their role.\nAdditionally, you can make dead players do your deeds for you. By shapeshifting, a random dead player will come back to life, kill the target, and then die again. Kill everyone to win."
+  },
+  {
+    "id": "Shaman",
+    "name": "Shaman",
+    "description": "Deflect all the attacks on Voodoo Doll",
+    "category": "Neutral",
+    "extra": "As the Shaman, you can use your Kill button to select a Voodoo Doll once per round. If the Kill button is used on you, the effect will be deflected onto the Voodoo Doll.\nIf you survive until the end, you win with the winning team.\nNote: If the killer cannot kill the chosen target, murder is canceled, but if the killer rechecks the Shaman, the killer will kill the Shaman."
+  },
+  {
+    "id": "Shocker",
+    "name": "Shocker",
+    "description": "Shock unsuspecting players",
+    "category": "Neutral",
+    "extra": "As the Shocker, you can mark rooms by doing tasks in them, and then Vent to electrocute anyone in those rooms for a set period of time. When you complete all your tasks, you get new ones. Note: Doing tasks during that period will mark them for the next ability use."
+  },
+  {
+    "id": "Shroud",
+    "name": "Shroud",
+    "description": "Shroud players to make them kill",
+    "category": "Neutral",
+    "extra": "As the Shroud, you do not kill normally.\nInstead, use your Kill button to shroud a player.\nShrouded players kill others.\nIf the shrouded player doesn't make a kill, they'll kill themselves after a meeting.\n\nShroud sees shrouded players with a 「◈」mark next to their name.\nShrouded players who did not make a kill will also have the 「◈」mark in meetings, where they'll die if the Shroud is alive by the end of the meeting."
+  },
+  {
+    "id": "Sidekick",
+    "name": "Sidekick",
+    "description": "Help the Jackal kill everyone",
+    "category": "Neutral",
+    "extra": "As the Sidekick, your job is to help the Jackal kill everyone.\nYou and the Jackal win together.\nDepending on the settings, you may turn into Jackal if old Jackal was killed.\nYou may not be able to kill until old Jackal is dead."
+  },
+  {
+    "id": "Skeleton",
+    "name": "Skeleton",
+    "description": "Blind players just by approaching them",
+    "category": "Neutral",
+    "extra": "As the Skeleton, you can kill players. If enough of your bodies are reported, you will win the game."
+  },
+  {
+    "id": "Slaad",
+    "name": "Slaad",
+    "description": "Suck the life out of your targets",
+    "category": "Neutral",
+    "extra": "The Slaad can use their kill button to suck the life out of a player. First, after a set amount of time, the target's vision and speed is reduced by a certian amount. Then after one meeting, the target turns gray. After another meeting, the target dies, and the Slaad's kill cooldown is reduced by a certain amount. Double click to kill normally, but your kill cooldown does not reduce. The killed players from your ability will have the Drained death reason."
+  },
+  {
+    "id": "Slayer",
+    "name": "Slayer",
+    "description": "Do tasks to kill in bursts",
+    "category": "Neutral",
+    "extra": "As the Slayer, when you complete a task, all other players around them will be killed."
+  },
+  {
+    "id": "Solsticer",
+    "name": "Solsticer",
+    "description": "Speed run all your tasks!",
+    "category": "Neutral",
+    "extra": "As the Solsticer, you won't die, and you win by finishing all your tasks in a single round. After every meeting finishes, your tasks reset, and you need to start all over again.\nVotes on the Solsticer will be directly canceled.\nKill attempts on the Solsticer will teleport it out of the map like Pelican until the meeting is finished.\nThe killer's Kill Cooldown will be reset to 10 seconds.\nSolsticer is counted as nothing in Game."
+  },
+  {
+    "id": "Sonic",
+    "name": "Sonic",
+    "description": "You are faster on demand",
+    "category": "Neutral",
+    "extra": "As the Sonic, you can Unshift to be faster for a short amount of time. You will also be immune to any attack."
+  },
+  {
+    "id": "Sorcerer",
+    "name": "Sorcerer",
+    "description": "Mark players and win if they die",
+    "category": "Neutral",
+    "extra": "As the Sorcerer, you can mark 2 people. Once both of the marked players are dead and there are 3 players alive, the Sorcerer wins alone. The Sorcerer can only kill the marked players."
+  },
+  {
+    "id": "SoulCollector",
+    "name": "Soul Collector",
+    "description": "Predict deaths to collect Souls",
+    "category": "Neutral",
+    "extra": "(Apocalypse):\nAs Soul Collector, you can use your Kill button on a player to predict their death. You will gain a Soul if your target dies in the round you select them or the meeting after.\nYour target resets after each meeting or after they die, whichever comes first. \n\nOnce you collect the configurable amount of Souls, you become Death. If the gain passive Souls setting is enabled, you will gain a Soul each meeting."
+  },
+  {
+    "id": "Specter",
+    "name": "Specter",
+    "description": "Get killed and finish your tasks to win!",
+    "category": "Neutral",
+    "extra": "As the Specter, your job is to get killed and finish your tasks.\nYou can do your tasks while alive.\nYou cannot win if you're alive.\nIf you get killed, you win with the winning team if your tasks are completed."
+  },
+  {
+    "id": "Spiritcaller",
+    "name": "Spiritcaller",
+    "description": "Turn Players into Evil Spirits",
+    "category": "Neutral",
+    "extra": "As the Spiritcaller, your victims become Evil Spirits after they die. These spirits can help you win by freezing other players briefly or blocking their vision. Alternatively, the spirits can give you a shield that protects you briefly from an attempted kill."
+  },
+  {
+    "id": "Stalker",
+    "name": "Stalker",
+    "description": "Descend into the darkness, release fear!",
+    "category": "Neutral",
+    "extra": "As the Stalker, you can kill anyone, and every kill will immediately cause a Lights Sabotage (if Lights Sabotage is already active, nothing will happen). Stalker cannot Vent. If the Impostor wins while the Stalker is alive or the Crewmate wins by killing the Impostors (according to the Host's setting, the Stalker may also win when the Crewmate wins by killing the Neutrals), then the Stalker wins alone."
+  },
+  {
+    "id": "Sunnyboy",
+    "name": "Sunnyboy",
+    "description": "Shine, shine my sunshine!",
+    "category": "Neutral",
+    "extra": "As the Sunnyboy, you win if you are dead by the end of the game. The game will not end when you are alive due to killers gaining the majority.\nAdditionally, you have access to portable Vitals."
+  },
+  {
+    "id": "Swan",
+    "name": "Swan",
+    "description": "Kill players and then eat the bodies",
+    "category": "Neutral",
+    "extra": "As the Swan, you can kill a player, then report the body to make it unreportable for everyone else. Kill everyone to win."
+  },
+  {
+    "id": "Taskinator",
+    "name": "Taskinator",
+    "description": "Silent tasks, deadly blasts",
+    "category": "Neutral",
+    "extra": "As the Taskinator, whenever you finish a task, the task will be bombed. When another player completes the bombed task, the bomb will detonate, and the player will die.\n\nYou win if you survive till the end and Crewmates don't win.\n\n Note: Taskinator bombs ignore all protection."
+  },
+  {
+    "id": "Terrorist",
+    "name": "Terrorist",
+    "description": "Finish your tasks, THEN die",
+    "category": "Neutral",
+    "extra": "As the Terrorist, when you die after completing all tasks, the Terrorist wins the game alone. (They can win by either being voted out or killed)."
+  },
+  {
+    "id": "Trainee",
+    "name": "Trainee",
+    "description": "Complete tasks, then kill",
+    "category": "Neutral",
+    "extra": "As the Trainee, you have tasks. When you complete all of your tasks, you can kill players. Kill everyone to win.\n\nYou can only win after tasks are complete."
+  },
+  {
+    "id": "TraineeB",
+    "name": "Trainee",
+    "description": "Complete tasks, then kill",
+    "category": "Neutral",
+    "extra": "As the Trainee, you have tasks. When you complete all of your tasks, you can kill players. Kill everyone to win.\n\nYou can only win after tasks are complete."
+  },
+  {
+    "id": "Traitor",
+    "name": "Traitor",
+    "description": "Eliminate the <color=#ff1919>Impostors</color>, then win",
+    "category": "Neutral",
+    "extra": "As the Traitor, you were an Impostor that betrayed the Impostors.\nYou know the Impostors, but they don't know you.\nThe twist? They can kill you, but you can't kill them.\n\nEliminate the Impostors by other means, then kill everyone else to win!"
+  },
+  {
+    "id": "Troller",
+    "name": "Troller",
+    "description": "Make random event by complete task",
+    "category": "Neutral",
+    "extra": "As a Troller, you can complete tasks so that random events can happen to players.\nFor example, changing the speed of all players, teleportation, influencing Sabotage, etc.\nAlso you can win with the winning team."
+  },
+  {
+    "id": "Undead",
+    "name": "Undead",
+    "description": "Kill players to win with the Wight",
+    "category": "Neutral",
+    "extra": "As an Undead, you win and die with the Wight. Everyone knows who you are, you cannot be guessed. You get slower every round."
+  },
+  {
+    "id": "Vaporizer",
+    "name": "Vaporizer",
+    "description": "Leave no trace with your kills",
+    "category": "Neutral",
+    "extra": "As the Vaporizer, your kills will not leave dead bodies. Additionaly, vaporized players will have the 'Vaporized' death reason."
+  },
+  {
+    "id": "Vector",
+    "name": "Vector",
+    "description": "Jump in! Jump out!",
+    "category": "Neutral",
+    "extra": "As the Vector, your goal is to win alone by Venting a certain number of times."
+  },
+  {
+    "id": "VengefulRomantic",
+    "name": "Vengeful Romantic",
+    "description": "Revenge your partner to win together",
+    "category": "Neutral",
+    "extra": "As the Vengeful Romantic, you change your roles from Romantic if your partner (a Crewmate or non-Neutral Killer) is killed. As a Vengeful Romantic, your goal is to avenge your partner, which means you must kill the killer of your partner. If you succeed, then you and your partner win with the winning team at the end. If you try to kill someone other than your partner's killer, then you will die by misfire."
+  },
+  {
+    "id": "Virus",
+    "name": "Virus",
+    "description": "Kill and infect everyone",
+    "category": "Neutral",
+    "extra": "As the Virus, your goal is to kill or infect all other players. When the Virus murders a Crewmate, their corpse is infected with a virus. The Crewmate who reports this corpse is infected joins the virus team or dies at the end of the meeting if the Virus doesn't get voted out, depending on the settings. If more players are on the Virus team than the Crewmate team, the Virus team wins."
+  },
+  {
+    "id": "Volatile",
+    "name": "Volatile",
+    "description": "Get protected with each kill but your cooldown rises",
+    "category": "Neutral",
+    "extra": "As the Volatile, your kill cooldown rises with every kill. However, you will be immortal for a certian duration after your kill. Kill everyone to win."
+  },
+  {
+    "id": "Vulture",
+    "name": "Vulture",
+    "description": "Eat bodies by reporting to win",
+    "category": "Neutral",
+    "extra": "As the Vulture, report bodies to win!\n\nWhen you report a body, if your Eat Cooldown is up, you'll eat the body (makes it unreportable).\nIf your eat ability is still on Cooldown, then you'll report the body normally.\n\nAdditionally, you'll report bodies normally if the maximum bodies eaten per round is reached."
+  },
+  {
+    "id": "War",
+    "name": "War",
+    "description": "Destroy everything",
+    "category": "Neutral",
+    "extra": "(Apocalypse):\nAs the War, you are invincible, have a lower Kill Cooldown, and can kill anyone with your previous powers.\n<b>Your presence is announced to everyone at the meeting after you transform.</b>"
+  },
+  {
+    "id": "Werewolf",
+    "name": "Werewolf",
+    "description": "Kill <color=#8cffff>Crewmates</color> in groups",
+    "category": "Neutral",
+    "extra": "As the Werewolf, you can kill much like any killer.\nHowever, when you kill, any nearby players also die.\nAny player who dies to this will have their death reason as Mauled.\n\nTo balance this, you have a higher Kill Cooldown than anyone else."
+  },
+  {
+    "id": "Widow",
+    "name": "Widow",
+    "description": "Win to avenge your lover",
+    "category": "Neutral",
+    "extra": "As the Widow you were once a Lover. Now you are a Neutral killer. Kill everyone to win with your Lover."
+  },
+  {
+    "id": "Wight",
+    "name": "Wight",
+    "description": "Create Undead by killing",
+    "category": "Neutral",
+    "extra": "The Wight can use their kill button to kill a player, then will be revived after a meeting to kill for them as Undead. Undead players will get slower every meeting. Undead players will die after the meeting where the Wight is dead.\nUndead players win with the Wight."
+  },
+  {
+    "id": "Workaholic",
+    "name": "Workaholic",
+    "description": "Complete all tasks to win solo!",
+    "category": "Neutral",
+    "extra": "As the Workaholic, you win alone when you complete all tasks. Depending on the Host's settings, you can only win if you are alive and or revealed to everyone at the beginning (these settings are rarely both on)."
+  },
+  {
+    "id": "Wraith",
+    "name": "Wraith",
+    "description": "Vent to go invisible temporarily",
+    "category": "Neutral",
+    "extra": "As the Wraith, you can Vent to Vanish temporarily. You will still appear visible on your screen. Vent again to become visible. You win if you are the last player remaining."
+  },
+  {
+    "id": "Conjurer",
+    "name": "Conjurer",
+    "description": "Blast away your enemies!",
+    "category": "Coven",
+    "extra": "As the Conjurer, you can Shapeshift once to mark a location.\nShapeshift again to conjure a meteor at the place you marked, killing everyone in the radius.\n<b>With the Necronomicon, you can kill. You can also mark a player using the Shapeshift UI. When the Conjurer clicks the Shapeshift button again, all the players in the radius of the marked player will die, including the marked player.</b>"
+  },
+  {
+    "id": "CovenLeader",
+    "name": "Coven Leader",
+    "description": "Help your teammates by retraining them",
+    "category": "Coven",
+    "extra": "The Coven Leader can use their Kill button on a fellow Coven member to retrain them into a random Coven role that isn’t currently in the game. During the next meeting, that Coven member will be notified that the Coven Leader wishes to retrain them. They can vote themselves to accept the retrain, or vote otherwise to deny it. Denying the retrain does not take away an ability usage.\n<b>With the Necronomicon, you cannot retrain, and can only kill other players.</b>"
+  },
+  {
+    "id": "Harvester",
+    "name": "Harvester",
+    "description": "Swap and steal Modifiers!",
+    "category": "Coven",
+    "extra": "As the Harvester, you can use the Shapeshift UI to pick two players. These players will have their Modifiers swapped upon the next meeting.\nWhile the Harvester is alive, every player killed by a Coven member will have a configurable amount of their Modifiers stolen by their killer.\n<b>With the Necronomicon, the Harvester can kill. While the Harvester is alive, every player killed by a non-Coven member will have a configurable amount of their Modifiers stolen and given to the Harvester.</b>"
+  },
+  {
+    "id": "HexMaster",
+    "name": "Hex Master",
+    "description": "Hex players to kill them in meetings",
+    "category": "Coven",
+    "extra": "The Hex Master can use their Kill button to mark a player with a symbol. If a player has this at the end of the meeting and the Hex Master hasn't died - then they die.\n<b>With the Necronomicon, the Hex will be passed around - similar to an Agitator bomb. Also, you can double-click the Kill button to kill normally.</b>"
+  },
+  {
+    "id": "Illusionist",
+    "name": "Illusionist",
+    "description": "Place Illusions on players to spread confusion!",
+    "category": "Coven",
+    "extra": "As the Illusionist, you can use your Kill button on a player to reverse the results of any investigative role. For example, if someone with a Kill button is Illusioned, they will appear not to have a Kill button to the Investigator, and vice versa.\nIllusions wear off after meetings.\n<b>With the Necronomicon, you may double-click to kill. Every kill you make appears as a random death reason.</b>"
+  },
+  {
+    "id": "Jinx",
+    "name": "Jinx",
+    "description": "Players \"accidentally\" die upon trying to kill your target",
+    "category": "Coven",
+    "extra": "The Jinx can use their Kill button to jinx a player. Anyone who interacts with the jinxed player will die with the death reason Jinxed.\n<b>With the Necronomicon the Jinx can double-kill to kill normally. Also, the jinxed player and the player who interacted with the jinxed person will die.</b>"
+  },
+  {
+    "id": "Medusa",
+    "name": "Medusa",
+    "description": "Stop players in their tracks by Stoning them",
+    "category": "Coven",
+    "extra": "The Medusa can use their Kill button on players to mark them as Stoned. When the Medusa clicks the Shapeshift button, all Stoned players will be unable to move and will have reduced vision for a configurable amount of time.\n<b>With the Necronomicon, killed players will be unreportable.</b>"
+  },
+  {
+    "id": "MoonDancer",
+    "name": "Moon Dancer",
+    "description": "Use Baton Pass to give out Modifiers!",
+    "category": "Coven",
+    "extra": "As the Moon Dancer, you can use your Kill button to use their ability, Baton Pass.\nIf used on a Coven member: Gives a Helpful Modifier at the next meeting.\nIf used on a non-Coven member: Gives a Harmful Modifier at the next meeting.\n<b>With the Necronomicon, the Moon Dancer can double-click their Kill button to kill. When killing, the player is teleported off the map. They will appear alive on Vitals and will not show up in Tracefinder's arrows etc. They die when a meeting/body report with the death reason Blasted Off.</b>"
+  },
+  {
+    "id": "Necromancer",
+    "name": "Necromancer",
+    "description": "Use the dead to your advantage",
+    "category": "Coven",
+    "extra": "As the Necromancer, you can Shapeshift to become the role of a random dead person for a set duration.\nSome roles can not be used.\nOnce a role is used, it can not be used the rest of the game.\n<b>With the Necronomicon, when someone tries to kill you, you will block the kill and be teleported to a random Vent. You have a limited time to kill your killer. If the time runs out or you try to kill someone else, you die.</b>"
+  },
+  {
+    "id": "Poisoner",
+    "name": "Poisoner",
+    "description": "Make players unable to use their ability",
+    "category": "Coven",
+    "extra": "The Poisoner can use their Kill button on a player to roleblock them. The next time the roleblocked player tries to use their ability, it will do nothing, and their Cooldown will be reset.\n<b>With the Necronomicon, you can double-click to kill. These kills will be delayed.</b>"
+  },
+  {
+    "id": "PotionMaster",
+    "name": "Potion Master",
+    "description": "Use your potions to your advantage",
+    "category": "Coven",
+    "extra": "As the Potion Master, you have two potions available for their use. The Reveal potion reveals a player's role. The Barrier potion places a shield on a player for one round, the player will not be notified of this unless they are Coven as well. Click the Shapeshift button to change potions.\n<b>With the Necronomicon, the Potion Master can double-click their Kill button to kill.</b>"
+  },
+  {
+    "id": "Ritualist",
+    "name": "Ritualist",
+    "description": "Perform Blood Rituals to Enchant other players!",
+    "category": "Coven",
+    "extra": "As the Ritualist, during a meeting, you can perform a Blood Ritual to guess a player’s exact role. If the Ritualist is correct, that player will be converted to Coven. If the Ritualist is incorrect, they will not die but will be unable to Blood Ritual until the next meeting.\nThe command is /rt id role.\n<b>With the Necronomicon, the Ritualist can kill.</b>"
+  },
+  {
+    "id": "Sacrifist",
+    "name": "Sacrifist",
+    "description": "Debuff your enemies at your own cost",
+    "category": "Coven",
+    "extra": "As the Sacrifist, you can Shapeshift to cause a random debuff to a non-Coven member, however, the Sacrifist will also receive this effect (when applicable).\nThe random player will be the same player until the round ends.\nDepending on the Host’s settings, if the Sacrifist is voted out, some random non-Coven who voted the Sacrifist will die too.\nNormally, the Sacrifist can not kill, however, to prevent prolonging of the game, Sacrifist can kill if they are the last Coven member alive.\n<b>With the Necronomicon, when you Shapeshift, you will commit the Ultimate Sacrifice. When you do this, you die. However, the entire Coven for the rest of the game receives a lowered Kill Cooldown.</b>"
+  },
+  {
+    "id": "Umbra",
+    "name": "Umbra",
+    "description": "Protect the coven at the expense of others",
+    "category": "Coven",
+    "extra": "The Umbra can select a player to sacrifice with their kill button. When any Coven member is attacked, the Coven member and selected player will swap places, and the selected player will be attacked instead.\n\n<b>With the Necronomicon, the Umbra can kill the player directly and add a shield to the Coven team, with one total use.</b>"
+  },
+  {
+    "id": "VoodooMaster",
+    "name": "Voodoo Master",
+    "description": "Craft Voodoo Dolls of other players!",
+    "category": "Coven",
+    "extra": "As the Voodoo Master, you can craft a Voodoo Doll of a player by using their Kill button, similar to the Shaman. All the interactions with you using Kill button will be deflected to the Voodoo Doll and the Voodoo Doll will destroy. Unlike the Shaman, this voodoo will last during the meeting (eg. If the Voodoo Master is judged, then the voodoo'd player will be judged instead).\n<b>With the Necronomicon, you can double-click to kill. Additionally, the voodoo’d player will be unable to report. The next person to interact with them will die.</b>"
+  },
+  {
+    "id": "WitchDoctor",
+    "name": "Witch Doctor",
+    "description": "Recruit players and cure them from their Modifiers",
+    "category": "Coven",
+    "extra": "As the Witch Doctor, you can convert an amount of players set by the Host into Coven members, while also removing all Harmful Modifiers.\n\n<b>With the Necronomicon, the Witch Doctor can also double click to kill normally.</b>"
+  },
+  {
+    "id": "Admired",
+    "name": "Admired",
+    "description": "The Admirer chose you as their love",
+    "category": "Modifier",
+    "extra": "(Betrayal Modifiers):\nAs an Admired player, you win with the Crewmates and not your original team.\n\nYou can see the Admirer."
+  },
+  {
+    "id": "Antidote",
+    "name": "Antidote",
+    "description": "Decrease the Cooldown of the player who interacts with you",
+    "category": "Modifier",
+    "extra": "As the Antidote, when someone tries to use their Kill button on you, their Cooldown will be decreased by a configurable amount of time."
+  },
+  {
+    "id": "Autopsy",
+    "name": "Autopsy",
+    "description": "You see how others died",
+    "category": "Modifier",
+    "extra": "As the Autopsy, you can see how people died.\n\nCannot be assigned to Doctor, Tracefinder, Scientist, or Sunnyboy."
+  },
+  {
+    "id": "Avanger",
+    "name": "Avenger",
+    "description": "You take someone with you upon death",
+    "category": "Modifier",
+    "extra": "Host can set whether the Impostor can become an Avenger. When the Avenger is killed (voted out, and irregular kills will not count), the Avenger will revenge a random player."
+  },
+  {
+    "id": "Aware",
+    "name": "Aware",
+    "description": "Know who revealed your role",
+    "category": "Modifier",
+    "extra": "As the Aware, you get a notification in the next meeting if a revealing role had interacted with you."
+  },
+  {
+    "id": "Bait",
+    "name": "Bait",
+    "description": "Your killer self-reports your body",
+    "category": "Modifier",
+    "extra": "As the Bait, when you die, the murderer who killed the Bait will self-report the Bait's body. However, this won't happen when a Scavenger, Cleaner, Swooper, Wraith, Medusa, or Killing Machine kills the Bait. The report may have a delay according to the Host's settings."
+  },
+  {
+    "id": "Trapper",
+    "name": "Beartrap",
+    "description": "Freeze your killer for a few seconds",
+    "category": "Modifier",
+    "extra": "As the Beartrap, when you die, Beartrap immobilizes killer for a configurable amount of time."
+  },
+  {
+    "id": "Bewilder",
+    "name": "Bewilder",
+    "description": "A twist of vision, a web of confusion",
+    "category": "Modifier",
+    "extra": "As the Bewilder, you may have a smaller/bigger vision. When the Bewilder has died, the murderer's vision may become the same as the Bewilder's, depending on the settings."
+  },
+  {
+    "id": "Blessed",
+    "name": "Blessed",
+    "description": "Get a shield at the start of a round",
+    "category": "Modifier",
+    "extra": "The Blessed gets a shield at the start of every round except the first that lasts for a certain amount of time. The shield will not work if not enough players are alive"
+  },
+  {
+    "id": "Bloodthirst",
+    "name": "Bloodthirst",
+    "description": "Become bloodthirsty and kill",
+    "category": "Modifier",
+    "extra": "As the Bloodthirst, doing tasks allows you to become bloodthirsty and kill players.\nWhen you finish a task, the next player you come in contact with dies.\n\nYour Bloodthirst remains after a meeting.\nUpon making a kill, your Bloodthirst clears till the next task you complete.\nBloodthirsts do not stack.\n\nOnly assigned to Crewmates with tasks."
+  },
+  {
+    "id": "Bounty",
+    "name": "Bounty",
+    "description": "You will be targeted",
+    "category": "Modifier",
+    "extra": "The Bounty will receive a green $ symbol next to their name for everyone to see. When the Bounty is killed, it is likely the killer will receive a positive effect, but there is also a chance the killer receives a negative effect."
+  },
+  {
+    "id": "Burst",
+    "name": "Burst",
+    "description": "Make your killer burst!",
+    "category": "Modifier",
+    "extra": "As the Burst, your killer explodes if they aren't inside a Vent after a set amount of time."
+  },
+  {
+    "id": "Chronos",
+    "name": "Chronos",
+    "description": "Your very existence bends meeting time",
+    "category": "Modifier",
+    "extra": "As Chronos, your presence warps how meetings play out.\nIf you call the meeting, the discussion timer is halved for a rushed trial.\nIf someone else calls a meeting while you are alive, the discussion timer is extended instead, dragging out the deliberation.\nA subtle icon appears next to your name during meetings, hinting at your modifier without revealing its exact effect."
+  },
+  {
+    "id": "Circumvent",
+    "name": "Circumvent",
+    "description": "You can no longer Vent",
+    "category": "Modifier",
+    "extra": "As the Circumvent, you can't Vent.\n\nOnly assigned to Impostors."
+  },
+  {
+    "id": "Clumsy",
+    "name": "Clumsy",
+    "description": "You have a chance to miss your kill",
+    "category": "Modifier",
+    "extra": "As the Clumsy, you have a chance to miss your kill.\n\nWhen you miss, your Cooldown is reset, and the target remains untouched.\n\nOnly assigned to killers."
+  },
+  {
+    "id": "Concealed",
+    "name": "Concealed",
+    "description": "You take too long to report",
+    "category": "Modifier",
+    "extra": "When the Concealed is reported, the report is delayed by a certain amount of time."
+  },
+  {
+    "id": "Cyber",
+    "name": "Cyber",
+    "description": "You're popular!",
+    "category": "Modifier",
+    "extra": "As the Cyber, you cannot die while in a group.\nDepending on the settings, Impostors, Neutrals, and or Crewmates will know if you die."
+  },
+  {
+    "id": "Diseased",
+    "name": "Diseased",
+    "description": "Increase the Cooldown of the player who interacts with you",
+    "category": "Modifier",
+    "extra": "As the Diseased, when someone tries to use their Kill button on you, their Cooldown will be increased by a configurable amount of time."
+  },
+  {
+    "id": "Unreportable",
+    "name": "Disregarded",
+    "description": "Your body can't be reported",
+    "category": "Modifier",
+    "extra": "With the Disregarded Modifier, your corpse will be unreportable."
+  },
+  {
+    "id": "Distracted",
+    "name": "Distracted",
+    "description": "Slow down whem players are near you",
+    "category": "Modifier",
+    "extra": "When the Distracted is near someone, their speed will be reduced."
+  },
+  {
+    "id": "DoubleShot",
+    "name": "Double Shot",
+    "description": "You have an extra life when guessing",
+    "category": "Modifier",
+    "extra": "When a player with Double Shot guesses a role incorrectly, they will get a second chance to guess, but the next wrong guess will result in suicide."
+  },
+  {
+    "id": "Eavesdropper",
+    "name": "Eavesdropper",
+    "description": "Listen in on other roles",
+    "category": "Modifier",
+    "extra": "As the Eavesdropper, you have a chance to read other Role/Modifier information-based messages like Mortician or Sleuth."
+  },
+  {
+    "id": "Egoist",
+    "name": "Egoist",
+    "description": "Win on your own",
+    "category": "Modifier",
+    "extra": "As the Egoist, if your team wins, the Egoist wins instead of their team.\nMadmates and Neutrals won't be Egoist."
+  },
+  {
+    "id": "Enchanted",
+    "name": "Enchanted",
+    "description": "Help the Coven",
+    "category": "Modifier",
+    "extra": "(Betrayal Modifiers):\nThe Enchanted Modifier can only be obtained through being converted by the Ritualist or upon killing the OIIAI as a non-Nerconomicon holder.\nOnce Enchanted, you are apart of the Coven team and are no longer apart of your original team."
+  },
+  {
+    "id": "Evader",
+    "name": "Evader",
+    "description": "You have a chance not to be exiled!",
+    "category": "Modifier",
+    "extra": "As the Evader, When you get voted out, there is a chance they will not get ejected. (Chance set by the Host.)"
+  },
+  {
+    "id": "EvilSpirit",
+    "name": "Evil Spirit",
+    "description": "You are an Evil Spirit",
+    "category": "Modifier",
+    "extra": "As an Evil Spirit, it's your job to help the Spiritcaller to victory. You can use your Haunt button to freeze players and reduce their vision. Alternatively, you can use your Haunt button to give the Spiritcaller a shield against a kill attempt temporarily."
+  },
+  {
+    "id": "Explosive",
+    "name": "Explosive",
+    "description": "Bomb a player at your death",
+    "category": "Modifier",
+    "extra": "When the Explosive dies, the killer will receive a bomb, that they can pass to others. After a certain amount of time the player with the bomb dies"
+  },
+  {
+    "id": "ExtraLife",
+    "name": "Extra Life",
+    "description": "You have an extra life!",
+    "category": "Modifier",
+    "extra": "As the Extra Life, you will not be killed for the first time you are killed."
+  },
+  {
+    "id": "Flash",
+    "name": "Flash",
+    "description": "You're faster",
+    "category": "Modifier",
+    "extra": "As the Flash, your default movement speed is faster than others. (speed depends on the setting of the Host)"
+  },
+  {
+    "id": "Fool",
+    "name": "Fool",
+    "description": "You can't fix Sabotages",
+    "category": "Modifier",
+    "extra": "Sleuth and Mechanic won't be Fool. Fools can't repair any Sabotage."
+  },
+  {
+    "id": "Forgetful",
+    "name": "Forgetful",
+    "description": "Forget the tasks you have done",
+    "category": "Modifier",
+    "extra": "The Forgetful's tasks will reset after every meeting."
+  },
+  {
+    "id": "Fragile",
+    "name": "Fragile",
+    "description": "Die instantly if someone uses the Kill button on you",
+    "category": "Modifier",
+    "extra": "As the Fragile, you will instantly die if someone tries to use the Kill button on you (even if the role cannot directly kill)."
+  },
+  {
+    "id": "FragileHunter",
+    "name": "Fragile Hunter",
+    "description": "Kill the <color=#d3d3d3>Fragile</color>!",
+    "category": "Modifier",
+    "extra": "As the Fragile Hunter, if you kill the Fragile, you automatically win the game."
+  },
+  {
+    "id": "Gambler",
+    "name": "Gambler",
+    "description": "Kill your killer or go bust!",
+    "category": "Modifier",
+    "extra": "As the Gambler, you have a 50/50 chance to either kill your killer or die. The role will be removed after you burn your ability uses."
+  },
+  {
+    "id": "Ghoul",
+    "name": "Ghoul",
+    "description": "Kill your killer after dying",
+    "category": "Modifier",
+    "extra": "As the Ghoul, one of two outcomes can occur on task completion.\n\nIf alive: Suicide\nIf dead: You kill your killer if they're alive.\n\nThis is only assigned to Crewmates, and not Crewmates with no tasks or are task-based."
+  },
+  {
+    "id": "Glow",
+    "name": "Glow",
+    "description": "You glow in the dark",
+    "category": "Modifier",
+    "extra": "As the Glow, during lights out, you and players nearby you will receive a vision boost."
+  },
+  {
+    "id": "Gravestone",
+    "name": "Gravestone",
+    "description": "Your role is revealed when you die",
+    "category": "Modifier",
+    "extra": "As the Gravestone, your role is revealed to everyone when you die."
+  },
+  {
+    "id": "Gross",
+    "name": "Gross",
+    "description": "EWWWWWWWWW!!!! GET AWAY FROM ME",
+    "category": "Modifier",
+    "extra": "As the Gross, your body will reappear after every meeting in the same place, and not be reportable after the first meeting. This happens because you are so gross no one will want to clean you up.\n"
+  },
+  {
+    "id": "Guesser",
+    "name": "Guesser",
+    "description": "Guess roles of players in meetings to kill",
+    "category": "Modifier",
+    "extra": "As a Guesser, guess the roles of players in meetings to kill them.\nGuessing the incorrect role kills you instead.\nThe guessing command is: /bt [player ID] [role]\nYou can see the player's id before the player's name or use the /id command to view the id of all players."
+  },
+  {
+    "id": "Hurried",
+    "name": "Hurried",
+    "description": "God, I got too much stuff!",
+    "category": "Modifier",
+    "extra": "As the hurried, you must complete all your tasks to win with your team! If you fail with your tasks, you lose.\nHurried hurries to his goal, so it won't get Madmate, Charmed or so."
+  },
+  {
+    "id": "Identifier",
+    "name": "Identifier",
+    "description": "Find killers based on their color",
+    "category": "Modifier",
+    "extra": "As the Identifier, when reporting a body, you will get a message in meeting saying if the Killer has a lighter color\n(Pink, Yellow, White, Cyan, Lime, Rose, Banana, Gray, Coral) or darker color(Blue, Red, Green, Orange, Black, Purple, Brown, Maroon, Tan)."
+  },
+  {
+    "id": "Influenced",
+    "name": "Influenced",
+    "description": "You lack decisiveness!",
+    "category": "Modifier",
+    "extra": "As the Influenced, your vote will be forced to the player with the most votes.\nInfluenced vote won't be counted while choosing the exiled player'\nNote that your vote skill still functions on the player you voted first\nIf all the alive players are Influenced, then the vote result won't shift\nCollector cannot become Influenced."
+  },
+  {
+    "id": "LabRat",
+    "name": "Lab Rat",
+    "description": "Your basis changes!",
+    "category": "Modifier",
+    "extra": "Every meeting, your role basis changes. Your basis could be:\n\nEngineer basis\nScientist basis\nTracker basis\nNoisemaker basis\nDetective basis"
+  },
+  {
+    "id": "Lag",
+    "name": "Lag",
+    "description": "You're lagging",
+    "category": "Modifier",
+    "extra": "The Lag's kills are delayed by 1 second."
+  },
+  {
+    "id": "LastImpostor",
+    "name": "Last Impostor",
+    "description": "Lower Kill Cooldown",
+    "category": "Modifier",
+    "extra": "This special effect is given to the last surviving Impostor. It significantly reduces their Kill Cooldown."
+  },
+  {
+    "id": "Lazy",
+    "name": "Lazy",
+    "description": "You're too lazy",
+    "category": "Modifier",
+    "extra": "As the Lazy, you are assigned a single short task and are immune to Warlocks, Puppeteers, and Gangsters."
+  },
+  {
+    "id": "Lovers",
+    "name": "Lovers",
+    "description": "Stay alive and win together",
+    "category": "Modifier",
+    "extra": "Lovers are a combination of two players. The Lovers win when they are the last ones standing, and their victory is shared. When one of the Lovers wins, the other also wins together. Lovers can see the 「♥」 next to each other's name. If one of the Lovers dies, the other will die in love (may not die in love according to the Host's settings). When one of the Lovers is exiled in the meeting, the other will die and become a dead body that cannot be reported."
+  },
+  {
+    "id": "Loyal",
+    "name": "Loyal",
+    "description": "You cannot be recruited",
+    "category": "Modifier",
+    "extra": "As the Loyal, you cannot be recruited by roles such as Jackal or Cultist.\n\nCannot be assigned to Neutrals."
+  },
+  {
+    "id": "Lucky",
+    "name": "Lucky",
+    "description": "Dodge attackers",
+    "category": "Modifier",
+    "extra": "As the Lucky, there is a probability for you to evade the kill; the Host sets the specific probability. The killer will see a Shield Animation when the evasion takes effect, but you will not know anything."
+  },
+  {
+    "id": "Madmate",
+    "name": "Madmate",
+    "description": "Help the Impostors",
+    "category": "Modifier",
+    "extra": "Only Crewmates can become Madmate. Madmate's task is to help the Impostors win the game. Madmate will lose if all Impostors are killed/ejected. Madmates may know who are Impostors, and Impostors may know who are Madmates (Host settings).\n\nLazy Guy, Celebrity can't become Madmate. Sheriff, Snitch, Nice Guesser, Mayor, and Judge may become Madmate (Host settings). Skill changes when the following roles are converted into Madmates:\n\nTime Manager => Doing tasks will reduce meeting time.\nBodyguard => Skill won't activate if the killer is an Impostor.\nGrenadier => Flash bomb will work on Crewmates and Neutrals instead of the Impostors.\nSheriff => Can kill anyone, including Impostors (Host settings).\nNice Guesser => Can guess Crewmates and Neutrals\nPsychic => All evil Neutrals and Crewmates' names with the ability to kill will be displayed in Red.\nJudge => Can judge anyone\nPacifist => Their ability only works on Crewmates."
+  },
+  {
+    "id": "Mare",
+    "name": "Mare",
+    "description": "Kill in the darkness",
+    "category": "Modifier",
+    "extra": "As the Mare, you have a low Kill Cooldown and have higher speed but can only kill during lights.\n\nAdditionally, your name will appear in red during lights.\n\nOnly assigned to Impostors and cannot be guessed."
+  },
+  {
+    "id": "Mimic",
+    "name": "Mimic",
+    "description": "Reveal killed players' roles to Impostors upon death",
+    "category": "Modifier",
+    "extra": "As the Mimic, when you're dead, other Impostors will receive a message once a meeting is called. This message will include information on roles which the Mimic killed.\nOnly Impostors can become Mimic.\nAs mimic you will always see roles of dead players"
+  },
+  {
+    "id": "Mundane",
+    "name": "Mundane",
+    "description": "Tasks all done, guessing's begun.",
+    "category": "Modifier",
+    "extra": "As the Mundane, you can only guess once you complete all your tasks."
+  },
+  {
+    "id": "Necroview",
+    "name": "Necroview",
+    "description": "See the team of the dead",
+    "category": "Modifier",
+    "extra": "As the Necroview, you can see the team of dead players. The following info will be displayed on the dead player's name while in a meeting:\n- The Red name indicates the Impostors.\n- The Cyan name indicates the Crewmates.\n- The Gray name indicates the Neutrals.\n- The Purple name indicates the Coven."
+  },
+  {
+    "id": "Nimble",
+    "name": "Nimble",
+    "description": "You can Vent!",
+    "category": "Modifier",
+    "extra": "As the Nimble, you gain access to the Vent button.\n\nOnly assigned to certain Crewmates."
+  },
+  {
+    "id": "Oiiai",
+    "name": "OIIAI",
+    "description": "OIIAIOIIIAI",
+    "category": "Modifier",
+    "extra": "As the OIIAI, when you die, you will make your killer forget their role.\nAdditionally, you may pass OIIAI on to the killer, depending on settings."
+  },
+  {
+    "id": "Oblivious",
+    "name": "Oblivious",
+    "description": "You can't report bodies",
+    "category": "Modifier",
+    "extra": "Analyst and Cleaners won't be Oblivious. The Oblivious cannot report dead bodies. Note: Bait killed by Oblivious will still report automatically, and Oblivious can still be used as a scapegoat for Anonymous."
+  },
+  {
+    "id": "Onbound",
+    "name": "Onbound",
+    "description": "You can't be guessed",
+    "category": "Modifier",
+    "extra": "As the Onbound, you cannot be guessed in meetings."
+  },
+  {
+    "id": "Overclocked",
+    "name": "Overclocked",
+    "description": "Lower Cooldown",
+    "category": "Modifier",
+    "extra": "As the Overclocked, your Kill Cooldown is reduced by a percentage.\n\nThis feature is only assigned to roles with a Kill button."
+  },
+  {
+    "id": "Paranoia",
+    "name": "Paranoia",
+    "description": "You're dead and alive simultaneously",
+    "category": "Modifier",
+    "extra": "As the Paranoia, you will be considered as two players in the game to determine when the game ends due to killers having the majority. Additionally, this grants you an extra vote, depending on options.\nNot assigned to Neutrals nor Madmates."
+  },
+  {
+    "id": "Peacemaker",
+    "name": "Peacemaker",
+    "description": "Prevent Impostor votes",
+    "category": "Modifier",
+    "extra": "The Peacemaker can prevent all Impostor votes while they are alive."
+  },
+  {
+    "id": "Productive",
+    "name": "Productive",
+    "description": "Get notified when a task is done",
+    "category": "Modifier",
+    "extra": "The Productive will receive a flash bang any time anyone does a task."
+  },
+  {
+    "id": "Prohibited",
+    "name": "Prohibited",
+    "description": "Certain Vents are blocked",
+    "category": "Modifier",
+    "extra": "As the Prohibited, you have specific Vents that you can't use.\nHow many Vents are disabled depends on the Host's settings."
+  },
+  {
+    "id": "Quota",
+    "name": "Quota",
+    "description": "Kill a certian amount to win",
+    "category": "Modifier",
+    "extra": "The Quota must kill a certian amount of people to win with their team."
+  },
+  {
+    "id": "Radar",
+    "name": "Radar",
+    "description": "Arrow's hue, closest to you!",
+    "category": "Modifier",
+    "extra": "As the Radar, you have arrows pointing towards the closest person at all times."
+  },
+  {
+    "id": "Radiator",
+    "name": "Radiator",
+    "description": "People near you overheat",
+    "category": "Modifier",
+    "extra": "For each second a player is near the Radiator, they will gain a point. While a player is not near the Radiator, they will lose a point. If the player has enough points, they will die."
+  },
+  {
+    "id": "Rage",
+    "name": "Rage",
+    "description": "Finish all your tasks to earn a kill button",
+    "category": "Modifier",
+    "extra": "As Rage, you are given extra tasks on top of your normal ones.\nOnce every task is complete - your original ones and the extra Rage tasks - you gain a kill button and can kill other players.\n\nOnly assigned to task-based Crewmates. Scientist-basis roles (Doctor, Tracefinder, etc.) can never be given Rage."
+  },
+  {
+    "id": "Rainbow",
+    "name": "Rainbow",
+    "description": "Colorful melodies! You don't even know your own color.",
+    "category": "Modifier",
+    "extra": "As the Rainbow, you change your colors like crazy."
+  },
+  {
+    "id": "Randomizer",
+    "name": "Randomizer",
+    "description": "You're going to be someone's burden when you die?",
+    "category": "Modifier",
+    "extra": "As the Randomizer, when you die, your killer will do one of the following:\n  1. Self-report your body\n  2. Stand next to your body\n  3. Have their Kill Cooldown set to 600s\n  4. Randomly avenge a player."
+  },
+  {
+    "id": "Rascal",
+    "name": "Rascal",
+    "description": "You appear evil in some cases",
+    "category": "Modifier",
+    "extra": "As the Rascal, you can die to the Sheriff, and Snitch can find you if Snitch can find Madmates.\n\nOnly assigned to Crewmates, cannot be assigned by the Merchant."
+  },
+  {
+    "id": "Reach",
+    "name": "Reach",
+    "description": "You have a longer kill range",
+    "category": "Modifier",
+    "extra": "(Modifier)\nAs the Reach, unlike everyone else, you have the longest kill range possible in the game.\nOnly roles with a Kill button can get this Modifier."
+  },
+  {
+    "id": "Rebirth",
+    "name": "Rebirth",
+    "description": "Arise Again",
+    "category": "Modifier",
+    "extra": "As the Rebirth, if you're the player about to be ejected, you will swap skins with a random Crewmate who voted for you.\nNotice: The Host vote never counts\nRebirth will be removed from you if you exhausted all your rebirths."
+  },
+  {
+    "id": "Rebound",
+    "name": "Rebound",
+    "description": "Guess me right, and face your plight!",
+    "category": "Modifier",
+    "extra": "As the Rebound, if a Guesser successfully guessed you or a Judge successfully judged you, they will die instead.\nIf a player with Double Shot guesses you correctly, they will die instantly."
+  },
+  {
+    "id": "Recruit",
+    "name": "Recruit",
+    "description": "Help the Jackal",
+    "category": "Modifier",
+    "extra": "(Betrayal Modifiers):\nAs a Recruit, you are on the Jackal's team and help out the Jackal and their Sidekicks.\nYou cannot win with your original team.\nDepending on the settings, you may turn into Jackal if old Jackal was killed and no Sidekicks is alive."
+  },
+  {
+    "id": "Redo",
+    "name": "Redo",
+    "description": "Change your role",
+    "category": "Modifier",
+    "extra": "When the Redo votes themself, they will change roles to a random role in their faction. This action can only be used once."
+  },
+  {
+    "id": "Residue",
+    "name": "Residue",
+    "description": "Players will know what room you were in",
+    "category": "Modifier",
+    "extra": "When a meeting is called, the last room you were in is revealed to everyone."
+  },
+  {
+    "id": "Rookie",
+    "name": "Rookie",
+    "description": "You're brand new",
+    "category": "Modifier",
+    "extra": "Sometimes the Rookie fails to complete their tasks. If this happens, their tasks are reset"
+  },
+  {
+    "id": "Rusher",
+    "name": "Rusher",
+    "description": "Become faster by tasking or killing",
+    "category": "Modifier",
+    "extra": "Every time the Rusher finishes a task/kill they become faster."
+  },
+  {
+    "id": "Seer",
+    "name": "Seer",
+    "description": "You are alerted when somebody has died",
+    "category": "Modifier",
+    "extra": "As the Seer, whenever a player dies, you will see a kill-flash (a red flash, possibly accompanied by an alarm sound like Sabotage)."
+  },
+  {
+    "id": "Shaded",
+    "name": "Shaded",
+    "description": "You are controlled by the Shade",
+    "category": "Modifier",
+    "extra": "You are recruited to the Shade's team, who is a dead player. They can choose to control your movement and actions at any time."
+  },
+  {
+    "id": "Silent",
+    "name": "Silent",
+    "description": "Vote like a Ghost!",
+    "category": "Modifier",
+    "extra": "As the Silent, your vote icon won't appear on the result screen.\nSo nobody knows who you voted for."
+  },
+  {
+    "id": "Sleuth",
+    "name": "Sleuth",
+    "description": "Gain info from dead bodies",
+    "category": "Modifier",
+    "extra": "As the Sleuth, you gain info from dead bodies.\n\nOptionally, you may also gain the killer's role.\n\nNot assigned to Analyst or Mortician."
+  },
+  {
+    "id": "Sloth",
+    "name": "Sloth",
+    "description": "You're slower",
+    "category": "Modifier",
+    "extra": "As the Sloth, your default movement speed is slower than others.\n(Speed depends on the setting of the Host)"
+  },
+  {
+    "id": "Snooze",
+    "name": "Snooze",
+    "description": "Zzzz.....",
+    "category": "Modifier",
+    "extra": "If you have the Snooze Add-On, there's a chance you can't report bodies. When you click report, you'll have a chance of not reporting the body. If you have failed at reporting, then you must wait to report again. There will be a cooldown on your report button, in which you will need to wait til the end of it to retry."
+  },
+  {
+    "id": "Soulless",
+    "name": "Soulless",
+    "description": "You have no Soul",
+    "category": "Modifier",
+    "extra": "When a Cursed Soul steals your soul, you get this Modifier.\n\nYou are not counted as alive."
+  },
+  {
+    "id": "Spurt",
+    "name": "Spurt",
+    "description": "Spring like a rabbit!",
+    "category": "Modifier",
+    "extra": "When you start walking, you gain an enormous speed boost, which swiftly deteriorates, until you have to rest still for a while to rejuvenate your speed."
+  },
+  {
+    "id": "Statue",
+    "name": "Statue",
+    "description": "You're still as a rock around people",
+    "category": "Modifier",
+    "extra": "As the Statue, whenever many people are near the Statue, the Statue is completely frozen or slowed down depending on the settings."
+  },
+  {
+    "id": "Stealer",
+    "name": "Stealer",
+    "description": "Gain votes with kills",
+    "category": "Modifier",
+    "extra": "As a Stealer, when you kill a player, the Stealer will get an additional vote (the Host sets the vote number, and the decimal is rounded down).\nAlso, extra votes from the Stealer are hidden during the meeting depending on the options."
+  },
+  {
+    "id": "Stubborn",
+    "name": "Stubborn",
+    "description": "Protect your Role and Modifiers",
+    "category": "Modifier",
+    "extra": "As the Stubborn, Eraser can't erase your role, Cleanser can't cleanse you, Bandit can't steal from you, and Monarch can't knight you.\nAdditionally, you can't gain any new Modifiers from the Merchant."
+  },
+  {
+    "id": "Subversion",
+    "name": "Subversion",
+    "description": "Sabotage as a Non-Impostor",
+    "category": "Modifier",
+    "extra": "The Subversion can sabotage as a non-Impostor role."
+  },
+  {
+    "id": "Susceptible",
+    "name": "Susceptible",
+    "description": "Death-reason lotto!",
+    "category": "Modifier",
+    "extra": "As the Susceptible, your death reason will be random."
+  },
+  {
+    "id": "Swift",
+    "name": "Swift",
+    "description": "Your kills don't cause a lunge",
+    "category": "Modifier",
+    "extra": "As the Swift, you will not make any movement when you kill.\nNote: Swift also ignores Bait"
+  },
+  {
+    "id": "Tiebreaker",
+    "name": "Tiebreaker",
+    "description": "Break tied votes",
+    "category": "Modifier",
+    "extra": "As the Tiebreaker, a tie vote priority will be given to the target voted by the Tiebreaker. Note: If multiple Tiebreakers choose different tie targets simultaneously, the skills of the Tiebreaker will not take effect."
+  },
+  {
+    "id": "Tired",
+    "name": "Tired",
+    "description": "Labor makes you sleepy.. Zzz..",
+    "category": "Modifier",
+    "extra": "As the Tired, Whenever you kill (or uses kill ability on) someone, alternatively whenever they finish a task, they will temporarily get lower vision and lower speed."
+  },
+  {
+    "id": "Torch",
+    "name": "Torch",
+    "description": "You have enhanced vision!",
+    "category": "Modifier",
+    "extra": "As the Torch, you have maximum vision and is not affected by Lights Sabotage."
+  },
+  {
+    "id": "Toxic",
+    "name": "Toxic",
+    "description": "No one wants to be near you",
+    "category": "Modifier",
+    "extra": "When a player is near the Toxic for a certain amount of time, they will be transported to the closest vent."
+  },
+  {
+    "id": "Tricky",
+    "name": "Tricky",
+    "description": "Tricky slays, in mysterious ways.",
+    "category": "Modifier",
+    "extra": "As the Tricky, your kills will have a random death reason."
+  },
+  {
+    "id": "Underclocked",
+    "name": "Underclocked",
+    "description": "Higher Cooldown",
+    "category": "Modifier",
+    "extra": "As the Underclocked, your Kill Cooldown is increased by a certain amount.\n\nThis Modifier is only assigned to roles with a Kill button."
+  },
+  {
+    "id": "Unlucky",
+    "name": "Unlucky",
+    "description": "Doing things has a chance to kill you",
+    "category": "Modifier",
+    "extra": "As the Unlucky, when you Complete Tasks, Kill, Venting, or open a Door, you have a chance to die."
+  },
+  {
+    "id": "Valhalla",
+    "name": "Valhalla",
+    "description": "Target of Ragnarok",
+    "category": "Modifier",
+    "extra": "When the Ragnarok kills you, they will not have their cooldown reset."
+  },
+  {
+    "id": "VoidBallot",
+    "name": "Void Ballot",
+    "description": "Your vote count is 0",
+    "category": "Modifier",
+    "extra": "Holder of this Modifier will have 0 vote count."
+  },
+  {
+    "id": "Watcher",
+    "name": "Watcher",
+    "description": "You see all the colors of votes",
+    "category": "Modifier",
+    "extra": "As a Watcher, during the meeting, you can see everyone's votes."
+  },
+  {
+    "id": "Web",
+    "name": "Web",
+    "description": "Freeze players who report you",
+    "category": "Modifier",
+    "extra": "When the Web's body is reported, the body will fail to report, and the reporter will be frozen."
+  },
+  {
+    "id": "Windy",
+    "name": "Windy",
+    "description": "Run like the wind",
+    "category": "Modifier",
+    "extra": "Whenever a player is close to the Windy, the Windy will have a speed boost."
+  },
+  {
+    "id": "Workhorse",
+    "name": "Workhorse",
+    "description": "Be the first to complete all tasks and get more",
+    "category": "Modifier",
+    "extra": "As the Workhorse, you are the first player to complete all the tasks will become Workhorse, and Workhorse will give the player extra tasks. The Host sets the number of additional tasks."
+  },
+  {
+    "id": "Youtuber",
+    "name": "YouTuber",
+    "description": "Get killed first to win",
+    "category": "Modifier",
+    "extra": "As the YouTuber, When you are the first player to die in the game, the YouTuber will win alone. If the YouTuber does not meet the win conditions, the YouTuber will follow the Crewmate to win. Note: Indirect killing methods such as being exiled, being guessed by the Guesser, etc., will not trigger the skills of the YouTuber.\nOnly Crewmates will become YouTuber."
+  }
+]

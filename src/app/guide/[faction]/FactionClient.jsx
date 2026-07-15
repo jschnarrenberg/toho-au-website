@@ -322,9 +322,11 @@ export default function FactionClient({ faction }) {
                       <span className="tor-fp-role-alignment">{role.alignment}</span>
                     </div>
                     <div className="tor-fp-role-meta">
-                      <span className="tor-fp-role-settings">
-                        {role.settings.length} settings
-                      </span>
+                      {Array.isArray(role.settings) && role.settings.length > 0 && (
+                        <span className="tor-fp-role-settings">
+                          {role.settings.length} settings
+                        </span>
+                      )}
                       <span className="tor-fp-role-chevron">›</span>
                     </div>
                   </Link>

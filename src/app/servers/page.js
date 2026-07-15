@@ -4,7 +4,6 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaCog, FaWindows, FaMobileAlt, FaDownload, FaExternalLinkAlt, FaShieldAlt } from "react-icons/fa";
-import HiddenComputer from "../components/HiddenComputer";
 
 export default function ServerInstallation() {
   const moddedServers = [
@@ -266,7 +265,6 @@ export default function ServerInstallation() {
           <div className="tor-page-title">
             <div className="tor-page-eyebrow">TOR-W : L</div>
             <h1 className="tor-page-h1">Server Installation</h1>
-			<HiddenComputer id="servers" />
             <p className="tor-page-sub">
               TOR-W: L cannot be played on official Innersloth servers. Use one of the modded servers below to play.
             </p>

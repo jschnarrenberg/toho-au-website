@@ -3,7 +3,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useEffect, useState, useRef } from "react";
-import HiddenComputer from "../components/HiddenComputer";
 
 function RainbowText({ text }) {
   const colors = [
@@ -297,7 +296,6 @@ export default function FeaturesPage() {
           <div className="tor-page-title">
             <div className="tor-page-eyebrow">TOR-W : L</div>
             <h1 className="tor-page-h1">Features</h1>
-			<HiddenComputer id="features" />
           </div>
 
           {features.map((f, i) => {

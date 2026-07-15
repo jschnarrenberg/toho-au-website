@@ -5,7 +5,7 @@ export const factions = [
     color: "#4fc3f7",
     glow: "rgba(79,195,247,0.25)",
     icon: "/icons/Crew.png",
-    description: "Work together to identify and eliminate threats aboard the ship.",
+    description: "Find and exile the Impostors.",
   },
   {
     slug: "impostor",
@@ -13,7 +13,7 @@ export const factions = [
     color: "#ef5350",
     glow: "rgba(239,83,80,0.25)",
     icon: "/icons/Imp.png",
-    description: "Sabotage, deceive, and eliminate the crew before they catch you.",
+    description: "Sabotage and kill everyone.",
   },
   {
     slug: "neutral",
@@ -21,7 +21,7 @@ export const factions = [
     color: "#bdbdbd",
     glow: "rgba(189,189,189,0.2)",
     icon: "/icons/Neutral.png",
-    description: "Pursue your own agenda — allies and enemies shift with the tide.",
+    description: "Work alone to achieve your own victory.",
   },
   {
     slug: "coven",
@@ -29,6 +29,14 @@ export const factions = [
     color: "#ce93d8",
     glow: "rgba(206,147,216,0.25)",
     icon: "/icons/Coven.png",
-    description: "A secret cabal wielding dark magic to bend the game to their will.",
+    description: "Bewitch and kill everyone.",
+  },
+  {
+    slug: "modifier",
+    name: "Modifier",
+    color: "#66bb6a",
+    glow: "rgba(102,187,106,0.25)",
+    icon: "\u2699",
+    description: "Add-on effects that layer onto any role.",
   },
 ];

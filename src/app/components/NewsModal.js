@@ -296,6 +296,24 @@ export default function NewsModal({ onClose }) {
           border-radius: 4px;
         }
 
+        .tor-article-author {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-top: 16px;
+          padding-top: 14px;
+          border-top: 1px solid rgba(255,255,255,0.06);
+          font-family: 'Space Mono', monospace;
+          font-size: 11px;
+          letter-spacing: 0.04em;
+          color: rgba(240,238,255,0.4);
+          flex-shrink: 0;
+        }
+        .tor-article-author-name {
+          color: #a07bff;
+          font-weight: 700;
+        }
+
         .tor-modal-divider {
           height: 1px;
           background: rgba(255,255,255,0.06);
@@ -352,6 +370,11 @@ export default function NewsModal({ onClose }) {
               <div className="tor-article-date">{selected.date}</div>
               <div className="tor-modal-divider" />
               <div className="tor-article-body">{selected.content}</div>
+              {selected.author && (
+                <div className="tor-article-author">
+                  - <span className="tor-article-author-name">{selected.author}</span>
+                </div>
+              )}
             </>
           )}
         </div>

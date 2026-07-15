@@ -1,41 +1,13 @@
 [
   {
     "id": 1,
-    "title": "Website Updates",
-    "date": "18 November 2025",
+    "title": "Migration To TOHO",
+    "date": "15 July 2026",
     "content": 
-    ["This just adds loads of stuff, such as:\n- News updates.\n- A new role 'Silencer'.\n- Some re-work on some role icons.\n\nPlans:\nI plan to add images as the icons for the roles."
-  ]
-  },
-  {
-    "id": 2,
-    "title": "Full Update of Website",
-    "date": "21 November 2025",
-    "content": 
-    ["The website if fully updated now, which contains:\n- New Role Icons in the roles page.\n- Added icons in the Mod Options tab for each role setting/option.\n\nPlease note that the icons used in the website WILL be different in the mod and will be updated, which means those icons are placeholders and just look prettier than what's currently in the mod."
-  ]
-  },
-  {
-    "id": 3,
-    "title": "Another Website Update",
-    "date": "30 Jaunuary 2026",
-    "content": 
-    ["This is the latest version of the website. It added the new roles from v2.1-r, a new features page which shows all the features the mod adds.\nThis will most likely update a week or two later than which v3.0-r fully releases.\n\nSome of the stuff will be added to the website from the test version of 3.0, so it is a lot less when the full version releases in March.\n\nThanks for your support, it helps me to continue even when some stuff are making it harder to continue."
-  ]
-  },
-  {
-    "id": 4,
-    "title": "Website UI Rework",
-    "date": "15 March 2026",
-    "content": 
-    ["The website has gotten its full rework.\nAfter an entire 2 months of working on the website and managing my school work, I have managed to finish the UI rework the website desprately needed.\n\nFeel free to give your feelings about the new UI in my Discord server!"
-  ]
-  },
-  {
-    "id": 5,
-    "title": "Guide Page & New Live Template Editor Addition",
-    "date": "05 May 2026",
-    "content": 
-    ["This is a bit of a bigger project I had to finish before I have to push a release for TOR-W:L v3.0-r.\n\nAlthough the new Live Template Editor cannot be used for the alpha version of the mod, it is advised to get to know the layout of it. Also, the Live Template Editor might be buggy, so do not use it without knowing how it works!!\n\nThe new Guide page is also something bigger than the Live Template Editor, as it took mee almost 2 weeks to finish and get all the new roles and stuff added to the Guide page. Please do take note, it is there to help new OR existing players with the new roles and the role's mechanics.\n\nAnyways, that's all from me!"]
+    ["Since the discontinuation of TOR-W: L, I have moved back to the modding in host-only mods.\n",
+	 "Ever since moving back, I have talked to the mod's creator, Lime (limeau on Discord), that I can revamp this website for his mod.\n",
+	 "With that said, I am glad to be back in the host-only modding community, and I feel welcomed more than ever, and I hope that you all will enjoy the mod as much as I do spending time coding awesome roles and modifiers t play with."
+	],
+	"author": "The Head Of Development, Andries"
   }
 ]

@@ -61,10 +61,10 @@ export default function Footer() {
       `}</style>
 
       <footer className="tor-footer">
-        <div className="tor-footer-logo">TOR-W : L</div>
+        <div className="tor-footer-logo">TOHO</div>
         <div className="tor-footer-divider" />
         <p className="tor-footer-made">
-          © 2025 - 2026 TOR-W: L &nbsp;·&nbsp; Made with{" "}
+          © 2024 - 2026 TOHO &nbsp;·&nbsp; Made with{" "}
           <FontAwesomeIcon icon={faHeart} className="heart" />{" "}
           by Andries using{" "}
           <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">

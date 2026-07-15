@@ -4,6 +4,7 @@ import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { parseMarkup } from "../../../lib/textMarkup";
 
 function FadeSection({ children, delay = 0 }) {
   const ref = useRef(null);
@@ -465,16 +466,14 @@ export default function RoleClient({ faction, role }) {
           </FadeSection>
 
           <FadeSection delay={80}>
-            <p className="tor-rc-description">{role.description}</p>
+            <p className="tor-rc-description">{parseMarkup(role.description)}</p>
           </FadeSection>
 
           <FadeSection delay={100}>
             <section className="tor-rc-section">
-              <h2 className="tor-rc-section-title">Abilities</h2>
+              <h2 className="tor-rc-section-title">How It Works</h2>
               <ul className="tor-rc-ability-list">
-                {role.abilities.map((ability, i) => (
-                  <li key={i} className="tor-rc-ability-item">{ability}</li>
-                ))}
+                <li className="tor-rc-ability-item">{parseMarkup(role.extra || role.description)}</li>
               </ul>
             </section>
           </FadeSection>
@@ -498,19 +497,21 @@ export default function RoleClient({ faction, role }) {
             </FadeSection>
           )}
 
-          <FadeSection delay={120}>
-            <section className="tor-rc-section">
-              <h2 className="tor-rc-section-title">
-                Settings
-                <span className="tor-rc-section-count">{role.settings.length}</span>
-              </h2>
-              <div className="tor-rc-settings-list">
-                {role.settings.map((setting) => (
-                  <SettingRow key={setting.key} setting={setting} />
-                ))}
-              </div>
-            </section>
-          </FadeSection>
+          {Array.isArray(role.settings) && role.settings.length > 0 && (
+            <FadeSection delay={120}>
+              <section className="tor-rc-section">
+                <h2 className="tor-rc-section-title">
+                  Settings
+                  <span className="tor-rc-section-count">{role.settings.length}</span>
+                </h2>
+                <div className="tor-rc-settings-list">
+                  {role.settings.map((setting) => (
+                    <SettingRow key={setting.key} setting={setting} />
+                  ))}
+                </div>
+              </section>
+            </FadeSection>
+          )}
         </main>
         <Footer />
       </div>

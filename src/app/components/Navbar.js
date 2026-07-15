@@ -38,7 +38,6 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/roles", label: "Roles" },
-    { href: "/options", label: "Options" },
     { href: "/templates", label: "Live Template Editor" },
     { href: "/servers", label: "Servers" },
     { href: "/features", label: "Features" },
@@ -230,7 +229,7 @@ export default function Navbar() {
 
       <nav className={`tor-nav${scrolled ? " scrolled" : ""}`}>
         <div className="tor-nav-inner">
-          <Link href="/" className="tor-logo">TOR-W : L</Link>
+          <Link href="/" className="tor-logo">TOH: O</Link>
 
           {/* Desktop — hidden on mobile */}
           <div className="tor-nav-links">
