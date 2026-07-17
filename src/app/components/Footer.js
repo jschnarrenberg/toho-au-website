@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -58,15 +59,46 @@ export default function Footer() {
           background: rgba(160,123,255,0.3);
           margin: 16px auto;
         }
+        .tor-footer-links {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin-bottom: 16px;
+        }
+        .tor-footer-links a {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          font-family: 'Space Mono', monospace;
+          font-size: 12px;
+          letter-spacing: 0.04em;
+          color: rgba(240,238,255,0.55);
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+        .tor-footer-links a:hover { color: #a07bff; }
+        .tor-footer-ext-icon { font-size: 9px; opacity: 0.6; }
       `}</style>
 
       <footer className="tor-footer">
         <div className="tor-footer-logo">TOHO</div>
         <div className="tor-footer-divider" />
+        <div className="tor-footer-links">
+          <a href="https://github.com/Limeau/TownofHost-Optimized" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+            GitHub
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="tor-footer-ext-icon" />
+          </a>
+          <a href="https://discord.gg/tohoptimized" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faDiscord} />
+            Discord
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="tor-footer-ext-icon" />
+          </a>
+        </div>
         <p className="tor-footer-made">
           © 2024 - 2026 TOHO &nbsp;·&nbsp; Made with{" "}
           <FontAwesomeIcon icon={faHeart} className="heart" />{" "}
-          by Andries using{" "}
+          by Andries, for Lime, using{" "}
           <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
             Next.js
           </a>

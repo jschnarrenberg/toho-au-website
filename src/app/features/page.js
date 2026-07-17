@@ -50,99 +50,69 @@ export default function FeaturesPage() {
   const features = [
     {
       title: "Main Menu Rework",
-      description: "The UI has been set to fit the color theme of this mod — blue. It removes the normal Among Us logo and adds the custom TOR-W: L logo.",
+      description: "The UI has been set to fit the color theme of this mod — purple. It removes the normal Among Us logo and adds the custom TOHO logo.",
       image: "/features/feature1.png",
       tag: "UI",
     },
     {
-      title: "Many Colors!!",
-      description: (
-        <>
-          There are many colors to choose from. In the latest update, <strong><RainbowText text="20 extra" /></strong> colors were added — and you can even set a <strong style={{ color: "#f0eeff" }}>secondary color</strong>!
-        </>
-      ),
+      title: "Chat Themes",
+      description: "Set the chat theme to whatever you like! Do you like the color of gold? Great! Golden Yellow and many more are there!",
       image: "/features/feature2.png",
       tag: "Cosmetics",
     },
     {
-      title: "Custom News",
-      description: "An in-game news panel keeps players up to date with mod announcements and patch notes directly in the lobby.",
+      title: "Custom Welcome Messages",
+      description: (
+        <>
+          Greet your players with a lovely little welcome message. you can edit them in <code className="tor-code">TOHO-DATA\template.txt</code>.
+        </>
+      ),
       image: "/features/feature3.png",
       tag: "UI",
     },
     {
-      title: "Custom Settings",
-      description: "Customize your game to your liking with the custom settings TOR-W: L has to offer.",
+      title: "Custom View Panel",
+      description: "A secondary panel has been added to the View Panel, which, sadly, only works for the host.",
       image: "/features/feature4.png",
       tag: "Settings",
     },
-    {
-      title: "Custom Presets",
-      description: "Powered by MiraAPI — the mod lets you save and load custom configuration templates so you can switch setups on the fly.",
+	{
+      title: "Custom Roles & Modifiers",
+      description: (
+        <>
+          This mod adds <span style={{ color: "#d8b4fe", fontWeight: 700 }}>400+ unique roles (Including Modifiers)</span> to spice up the game.
+        </>
+      ),
       image: "/features/feature5.png",
-      tag: "Settings",
+      tag: ["Roles", "Modifiers"],
     },
     {
       title: "Game Settings",
-      description: "Customize matches to your liking. Just ask what options do before enabling some of them...",
+      description: "Customize settings to your liking! This includes Custom Presets (up to 5) and then Gamemodes as well!",
       image: "/features/feature6.png",
       tag: "Settings",
     },
     {
-      title: "Custom & Unique Roles",
-      description: (
-        <>
-          This mod adds <span style={{ color: "#d8b4fe", fontWeight: 700 }}>21 unique roles</span> to spice up the game. Feel free to test them in freeplay first.
-        </>
-      ),
-      image: "/features/feature7.png",
-      tag: "Roles",
-    },
-    {
-      title: "Custom & Unique Modifiers",
-      description: (
-        <>
-          This mod adds <span style={{ color: "#67e8f9", fontWeight: 700 }}>6 unique modifiers</span> to the game (excluding Vendetta).
-        </>
-      ),
-      image: "/features/feature8.png",
-      tag: "Roles",
-    },
-    {
-      title: "Lobby UI",
-      description: "The Lobby Pane has been customized to fit the feel and color scheme of the mod.",
-      image: "/features/feature9.png",
-      tag: "UI",
-    },
-    {
-      title: "\"Take Notes!!\"",
-      description: "The Notepad feature helps players take notes during the game to prevent misinformation among the crew.",
-      image: "/features/feature10.png",
-      tag: "Gameplay",
-    },
-    {
-      title: "Settings View Pane UI",
-      description: "The color scheme was applied here too. Buttons have been finished and there are plans to also rework the background.",
-      image: "/features/feature11.png",
-      tag: "UI",
-    },
-    {
-      title: "Custom Ability Counters",
-      description: "Added custom ability counters for each role, showing uses remaining depending on the action.",
-      image: "/features/feature12.png",
-      tag: "Gameplay",
-    },
-	{
       title: "Custom Gamemodes",
-      description: "Added some unique and fun gamemodes to the game for some chaos and twists.",
-      image: "/features/feature13.png",
+      description: "Like chaos? Then you're in for a treat because Gamemodes do EXACTLY that.",
+      image: "/features/feature7.png",
+      tag: "Gamemodes",
+    },
+    {
+      title: "Custom Mod Settings",
+      description: "It basically does what it says. But you get to modify the mod with its settings to YOUR own liking.",
+      image: "/features/feature8.png",
       tag: "Gameplay",
     },
-	{
-      title: "Help Buttons",
-      description: "Added custom buttons next to modifiers to see a description of what the modifier does.",
-      image: "/features/feature14.png",
-      tag: "UI",
+    {
+      title: "Auto Lobby Posting",
+      description: (
+        <>
+          This sends your lobby DIRECTLY to the <a href="https://discord.gg/tohoptimized" target="_blank" rel="noopener noreferrer" className="tor-link">TOHO Discord Server</a> & can be toggled in the <code className="tor-code">SYSTEM SETTINGS</code> tab.
+        </>
+      ),
+      image: "/features/feature9.png",
+      tag: "Miscellaneous",
     },
   ];
 
@@ -151,7 +121,10 @@ export default function FeaturesPage() {
     Cosmetics: { color: "#f9a8d4", bg: "rgba(236,72,153,0.12)",  border: "rgba(236,72,153,0.3)"  },
     Settings:  { color: "#fdba74", bg: "rgba(249,115,22,0.12)",  border: "rgba(249,115,22,0.3)"  },
     Roles:     { color: "#d8b4fe", bg: "rgba(168,85,247,0.12)",  border: "rgba(168,85,247,0.3)"  },
+    Modifiers: { color: "#67e8f9", bg: "rgba(6,182,212,0.12)",   border: "rgba(6,182,212,0.3)"   },
+    Gamemodes: { color: "#facc15", bg: "rgba(234,179,8,0.12)",   border: "rgba(234,179,8,0.3)"   },
     Gameplay:  { color: "#86efac", bg: "rgba(34,197,94,0.12)",   border: "rgba(34,197,94,0.3)"   },
+	Miscellaneous: { color: "#c4b5fd", bg: "rgba(148,163,184,0.12)", border: "rgba(148,163,184,0.3)" },
   };
 
   return (
@@ -180,8 +153,18 @@ export default function FeaturesPage() {
           flex-direction: column;
           gap: 24px;
         }
-
-        
+		
+		.tor-link {
+		  color: #a07bff;
+		  text-decoration: underline;
+		  text-underline-offset: 2px;
+		  transition: color 0.2s;
+		}
+		
+		.tor-link:hover {
+		  color: #d8b4fe;
+		}
+		
         .tor-page-title { text-align: center; margin-bottom: 16px; }
         .tor-page-eyebrow {
           display: inline-block;
@@ -240,6 +223,11 @@ export default function FeaturesPage() {
         .tor-feat-card:hover .tor-feat-img-wrap img { transform: scale(1.03); }
 
         .tor-feat-text { display: flex; flex-direction: column; gap: 12px; }
+        .tor-feat-tag-row {
+          display: flex;
+          gap: 6px;
+          flex-wrap: wrap;
+        }
         .tor-feat-tag {
           display: inline-flex;
           align-items: center;
@@ -271,6 +259,15 @@ export default function FeaturesPage() {
           color: rgba(240,238,255,0.6);
           line-height: 1.8;
         }
+        .tor-code {
+          background: rgba(160,123,255,0.12);
+          border: 1px solid rgba(160,123,255,0.3);
+          border-radius: 4px;
+          padding: 2px 6px;
+          font-family: 'Space Mono', monospace;
+          font-size: 11px;
+          color: #a07bff;
+        }
 
         @media (max-width: 680px) {
           .tor-feat-card,
@@ -290,12 +287,12 @@ export default function FeaturesPage() {
         <main className="tor-feat-main">
 
           <div className="tor-page-title">
-            <div className="tor-page-eyebrow">TOR-W : L</div>
+            <div className="tor-page-eyebrow">TOHO</div>
             <h1 className="tor-page-h1">Features</h1>
           </div>
 
           {features.map((f, i) => {
-            const tag = tagColors[f.tag] || tagColors.UI;
+            const tags = (Array.isArray(f.tag) ? f.tag : [f.tag]).slice(0, 2);
             return (
               <FadeCard key={i} delay={i % 3 * 60}>
                 <div className={`tor-feat-card${i % 2 !== 0 ? " reversed" : ""}`}>
@@ -306,12 +303,20 @@ export default function FeaturesPage() {
 
                   <div className="tor-feat-text">
                     <span className="tor-feat-num">/ {String(i + 1).padStart(2, "0")}</span>
-                    <span
-                      className="tor-feat-tag"
-                      style={{ color: tag.color, background: tag.bg, borderColor: tag.border }}
-                    >
-                      {f.tag}
-                    </span>
+                    <div className="tor-feat-tag-row">
+                      {tags.map(t => {
+                        const tag = tagColors[t] || tagColors.UI;
+                        return (
+                          <span
+                            key={t}
+                            className="tor-feat-tag"
+                            style={{ color: tag.color, background: tag.bg, borderColor: tag.border }}
+                          >
+                            {t}
+                          </span>
+                        );
+                      })}
+                    </div>
                     <h2 className="tor-feat-title">{f.title}</h2>
                     <div className="tor-feat-desc">
                       {typeof f.description === "string"

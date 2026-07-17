@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaNewspaper } from "react-icons/fa";
+import { FaNewspaper, FaGithub, FaDiscord, FaExternalLinkAlt } from "react-icons/fa";
 import NewsModal from "./NewsModal";
 
 export default function Navbar() {
@@ -40,8 +40,13 @@ export default function Navbar() {
     { href: "/roles", label: "Roles" },
     { href: "/templates", label: "Live Template Editor" },
     { href: "/servers", label: "Servers" },
-    //{ href: "/features", label: "Features" },
+    { href: "/features", label: "Features" },
     { href: "/guide", label: "Guide" },
+  ];
+
+  const externalLinks = [
+    { href: "https://github.com/andries659/TownofHost-Optimized", label: "GitHub", icon: FaGithub },
+    { href: "https://discord.gg/YOUR_INVITE", label: "Discord", icon: FaDiscord },
   ];
 
   return (
@@ -124,6 +129,18 @@ export default function Navbar() {
         }
         .tor-nav-links a.starlight { color: #ffe066; }
         .tor-nav-links a.starlight:hover { background: rgba(255,224,102,0.08); }
+        .tor-ext-icon { font-size: 10px; opacity: 0.6; }
+        .tor-nav-links a.tor-ext-link,
+        .tor-mobile-menu a.tor-ext-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .tor-nav-links a.tor-ext-link svg,
+        .tor-mobile-menu a.tor-ext-link svg {
+          display: inline-block;
+          flex-shrink: 0;
+        }
 
         .tor-news-btn { position: relative; }
         .tor-unread-dot {
@@ -237,6 +254,13 @@ export default function Navbar() {
               <Link key={href} href={href}>{label}</Link>
             ))}
             <Link href="/starlight" className="starlight">✦ Starlight</Link>
+            {externalLinks.map(({ href, label, icon: Icon }) => (
+              <a key={href} href={href} target="_blank" rel="noopener noreferrer" className="tor-ext-link">
+                <Icon />
+                {label}
+                <FaExternalLinkAlt className="tor-ext-icon" />
+              </a>
+            ))}
             <button className="tor-nav-btn tor-news-btn" onClick={() => setOpenNews(true)}>
               <FaNewspaper />
               News
@@ -266,6 +290,13 @@ export default function Navbar() {
               <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
             ))}
             <Link href="/starlight" className="starlight" onClick={() => setOpen(false)}>✦ Starlight</Link>
+            {externalLinks.map(({ href, label, icon: Icon }) => (
+              <a key={href} href={href} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="tor-ext-link">
+                <Icon />
+                {label}
+                <FaExternalLinkAlt className="tor-ext-icon" />
+              </a>
+            ))}
           </div>
         </div>
       </nav>
