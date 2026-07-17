@@ -12,7 +12,7 @@ function DownloadButton() {
 
   useEffect(() => {
     async function fetchLatest() {
-      const res = await fetch("https://api.github.com/repos/Limeau/TownofHost-Optimized/releases/latest");
+      const res = await fetch("https://api.github.com/repos/Limeau/TownofHost-Optimized/releases/latest/TOHO.dll");
       const data = await res.json();
       if (data.assets?.length > 0) {
         setDownloadUrl(data.assets[0].browser_download_url);
