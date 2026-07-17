@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faDiscord, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -92,6 +92,11 @@ export default function Footer() {
           <a href="https://discord.gg/tohoptimized" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faDiscord} />
             Discord
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="tor-footer-ext-icon" />
+          </a>
+		  <a href="https://youtube.com/@tohoptimized" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faYoutube} />
+            YouTube
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="tor-footer-ext-icon" />
           </a>
         </div>
