@@ -708,6 +708,16 @@ export default function TemplatePage() {
           .tor-named-row { grid-template-columns: 1fr; }
           .tor-named-key { padding-top: 0; }
         }
+		
+		.tor-sub {
+          margin: 20px auto 0;
+          max-width: 500px;
+          font-size: 17px;
+          color: rgba(240,238,255,0.45);
+          line-height: 1.65;
+          font-weight: 400;
+          font-family: 'Space Mono', monospace;
+        }
       `}</style>
 
       <div className="tor-template-page">
