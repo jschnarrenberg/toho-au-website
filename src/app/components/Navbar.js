@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { FaNewspaper, FaGithub, FaDiscord, FaExternalLinkAlt } from "react-icons/fa";
+import { FaNewspaper, FaGithub, FaDiscord, FaExternalLinkAlt, FaChevronDown } from "react-icons/fa";
 import NewsModal from "./NewsModal";
 
 export default function Navbar() {
@@ -10,11 +10,24 @@ export default function Navbar() {
   const [openNews, setOpenNews] = useState(false);
   const [hasUnread, setHasUnread] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [guideOpen, setGuideOpen] = useState(false);
+  const [mobileGuideOpen, setMobileGuideOpen] = useState(false);
+  const guideRef = useRef(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const onClickOutside = (e) => {
+      if (guideRef.current && !guideRef.current.contains(e.target)) {
+        setGuideOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onClickOutside);
+    return () => document.removeEventListener("mousedown", onClickOutside);
   }, []);
 
   useEffect(() => {
@@ -37,12 +50,16 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/roles", label: "Roles" },
-    { href: "/templates", label: "Live Template Editor" },
+	{ href: "/roles", label: "Roles" },
+    { href: "/templates", label: "Template Editor" },
     { href: "/servers", label: "Servers" },
     { href: "/features", label: "Features" },
-    { href: "/guide", label: "Guide" },
 	{ href: "/feedback", label: "Feedback" },
+  ];
+
+  const guideLinks = [
+    { href: "/guide", label: "Role Guide" },
+    { href: "/guide/installation", label: "Installation Guide" },
   ];
 
   return (
@@ -138,6 +155,124 @@ export default function Navbar() {
         .tor-mobile-menu a.tor-ext-link svg {
           display: inline-block;
           flex-shrink: 0;
+        }
+
+        /* Guide dropdown — desktop */
+        .tor-dropdown {
+          position: relative;
+        }
+        .tor-dropdown-trigger {
+          font-family: 'Space Mono', monospace;
+          font-size: 12px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: rgba(240,238,255,0.55);
+          background: none;
+          border: none;
+          padding: 6px 12px;
+          border-radius: 8px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          transition: color 0.2s, background 0.2s;
+        }
+        .tor-dropdown-trigger:hover,
+        .tor-dropdown-trigger.active {
+          color: #f0eeff;
+          background: rgba(255,255,255,0.05);
+        }
+        .tor-dropdown-trigger svg {
+          font-size: 9px;
+          transition: transform 0.2s;
+        }
+        .tor-dropdown-trigger.active svg {
+          transform: rotate(180deg);
+        }
+        .tor-dropdown-menu {
+          position: absolute;
+          top: calc(100% + 8px);
+          left: 0;
+          min-width: 180px;
+          background: rgba(13,17,32,0.97);
+          backdrop-filter: blur(24px);
+          -webkit-backdrop-filter: blur(24px);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 10px;
+          padding: 6px;
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-6px);
+          transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+          box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+        }
+        .tor-dropdown-menu.open {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+        .tor-dropdown-menu a {
+          font-family: 'Space Mono', monospace;
+          font-size: 12px;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: rgba(240,238,255,0.6);
+          text-decoration: none;
+          padding: 8px 10px;
+          border-radius: 7px;
+          transition: background 0.2s, color 0.2s;
+        }
+        .tor-dropdown-menu a:hover {
+          background: rgba(255,255,255,0.06);
+          color: #f0eeff;
+        }
+
+        /* Guide dropdown — mobile accordion */
+        .tor-mobile-dropdown-trigger {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 12px 16px;
+          font-family: 'Space Mono', monospace;
+          font-size: 13px;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: rgba(240,238,255,0.65);
+          background: none;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: background 0.2s, color 0.2s;
+        }
+        .tor-mobile-dropdown-trigger:hover {
+          background: rgba(255,255,255,0.05);
+          color: #f0eeff;
+        }
+        .tor-mobile-dropdown-trigger svg {
+          font-size: 10px;
+          transition: transform 0.2s;
+        }
+        .tor-mobile-dropdown-trigger.active svg {
+          transform: rotate(180deg);
+        }
+        .tor-mobile-dropdown-panel {
+          overflow: hidden;
+          max-height: 0;
+          transition: max-height 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          padding-left: 12px;
+        }
+        .tor-mobile-dropdown-panel.open {
+          max-height: 160px;
+        }
+        .tor-mobile-dropdown-panel a {
+          font-size: 12px;
+          opacity: 0.85;
         }
 
         .tor-news-btn { position: relative; }
@@ -250,7 +385,28 @@ export default function Navbar() {
 
           {/* Desktop — hidden on mobile */}
           <div className="tor-nav-links">
-            {navLinks.map(({ href, label }) => (
+            {navLinks.slice(0, 4).map(({ href, label }) => (
+              <Link key={href} href={href}>{label}</Link>
+            ))}
+
+            <div className="tor-dropdown" ref={guideRef}>
+              <button
+                className={`tor-dropdown-trigger${guideOpen ? " active" : ""}`}
+                onClick={() => setGuideOpen((v) => !v)}
+              >
+                Guide
+                <FaChevronDown />
+              </button>
+              <div className={`tor-dropdown-menu${guideOpen ? " open" : ""}`}>
+                {guideLinks.map(({ href, label }) => (
+                  <Link key={href} href={href} onClick={() => setGuideOpen(false)}>
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {navLinks.slice(4).map(({ href, label }) => (
               <Link key={href} href={href}>{label}</Link>
             ))}
             <Link href="/starlight" className="starlight">✦ Starlight</Link>
@@ -280,7 +436,33 @@ export default function Navbar() {
         {/* Mobile dropdown — full width, no floating */}
         <div className={`tor-mobile-menu${open ? " open" : ""}`}>
           <div className="tor-mobile-menu-inner">
-            {navLinks.map(({ href, label }) => (
+            {navLinks.slice(0, 4).map(({ href, label }) => (
+              <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
+            ))}
+
+            <button
+              className={`tor-mobile-dropdown-trigger${mobileGuideOpen ? " active" : ""}`}
+              onClick={() => setMobileGuideOpen((v) => !v)}
+            >
+              Guide
+              <FaChevronDown />
+            </button>
+            <div className={`tor-mobile-dropdown-panel${mobileGuideOpen ? " open" : ""}`}>
+              {guideLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => {
+                    setOpen(false);
+                    setMobileGuideOpen(false);
+                  }}
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+
+            {navLinks.slice(4).map(({ href, label }) => (
               <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
             ))}
             <Link href="/starlight" className="starlight" onClick={() => setOpen(false)}>✦ Starlight</Link>
