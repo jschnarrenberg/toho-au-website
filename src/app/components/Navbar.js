@@ -125,6 +125,8 @@ export default function Navbar() {
         }
         .tor-nav-links a.starlight { color: #ffe066; }
         .tor-nav-links a.starlight:hover { background: rgba(255,224,102,0.08); }
+		.tor-nav-links a.birthdays { color: #1085c4; }
+        .tor-nav-links a.birthdays:hover { background: rgba(56,151,201,0.08); }
         .tor-ext-icon { font-size: 10px; opacity: 0.6; }
         .tor-nav-links a.tor-ext-link,
         .tor-mobile-menu a.tor-ext-link {
@@ -250,6 +252,7 @@ export default function Navbar() {
               <Link key={href} href={href}>{label}</Link>
             ))}
             <Link href="/starlight" className="starlight">✦ Starlight</Link>
+			<Link href="/birthdays" className="birthdays">✦ Birtdays</Link>
             <button className="tor-nav-btn tor-news-btn" onClick={() => setOpenNews(true)}>
               <FaNewspaper />
               News
@@ -279,6 +282,7 @@ export default function Navbar() {
               <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
             ))}
             <Link href="/starlight" className="starlight" onClick={() => setOpen(false)}>✦ Starlight</Link>
+			<Link href="/birthdays" className="birthdays" onClick={() => setOpen(false)}>✦ Birthdays</Link>
           </div>
         </div>
       </nav>
