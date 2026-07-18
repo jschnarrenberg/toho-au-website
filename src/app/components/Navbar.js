@@ -42,11 +42,7 @@ export default function Navbar() {
     { href: "/servers", label: "Servers" },
     { href: "/features", label: "Features" },
     { href: "/guide", label: "Guide" },
-  ];
-
-  const externalLinks = [
-    { href: "https://github.com/Limeau/TownofHost-Optimized", label: "GitHub", icon: FaGithub },
-    { href: "https://discord.gg/tohoptimized", label: "Discord", icon: FaDiscord },
+	{ href: "/feedback", label: "Feedback" },
   ];
 
   return (
@@ -254,13 +250,6 @@ export default function Navbar() {
               <Link key={href} href={href}>{label}</Link>
             ))}
             <Link href="/starlight" className="starlight">✦ Starlight</Link>
-            {externalLinks.map(({ href, label, icon: Icon }) => (
-              <a key={href} href={href} target="_blank" rel="noopener noreferrer" className="tor-ext-link">
-                <Icon />
-                {label}
-                <FaExternalLinkAlt className="tor-ext-icon" />
-              </a>
-            ))}
             <button className="tor-nav-btn tor-news-btn" onClick={() => setOpenNews(true)}>
               <FaNewspaper />
               News
@@ -290,13 +279,6 @@ export default function Navbar() {
               <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
             ))}
             <Link href="/starlight" className="starlight" onClick={() => setOpen(false)}>✦ Starlight</Link>
-            {externalLinks.map(({ href, label, icon: Icon }) => (
-              <a key={href} href={href} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="tor-ext-link">
-                <Icon />
-                {label}
-                <FaExternalLinkAlt className="tor-ext-icon" />
-              </a>
-            ))}
           </div>
         </div>
       </nav>
