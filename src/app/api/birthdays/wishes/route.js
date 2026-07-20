@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { kv } from "@vercel/kv";
-import { auth } from "../../../../auth";
-import { birthdayConfig } from "../../../lib/birthdayConfig";
+import { auth } from "../../../../../auth";
+import { birthdayConfig } from "../../../../lib/birthdayConfig";
 
 function wishesKey(slug) {
   return `birthday:${slug}:wishes`;

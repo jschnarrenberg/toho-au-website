@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useCallback } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import {
   FaPaintBrush, FaFont, FaAlignLeft, FaAlignCenter, FaAlignRight,
   FaBold, FaItalic, FaUnderline, FaPlus, FaRandom, FaDownload,

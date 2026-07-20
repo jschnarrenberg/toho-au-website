@@ -1,8 +1,8 @@
 "use client";
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import FeedbackForm from "../components/FeedbackForm";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import FeedbackForm from "../../components/FeedbackForm";
 
 export default function FeedbackPage() {
   return (

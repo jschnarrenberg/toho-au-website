@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
 import { useEffect, useRef, useState } from "react";
 import { FaCheckCircle, FaCog, FaExternalLinkAlt } from "react-icons/fa";
 
@@ -51,21 +51,6 @@ const STEPS = [
         <span className="tor-install-code">BepInEx/config</span>, and{" "}
         <span className="tor-install-code">BepInEx/interop</span> folders that weren't there
         before.
-      </>
-    ),
-  },
-  {
-    title: "Reactor",
-    desc: "Install Reactor plugin for Among Us modding",
-    body: (
-      <>
-        Grab the latest <span className="tor-install-code">Reactor.dll</span> from{" "}
-        <a href="https://github.com/NuclearPowered/Reactor/releases/latest" target="_blank" rel="noopener noreferrer" className="tor-install-link">
-          NuclearPowered/Reactor
-        </a>{" "}
-        and drop it into <span className="tor-install-code">BepInEx/plugins</span>. Launch
-        Among Us again — if it worked, you'll see the BepInEx and Reactor version numbers in
-        the top-left of the main menu.
       </>
     ),
   },

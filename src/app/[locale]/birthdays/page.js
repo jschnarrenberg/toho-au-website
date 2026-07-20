@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { FaBirthdayCake, FaDiscord, FaPaperPlane, FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import { birthdayConfig } from "../lib/birthdayConfig";
 
 export default function BirthdayPage() {

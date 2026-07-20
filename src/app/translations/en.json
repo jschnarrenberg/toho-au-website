@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Home",
+    "roles": "Roles",
+    "templates": "Template Editor",
+    "servers": "Servers",
+    "features": "Features",
+    "feedback": "Feedback",
+    "guide": "Guide",
+    "news": "News",
+    "starlight": "✦ Starlight",
+    "roleGuide": "Role Guide",
+    "installationGuide": "Installation Guide",
+    "lang": "Lang"
+  },
+  "home": {
+    "eyebrow": "Among Us Mod",
+    "titleLine1": "The",
+    "titleLine2": "Optimized",
+    "titleLine3": "Experience",
+    "subtitle": "A place for roles, features, and updates — optimized for both mobile and desktop.",
+    "guideBtn": "Guide",
+    "starlightBtn": "Starlight",
+    "downloadBtn": "Download Now",
+    "fetchingRelease": "Fetching release…",
+    "features": "Features",
+    "coloredUi": "Colored UI",
+    "coloredUiDesc": "Vibrant colors and visual enhancements throughout",
+    "customRoles": "Custom Roles",
+    "customRolesDesc": "Feature-rich roles with unique abilities",
+    "gameOptions": "Game Options",
+    "gameOptionsDesc": "New settings and configuration tools",
+    "gamemodes": "Gamemodes",
+    "gamemodesDesc": "Entirely new ways to play"
+  },
+  "news": {
+    "title": "Latest News"
+  }
+}

@@ -2,17 +2,23 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { FaNewspaper, FaGithub, FaDiscord, FaExternalLinkAlt, FaChevronDown } from "react-icons/fa";
+import { FaNewspaper, FaChevronDown } from "react-icons/fa";
+import { useLocale } from "./LocaleProvider";
 import NewsModal from "./NewsModal";
 
 export default function Navbar() {
+  const { locale, setLocale, t } = useLocale();
+
   const [open, setOpen] = useState(false);
   const [openNews, setOpenNews] = useState(false);
   const [hasUnread, setHasUnread] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [guideOpen, setGuideOpen] = useState(false);
+  const [translationOpen, setTranslationOpen] = useState(false);
   const [mobileGuideOpen, setMobileGuideOpen] = useState(false);
+  const [mobileTranslationOpen, setMobileTranslationOpen] = useState(false);
   const guideRef = useRef(null);
+  const translationRef = useRef(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -24,6 +30,16 @@ export default function Navbar() {
     const onClickOutside = (e) => {
       if (guideRef.current && !guideRef.current.contains(e.target)) {
         setGuideOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onClickOutside);
+    return () => document.removeEventListener("mousedown", onClickOutside);
+  }, []);
+
+  useEffect(() => {
+    const onClickOutside = (e) => {
+      if (translationRef.current && !translationRef.current.contains(e.target)) {
+        setTranslationOpen(false);
       }
     };
     document.addEventListener("mousedown", onClickOutside);
@@ -49,17 +65,22 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: "/", label: "Home" },
-	{ href: "/roles", label: "Roles" },
-    { href: "/templates", label: "Template Editor" },
-    { href: "/servers", label: "Servers" },
-    { href: "/features", label: "Features" },
-	{ href: "/feedback", label: "Feedback" },
+    { href: `/${locale}`, label: t.nav.home },
+    { href: `/${locale}/roles`, label: t.nav.roles },
+    { href: `/${locale}/templates`, label: t.nav.templates },
+    { href: `/${locale}/servers`, label: t.nav.servers },
+    { href: `/${locale}/features`, label: t.nav.features },
+    { href: `/${locale}/feedback`, label: t.nav.feedback },
   ];
 
   const guideLinks = [
-    { href: "/guide", label: "Role Guide" },
-    { href: "/guide/installation", label: "Installation Guide" },
+    { href: `/${locale}/guide`, label: t.nav.roleGuide },
+    { href: `/${locale}/guide/installation`, label: t.nav.installationGuide },
+  ];
+
+  const translationLinks = [
+    { code: "en", label: "English" },
+    { code: "fr", label: "Français" },
   ];
 
   return (
@@ -87,7 +108,6 @@ export default function Navbar() {
           border-bottom: 1px solid transparent;
         }
 
-        /* Inner row — full width, padded on both sides */
         .tor-nav-inner {
           width: 100%;
           box-sizing: border-box;
@@ -110,7 +130,6 @@ export default function Navbar() {
           flex-shrink: 0;
         }
 
-        /* Desktop links */
         .tor-nav-links {
           display: flex;
           align-items: center;
@@ -142,22 +161,10 @@ export default function Navbar() {
         }
         .tor-nav-links a.starlight { color: #ffe066; }
         .tor-nav-links a.starlight:hover { background: rgba(255,224,102,0.08); }
-		.tor-nav-links a.birthdays { color: #1085c4; }
+        .tor-nav-links a.birthdays { color: #1085c4; }
         .tor-nav-links a.birthdays:hover { background: rgba(56,151,201,0.08); }
         .tor-ext-icon { font-size: 10px; opacity: 0.6; }
-        .tor-nav-links a.tor-ext-link,
-        .tor-mobile-menu a.tor-ext-link {
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-        }
-        .tor-nav-links a.tor-ext-link svg,
-        .tor-mobile-menu a.tor-ext-link svg {
-          display: inline-block;
-          flex-shrink: 0;
-        }
 
-        /* Guide dropdown — desktop */
         .tor-dropdown {
           position: relative;
         }
@@ -214,7 +221,8 @@ export default function Navbar() {
           visibility: visible;
           transform: translateY(0);
         }
-        .tor-dropdown-menu a {
+        .tor-dropdown-menu a,
+        .tor-dropdown-menu button {
           font-family: 'Space Mono', monospace;
           font-size: 12px;
           letter-spacing: 0.06em;
@@ -224,13 +232,17 @@ export default function Navbar() {
           padding: 8px 10px;
           border-radius: 7px;
           transition: background 0.2s, color 0.2s;
+          background: none;
+          border: none;
+          cursor: pointer;
+          text-align: left;
         }
-        .tor-dropdown-menu a:hover {
+        .tor-dropdown-menu a:hover,
+        .tor-dropdown-menu button:hover {
           background: rgba(255,255,255,0.06);
           color: #f0eeff;
         }
 
-        /* Guide dropdown — mobile accordion */
         .tor-mobile-dropdown-trigger {
           display: flex;
           align-items: center;
@@ -270,9 +282,27 @@ export default function Navbar() {
         .tor-mobile-dropdown-panel.open {
           max-height: 160px;
         }
-        .tor-mobile-dropdown-panel a {
+        .tor-mobile-dropdown-panel a,
+        .tor-mobile-dropdown-panel button {
           font-size: 12px;
           opacity: 0.85;
+          font-family: 'Space Mono', monospace;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: rgba(240,238,255,0.65);
+          text-decoration: none;
+          padding: 8px 16px;
+          border-radius: 7px;
+          transition: background 0.2s, color 0.2s;
+          background: none;
+          border: none;
+          cursor: pointer;
+          text-align: left;
+        }
+        .tor-mobile-dropdown-panel a:hover,
+        .tor-mobile-dropdown-panel button:hover {
+          background: rgba(255,255,255,0.05);
+          color: #f0eeff;
         }
 
         .tor-news-btn { position: relative; }
@@ -288,7 +318,6 @@ export default function Navbar() {
           pointer-events: none;
         }
 
-        /* Mobile controls — hidden on desktop */
         .tor-mobile-controls {
           display: none;
           align-items: center;
@@ -333,7 +362,6 @@ export default function Navbar() {
         .tor-hamburger.open span:nth-child(2) { opacity: 0; }
         .tor-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
-        /* Mobile dropdown — full width, flush edges */
         .tor-mobile-menu {
           width: 100%;
           box-sizing: border-box;
@@ -346,7 +374,7 @@ export default function Navbar() {
           transition: max-height 0.4s ease;
         }
         .tor-mobile-menu.open {
-          max-height: 420px;
+          max-height: 500px;
         }
         .tor-mobile-menu-inner {
           padding: 8px 16px 12px;
@@ -369,7 +397,7 @@ export default function Navbar() {
         .tor-mobile-menu a:hover { background: rgba(255,255,255,0.05); color: #f0eeff; }
         .tor-mobile-menu a.starlight { color: #ffe066; }
         .tor-mobile-menu a.starlight:hover { background: rgba(255,224,102,0.08); }
-		.tor-mobile-menu a.birthdays { color: #1085c4; }
+        .tor-mobile-menu a.birthdays { color: #1085c4; }
         .tor-mobile-menu a.birthdays:hover { background: rgba(56,151,201,0.08); }
 
         @media (max-width: 768px) {
@@ -381,9 +409,9 @@ export default function Navbar() {
 
       <nav className={`tor-nav${scrolled ? " scrolled" : ""}`}>
         <div className="tor-nav-inner">
-          <Link href="/" className="tor-logo">TOHO</Link>
+          <Link href={`/${locale}`} className="tor-logo">TOHO</Link>
 
-          {/* Desktop — hidden on mobile */}
+          {/* Desktop */}
           <div className="tor-nav-links">
             {navLinks.slice(0, 4).map(({ href, label }) => (
               <Link key={href} href={href}>{label}</Link>
@@ -394,7 +422,7 @@ export default function Navbar() {
                 className={`tor-dropdown-trigger${guideOpen ? " active" : ""}`}
                 onClick={() => setGuideOpen((v) => !v)}
               >
-                Guide
+                {t.nav.guide}
                 <FaChevronDown />
               </button>
               <div className={`tor-dropdown-menu${guideOpen ? " open" : ""}`}>
@@ -406,19 +434,41 @@ export default function Navbar() {
               </div>
             </div>
 
+            <div className="tor-dropdown" ref={translationRef}>
+              <button
+                className={`tor-dropdown-trigger${translationOpen ? " active" : ""}`}
+                onClick={() => setTranslationOpen((v) => !v)}
+              >
+                {t.nav.lang}
+                <FaChevronDown />
+              </button>
+              <div className={`tor-dropdown-menu${translationOpen ? " open" : ""}`}>
+                {translationLinks.map(({ code, label }) => (
+                  <button
+                    key={code}
+                    onClick={() => {
+                      setTranslationOpen(false);
+                      setLocale(code);
+                    }}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
             {navLinks.slice(4).map(({ href, label }) => (
               <Link key={href} href={href}>{label}</Link>
             ))}
-            <Link href="/starlight" className="starlight">✦ Starlight</Link>
-			<Link href="/birthdays" className="birthdays">✦ Birtdays</Link>
+            <Link href={`/${locale}/starlight`} className="starlight">{t.nav.starlight}</Link>
             <button className="tor-nav-btn tor-news-btn" onClick={() => setOpenNews(true)}>
               <FaNewspaper />
-              News
+              {t.nav.news}
               {hasUnread && <span className="tor-unread-dot" />}
             </button>
           </div>
 
-          {/* Mobile — hidden on desktop */}
+          {/* Mobile */}
           <div className="tor-mobile-controls">
             <button className="tor-mobile-news-btn" onClick={() => setOpenNews(true)}>
               <FaNewspaper />
@@ -433,7 +483,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile dropdown — full width, no floating */}
+        {/* Mobile menu */}
         <div className={`tor-mobile-menu${open ? " open" : ""}`}>
           <div className="tor-mobile-menu-inner">
             {navLinks.slice(0, 4).map(({ href, label }) => (
@@ -444,7 +494,7 @@ export default function Navbar() {
               className={`tor-mobile-dropdown-trigger${mobileGuideOpen ? " active" : ""}`}
               onClick={() => setMobileGuideOpen((v) => !v)}
             >
-              Guide
+              {t.nav.guide}
               <FaChevronDown />
             </button>
             <div className={`tor-mobile-dropdown-panel${mobileGuideOpen ? " open" : ""}`}>
@@ -462,11 +512,34 @@ export default function Navbar() {
               ))}
             </div>
 
+            <button
+              className={`tor-mobile-dropdown-trigger${mobileTranslationOpen ? " active" : ""}`}
+              onClick={() => setMobileTranslationOpen((v) => !v)}
+            >
+              {t.nav.lang}
+              <FaChevronDown />
+            </button>
+            <div className={`tor-mobile-dropdown-panel${mobileTranslationOpen ? " open" : ""}`}>
+              {translationLinks.map(({ code, label }) => (
+                <button
+                  key={code}
+                  onClick={() => {
+                    setOpen(false);
+                    setMobileTranslationOpen(false);
+                    setLocale(code);
+                  }}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+
             {navLinks.slice(4).map(({ href, label }) => (
               <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
             ))}
-            <Link href="/starlight" className="starlight" onClick={() => setOpen(false)}>✦ Starlight</Link>
-			<Link href="/birthdays" className="birthdays" onClick={() => setOpen(false)}>✦ Birthdays</Link>
+            <Link href={`/${locale}/starlight`} className="starlight" onClick={() => setOpen(false)}>
+              {t.nav.starlight}
+            </Link>
           </div>
         </div>
       </nav>

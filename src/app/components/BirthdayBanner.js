@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { birthdayConfig } from "../lib/birthdayConfig";
+import { birthdayConfig } from "@/app/[locale]/lib/birthdayConfig";
 
 export default function BirthdayBanner() {
   if (!birthdayConfig.active) return null;

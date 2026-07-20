@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "roles": "Rôles",
+    "templates": "Éditeur de Modèles",
+    "servers": "Serveurs",
+    "features": "Fonctionnalités",
+    "feedback": "Retour",
+    "guide": "Guide",
+    "news": "Actualités",
+    "starlight": "✦ Starlight",
+    "roleGuide": "Guide des Rôles",
+    "installationGuide": "Guide d'Installation",
+    "lang": "Langue"
+  },
+  "home": {
+    "eyebrow": "Mod Among Us",
+    "titleLine1": "Une",
+    "titleLine2": "Expérience",
+    "titleLine3": "Optimisée",
+    "subtitle": "Un endroit pour les rôles, fonctionnalités et mises à jour — optimisé pour mobile et bureau.",
+    "guideBtn": "Guide",
+    "starlightBtn": "Starlight",
+    "downloadBtn": "Télécharger maintenant",
+    "fetchingRelease": "Récupération de la version…",
+    "features": "Fonctionnalités",
+    "coloredUi": "Interface Colorée",
+    "coloredUiDesc": "Des couleurs vives et des améliorations visuelles partout",
+    "customRoles": "Rôles Personnalisés",
+    "customRolesDesc": "Rôles riches en fonctionnalités avec des capacités uniques",
+    "gameOptions": "Options de Jeu",
+    "gameOptionsDesc": "Nouveaux paramètres et outils de configuration",
+    "gamemodes": "Modes de Jeu",
+    "gamemodesDesc": "Des façons entièrement nouvelles de jouer"
+  },
+  "news": {
+    "title": "Dernières Actualités"
+  }
+}

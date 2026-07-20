@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { auth } from "../../../auth";
+import { auth } from "../../../../auth";
 
 const TYPE_COLORS = {
   Bug: 0xff5f5f,

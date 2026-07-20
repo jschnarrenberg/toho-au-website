@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 import { useEffect, useRef, useState } from "react";
 import { factions, factionData } from "@/app/data/guide";
 

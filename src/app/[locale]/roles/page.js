@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import { FaInfoCircle, FaSearch, FaTimes } from "react-icons/fa";
 import { parseMarkup } from "../lib/textMarkup";
 import rolesData from "../data/roles.json";

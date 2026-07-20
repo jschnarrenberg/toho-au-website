@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import Link from "next/link";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 import { FaRocket, FaMobileAlt, FaDownload, FaInfoCircle, FaStar } from "react-icons/fa";
 
 export const metadata = {

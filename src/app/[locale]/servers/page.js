@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import { FaCog, FaWindows, FaMobileAlt, FaDownload, FaExternalLinkAlt, FaShieldAlt } from "react-icons/fa";
 
 export default function ServerInstallation() {
