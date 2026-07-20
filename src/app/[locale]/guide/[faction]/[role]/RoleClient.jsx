@@ -4,7 +4,7 @@ import Footer from "../../../../components/Footer";
 import Navbar from "../../../../components/Navbar";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { parseMarkup } from "../../../lib/textMarkup";
+import { parseMarkup } from "@/app/[locale]/lib/textMarkup";
 
 function FadeSection({ children, delay = 0 }) {
   const ref = useRef(null);
